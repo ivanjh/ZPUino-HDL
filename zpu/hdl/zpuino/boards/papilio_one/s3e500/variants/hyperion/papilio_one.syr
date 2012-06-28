@@ -1,0 +1,196 @@
+Release 14.2 - xst P.28xd (lin)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.16 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.16 secs
+ 
+--> 
+Reading design: papilio_one.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "papilio_one.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "papilio_one"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : papilio_one_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : NO
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : YES
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : No
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : YES
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : No
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/zpu_config.vhd" in Library work.
+Package <zpu_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpupkg.vhd" in Library work.
+Package <zpupkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/zpuino_config.vhd" in Library work.
+Package <zpuino_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuinopkg.vhd" in Library work.
+Package <zpuinopkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/prescaler.vhd" in Library work.
+Entity <prescaler> compiled.
+Entity <prescaler> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/uart_brgen.vhd" in Library work.
+Entity <uart_brgen> compiled.
+Entity <uart_brgen> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/tx_unit.vhd" in Library work.
+Entity <TxUnit> compiled.
+Entity <TxUnit> (Architecture <Behaviour>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" in Library work.
+Entity <timer> compiled.
+Entity <timer> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/spiclkgen.vhd" in Library work.
+Entity <spiclkgen> compiled.
+Entity <spiclkgen> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/spi.vhd" in Library work.
+Entity <spi> compiled.
+Entity <spi> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_rx.vhd" in Library work.
+Entity <zpuino_uart_rx> compiled.
+Entity <zpuino_uart_rx> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_mv_filter.vhd" in Library work.
+Entity <zpuino_uart_mv_filter> compiled.
+Entity <zpuino_uart_mv_filter> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/fifo.vhd" in Library work.
+Entity <fifo> compiled.
+Entity <fifo> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/prom-generic-dp-32.vhd" in Library work.
+Entity <prom_generic_dualport> compiled.
+Entity <prom_generic_dualport> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd" in Library work.
+Entity <zpuino_uart> compiled.
+Entity <zpuino_uart> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_timers.vhd" in Library work.
+Entity <zpuino_timers> compiled.
+Entity <zpuino_timers> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_spi.vhd" in Library work.
+Entity <zpuino_spi> compiled.
+Entity <zpuino_spi> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_sigmadelta.vhd" in Library work.
+Entity <zpuino_sigmadelta> compiled.
+Entity <zpuino_sigmadelta> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" in Library work.
+Entity <zpuino_intr> compiled.
+Entity <zpuino_intr> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_gpio.vhd" in Library work.
+Entity <zpuino_gpio> compiled.
+Entity <zpuino_gpio> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_serialreset.vhd" in Library work.
+Entity <zpuino_serialreset> compiled.
+Entity <zpuino_serialreset> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_crc16.vhd" in Library work.
+Entity <zpuino_crc16> compiled.
+Entity <zpuino_crc16> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_adc.vhd" in Library work.
+Entity <zpuino_adc> compiled.
+Entity <zpuino_adc> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_empty_device.vhd" in Library work.
+Entity <zpuino_empty_device> compiled.
+Entity <zpuino_empty_device> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/dualport_ram.vhd" in Library work.
+Entity <dualport_ram> compiled.
+Entity <dualport_ram> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_io.vhd" in Library work.
+Entity <zpuino_io> compiled.
+Entity <zpuino_io> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd" in Library work.
+ERROR:HDLParsers:3014 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd" Line 44. Library unit wishbonepkg is not available in library work.
+--> 
+
+
+Total memory usage is 175236 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

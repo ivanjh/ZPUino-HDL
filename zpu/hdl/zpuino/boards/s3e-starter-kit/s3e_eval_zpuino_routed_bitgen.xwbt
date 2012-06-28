@@ -1,0 +1,7 @@
+INFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/s3e_eval_zpuino_routed.ncd
+OUTFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/s3e_eval_zpuino_routed.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit
+LICENSE=WebPack
+USER_INFO=202284610_0_0_530

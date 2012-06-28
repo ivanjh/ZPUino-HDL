@@ -1,0 +1,7 @@
+INFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil/oho_godil_routed.ncd
+OUTFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil/oho_godil_routed.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4vq100
+WORKINGDIR=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil
+LICENSE=WebPack
+USER_INFO=202284610_0_0_530

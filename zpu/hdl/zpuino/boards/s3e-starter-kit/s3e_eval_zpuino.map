@@ -1,0 +1,184 @@
+Release 14.2 Map P.28xd (lin)
+Xilinx Map Application Log File for Design 's3e_eval_zpuino'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm speed -detail -ir off
+-ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on -o
+s3e_eval_zpuino.ncd s3e_eval_zpuino.ngd s3e_eval_zpuino.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Aug 15 20:12:50 2012
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:501 - The I/O component UART_TX has conflicting DRIVE property
+   values.  The symbol UART_TX has property value 8.  The symbol obuftx/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol UART_TX.
+WARNING:Pack:501 - The I/O component SPI_SCK has conflicting DRIVE property
+   values.  The symbol SPI_SCK has property value 8.  The symbol sckpad/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol SPI_SCK.
+WARNING:Pack:501 - The I/O component SPI_MOSI has conflicting DRIVE property
+   values.  The symbol SPI_MOSI has property value 6.  The symbol mosipad/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol SPI_MOSI.
+WARNING:Pack:501 - The I/O component LCD_E has conflicting DRIVE property
+   values.  The symbol LCD_E has property value 6.  The symbol pin46/obufi has
+   property value _.  The system will use the property value attached to symbol
+   LCD_E.
+WARNING:Pack:501 - The I/O component DAC_CS has conflicting DRIVE property
+   values.  The symbol DAC_CS has property value 8.  The symbol pin52/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol DAC_CS.
+WARNING:Pack:501 - The I/O component LED<0> has conflicting DRIVE property
+   values.  The symbol LED<0> has property value 8.  The symbol pin32/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<0>.
+WARNING:Pack:501 - The I/O component LED<1> has conflicting DRIVE property
+   values.  The symbol LED<1> has property value 8.  The symbol pin33/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<1>.
+WARNING:Pack:501 - The I/O component LED<2> has conflicting DRIVE property
+   values.  The symbol LED<2> has property value 8.  The symbol pin34/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<2>.
+WARNING:Pack:501 - The I/O component LED<3> has conflicting DRIVE property
+   values.  The symbol LED<3> has property value 8.  The symbol pin35/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<3>.
+WARNING:Pack:501 - The I/O component LED<4> has conflicting DRIVE property
+   values.  The symbol LED<4> has property value 8.  The symbol pin36/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<4>.
+WARNING:Pack:501 - The I/O component LED<5> has conflicting DRIVE property
+   values.  The symbol LED<5> has property value 8.  The symbol pin37/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<5>.
+WARNING:Pack:501 - The I/O component LED<6> has conflicting DRIVE property
+   values.  The symbol LED<6> has property value 8.  The symbol pin38/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<6>.
+WARNING:Pack:501 - The I/O component LED<7> has conflicting DRIVE property
+   values.  The symbol LED<7> has property value 8.  The symbol pin39/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<7>.
+WARNING:Pack:501 - The I/O component AMP_CS has conflicting DRIVE property
+   values.  The symbol AMP_CS has property value 6.  The symbol pin53/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol AMP_CS.
+WARNING:Pack:501 - The I/O component LCD_RS has conflicting DRIVE property
+   values.  The symbol LCD_RS has property value 6.  The symbol pin44/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LCD_RS.
+WARNING:Pack:501 - The I/O component LCD_RW has conflicting DRIVE property
+   values.  The symbol LCD_RW has property value 6.  The symbol pin45/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LCD_RW.
+WARNING:Pack:501 - The I/O component SPI_CS has conflicting DRIVE property
+   values.  The symbol SPI_CS has property value 6.  The symbol pin16/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol SPI_CS.
+WARNING:Pack:501 - The I/O component AMP_SHDN has conflicting DRIVE property
+   values.  The symbol AMP_SHDN has property value 6.  The symbol pin47/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol AMP_SHDN.
+WARNING:Pack:501 - The I/O component AD_CONV has conflicting DRIVE property
+   values.  The symbol AD_CONV has property value 6.  The symbol pin51/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol AD_CONV.
+WARNING:Pack:266 - The function generator zpuino/core/w1_tos_4_mux0002191 failed
+   to merge with F5 multiplexer zpuino/core/prefr_spnext_mux0000<4>89.  There is
+   a conflict for the FXMUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 4 mins 52 secs 
+Total CPU  time at the beginning of Placer: 4 mins 47 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:7f33203a) REAL time: 4 mins 55 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:7f33203a) REAL time: 4 mins 55 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:7f33203a) REAL time: 4 mins 55 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:c3c8d637) REAL time: 6 mins 4 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:c3c8d637) REAL time: 6 mins 4 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:c3c8d637) REAL time: 6 mins 4 secs 
+
+Phase 7.8  Global Placement
+.......................
+...............................................................................
+.....
+.............................................................................................................
+................
+................
+...................................................
+.........
+Phase 7.8  Global Placement (Checksum:b7b6f51d) REAL time: 15 mins 50 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:b7b6f51d) REAL time: 15 mins 54 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:c5d762ae) REAL time: 24 mins 32 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:c5d762ae) REAL time: 24 mins 32 secs 
+
+Total REAL time to Placer completion: 24 mins 32 secs 
+Total CPU  time to Placer completion: 24 mins 20 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   20
+Logic Utilization:
+  Number of Slice Flip Flops:         2,226 out of   9,312   23%
+  Number of 4 input LUTs:             3,254 out of   9,312   34%
+Logic Distribution:
+  Number of occupied Slices:          2,598 out of   4,656   55%
+    Number of Slices containing only related logic:   2,598 out of   2,598 100%
+    Number of Slices containing unrelated logic:          0 out of   2,598   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,447 out of   9,312   37%
+    Number used as logic:             3,167
+    Number used as a route-thru:        193
+    Number used as Shift registers:      87
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 68 out of     232   29%
+    IOB Flip Flops:                      35
+  Number of RAMB16s:                     18 out of      20   90%
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         2 out of       4   50%
+  Number of MULT18X18SIOs:                4 out of      20   20%
+
+Average Fanout of Non-Clock Nets:                3.26
+
+Peak Memory Usage:  240 MB
+Total REAL time to MAP completion:  24 mins 37 secs 
+Total CPU time to MAP completion:   24 mins 26 secs 
+
+Mapping completed.
+See MAP report file "s3e_eval_zpuino.mrp" for details.
