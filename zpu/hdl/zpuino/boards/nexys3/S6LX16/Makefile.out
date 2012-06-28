@@ -290,7 +290,7 @@ WARNING:HDLCompiler:634 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/
 --> 
 
 
-Total memory usage is 140052 kilobytes
+Total memory usage is 140056 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :   15 (   0 filtered)

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Reading design: papilio_one.prj
@@ -3238,8 +3238,8 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 2565.00 secs
-Total CPU time to Xst completion: 2549.07 secs
+Total REAL time to Xst completion: 3841.00 secs
+Total CPU time to Xst completion: 3811.90 secs
  
 --> 
 

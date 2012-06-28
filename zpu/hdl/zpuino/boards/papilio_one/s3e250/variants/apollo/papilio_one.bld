@@ -33,10 +33,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 115384 kilobytes
+Total memory usage is 115388 kilobytes
 
 Writing NGD file "papilio_one.ngd" ...
-Total REAL time to NGDBUILD completion: 2 min  21 sec
-Total CPU time to NGDBUILD completion:  2 min  20 sec
+Total REAL time to NGDBUILD completion: 2 min  42 sec
+Total CPU time to NGDBUILD completion:  2 min  39 sec
 
 Writing NGDBUILD log file "papilio_one.bld"...

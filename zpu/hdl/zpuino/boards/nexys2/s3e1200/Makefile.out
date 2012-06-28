@@ -74,7 +74,7 @@ ERROR:HDLParsers:1209 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme
 --> 
 
 
-Total memory usage is 172148 kilobytes
+Total memory usage is 172144 kilobytes
 
 Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
