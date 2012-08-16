@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd</arg>&quot; Line <arg fmt="%d" index="2">570</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">enable_fmul16</arg>&apos;.
-</msg>
-
-<msg type="error" file="HDLParsers" num="1209" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd</arg>&quot; Line <arg fmt="%d" index="2">570</arg>. <arg fmt="%s" index="3">enable_fmul16</arg>: Undefined symbol (last report in this block)
+<msg type="error" file="HDLParsers" num="3312" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd</arg>&quot; Line <arg fmt="%d" index="2">194</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">Undefined</arg>&apos;.
 </msg>
 
 </messages>

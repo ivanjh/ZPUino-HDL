@@ -131,43 +131,13 @@ Entity <uart_brgen> compiled.
 Entity <uart_brgen> (Architecture <behave>) compiled.
 Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" in Library work.
 Entity <zpuino_intr> compiled.
-Entity <zpuino_intr> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/wishbonepkg.vhd" in Library work.
-Package <wishbonepkg> compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/dualport_ram.vhd" in Library work.
-Entity <dualport_ram> compiled.
-Entity <dualport_ram> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/shifter.vhd" in Library work.
-Entity <lshifter> compiled.
-Entity <lshifter> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" in Library work.
-Entity <timer> compiled.
-Entity <timer> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_rx.vhd" in Library work.
-Entity <zpuino_uart_rx> compiled.
-Entity <zpuino_uart_rx> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/tx_unit.vhd" in Library work.
-Entity <TxUnit> compiled.
-Entity <TxUnit> (Architecture <Behaviour>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/fifo.vhd" in Library work.
-Entity <fifo> compiled.
-Entity <fifo> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/spi.vhd" in Library work.
-Entity <spi> compiled.
-Entity <spi> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/spiclkgen.vhd" in Library work.
-Entity <spiclkgen> compiled.
-Entity <spiclkgen> (Architecture <behave>) compiled.
-Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd" in Library work.
-Entity <zpu_core_extreme> compiled.
-ERROR:HDLParsers:3312 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd" Line 570. Undefined symbol 'enable_fmul16'.
-ERROR:HDLParsers:1209 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd" Line 570. enable_fmul16: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" Line 194. Undefined symbol 'Undefined'.
 --> 
 
 
-Total memory usage is 172144 kilobytes
+Total memory usage is 169412 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

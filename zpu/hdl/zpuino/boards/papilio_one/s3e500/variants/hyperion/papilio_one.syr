@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.44 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.44 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 Reading design: papilio_one.prj
@@ -183,12 +183,73 @@ Entity <dualport_ram> (Architecture <behave>) compiled.
 Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_io.vhd" in Library work.
 Entity <zpuino_io> compiled.
 Entity <zpuino_io> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/wishbonepkg.vhd" in Library work.
+Package <wishbonepkg> compiled.
 Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd" in Library work.
-ERROR:HDLParsers:3014 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd" Line 44. Library unit wishbonepkg is not available in library work.
+Entity <zpuino_top> compiled.
+Entity <zpuino_top> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/pulse.vhd" in Library work.
+Entity <pulse> compiled.
+Entity <pulse> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/shifter.vhd" in Library work.
+Entity <lshifter> compiled.
+Entity <lshifter> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/mult.vhd" in Library work.
+Entity <multiplier> compiled.
+Entity <multiplier> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd" in Library work.
+Entity <zpu_core_extreme> compiled.
+Entity <zpu_core_extreme> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/wb_rom_ram.vhd" in Library work.
+Entity <wb_rom_ram> compiled.
+Entity <wb_rom_ram> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/wbmux2.vhd" in Library work.
+Entity <wbmux2> compiled.
+Entity <wbmux2> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/wbarb2_1.vhd" in Library work.
+Entity <wbarb2_1> compiled.
+Entity <wbarb2_1> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_debug_spartan3e.vhd" in Library work.
+Entity <zpuino_debug_spartan3e> compiled.
+Entity <zpuino_debug_spartan3e> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_debug_core.vhd" in Library work.
+Entity <zpuino_debug_core> compiled.
+Entity <zpuino_debug_core> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_debug_jtag.vhd" in Library work.
+Entity <zpuino_debug_jtag> compiled.
+Entity <zpuino_debug_jtag> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/jtag_chain.vhd" in Library work.
+Entity <jtag_chain> compiled.
+Entity <jtag_chain> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/simple_sigmadelta.vhd" in Library work.
+Entity <simple_sigmadelta> compiled.
+Entity <simple_sigmadelta> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/zpuino_YM2149_linmix.vhd" in Library work.
+Entity <zpuino_io_YM2149> compiled.
+Entity <zpuino_io_YM2149> (Architecture <RTL>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/wb_sid6581.vhd" in Library work.
+Entity <wb_sid6581> compiled.
+Entity <wb_sid6581> (Architecture <rtl>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/sid_components.vhd" in Library work.
+Entity <pwm_sddac> compiled.
+Entity <pwm_sddac> (Architecture <rtl>) compiled.
+Entity <pwm_sdadc> compiled.
+Entity <pwm_sdadc> (Architecture <rtl>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/sid_voice.vhd" in Library work.
+Entity <sid_voice> compiled.
+Entity <sid_voice> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/sid_6581.vhd" in Library work.
+Entity <sid6581> compiled.
+Entity <sid6581> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_vga_ram.vhd" in Library work.
+Entity <zpuino_vga_ram> compiled.
+Entity <zpuino_vga_ram> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/../../../../../wb_char_ram_8x8_sp.vhd" in Library work.
+ERROR:HDLParsers:3264 - Can't read file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/../../../../../wb_char_ram_8x8_sp.vhd": No such file or directory
 --> 
 
 
-Total memory usage is 175236 kilobytes
+Total memory usage is 180396 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

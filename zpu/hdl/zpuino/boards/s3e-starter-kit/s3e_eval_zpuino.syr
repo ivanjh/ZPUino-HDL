@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: s3e_eval_zpuino.prj
@@ -566,7 +566,7 @@ Entity <prescaler> analyzed. Unit <prescaler> generated.
 Analyzing generic Entity <zpuino_uart> in library <work> (Architecture <behave>).
 	bits = 11
 WARNING:Xst:753 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd" line 215: Unconnected output port 'full' of component 'fifo'.
-INFO:Xst:1561 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd" line 242: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd" line 243: Mux is complete : default of case is discarded
 Entity <zpuino_uart> analyzed. Unit <zpuino_uart> generated.
 
 Analyzing Entity <zpuino_uart_rx> in library <work> (Architecture <behave>).
@@ -611,7 +611,7 @@ Analyzing generic Entity <timer.1> in library <work> (Architecture <behave>).
 	PWMCOUNT = 1
 	TSCENABLED = true
 	WIDTH = 16
-WARNING:Xst:819 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" line 190: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" line 194: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <tmrr.pwmr<0>.cmplow>, <tmrr.pwmr<0>.cmphigh>, <tmrr.pwmr<0>.en>, <tmrr.pwmrb<0>.cmplow>, <tmrr.pwmrb<0>.cmphigh>, <tmrr.pwmrb<0>.en>, <tmr0_prescale_event>
 Entity <timer.1> analyzed. Unit <timer.1> generated.
 
@@ -621,7 +621,7 @@ Analyzing generic Entity <timer.2> in library <work> (Architecture <behave>).
 	PWMCOUNT = 1
 	TSCENABLED = false
 	WIDTH = 24
-WARNING:Xst:819 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" line 190: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" line 194: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <tmrr.pwmr<0>.cmplow>, <tmrr.pwmr<0>.cmphigh>, <tmrr.pwmr<0>.en>, <tmrr.pwmrb<0>.cmplow>, <tmrr.pwmrb<0>.cmphigh>, <tmrr.pwmrb<0>.en>
 INFO:Xst:2679 - Register <tmrr.pwmrb<0>.en> in unit <timer.2> has a constant value of 0 during circuit operation. The register is replaced by logic.
 Entity <timer.2> analyzed. Unit <timer.2> generated.
@@ -1020,9 +1020,9 @@ WARNING:Xst:1780 - Signal <tmr0_prescale_rst> is never used or assigned. This un
 WARNING:Xst:1780 - Signal <TSC_q> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <pwm_out<0>>.
     Found 32-bit 3-to-1 multiplexer for signal <wb_dat_o>.
-    Found 24-bit comparator equal for signal <ovf$cmp_eq0000> created at line 207.
-    Found 24-bit comparator greatequal for signal <pwm_out_0$cmp_ge0000> created at line 341.
-    Found 24-bit comparator less for signal <pwm_out_0$cmp_lt0000> created at line 341.
+    Found 24-bit comparator equal for signal <ovf$cmp_eq0000> created at line 211.
+    Found 24-bit comparator greatequal for signal <pwm_out_0$cmp_ge0000> created at line 345.
+    Found 24-bit comparator less for signal <pwm_out_0$cmp_lt0000> created at line 345.
     Found 1-bit register for signal <tmrr.ccm>.
     Found 24-bit register for signal <tmrr.cmp>.
     Found 24-bit updown counter for signal <tmrr.cnt>.
@@ -1257,9 +1257,9 @@ WARNING:Xst:647 - Input <wb_dat_i<31:16>> is never used. This port will be prese
 WARNING:Xst:1780 - Signal <tmr0_prescale_rst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit register for signal <pwm_out<0>>.
     Found 32-bit 4-to-1 multiplexer for signal <wb_dat_o>.
-    Found 16-bit comparator equal for signal <ovf$cmp_eq0000> created at line 207.
-    Found 16-bit comparator greatequal for signal <pwm_out_0$cmp_ge0000> created at line 341.
-    Found 16-bit comparator less for signal <pwm_out_0$cmp_lt0000> created at line 341.
+    Found 16-bit comparator equal for signal <ovf$cmp_eq0000> created at line 211.
+    Found 16-bit comparator greatequal for signal <pwm_out_0$cmp_ge0000> created at line 345.
+    Found 16-bit comparator less for signal <pwm_out_0$cmp_lt0000> created at line 345.
     Found 1-bit register for signal <tmrr.ccm>.
     Found 16-bit register for signal <tmrr.cmp>.
     Found 16-bit updown counter for signal <tmrr.cnt>.
@@ -3032,13 +3032,13 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3784.00 secs
-Total CPU time to Xst completion: 3752.59 secs
+Total REAL time to Xst completion: 175.00 secs
+Total CPU time to Xst completion: 174.32 secs
  
 --> 
 
 
-Total memory usage is 303556 kilobytes
+Total memory usage is 303564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  837 (   0 filtered)

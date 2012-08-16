@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="2">
-<DesignStatistics TimeStamp="Thu Aug 16 14:56:15 2012"><group name="NetStatistics">
+<DesignStatistics TimeStamp="Fri Aug 17 05:20:11 2012"><group name="NetStatistics">
 <item name="NumNets_Active" rev="2">
 <attrib name="value" value="5020"/></item>
 <item name="NumNets_Gnd" rev="2">
@@ -142,7 +142,7 @@
 <attrib name="value" value="1145"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Thu Aug 16 14:56:15 2012"><group name="SiteSummary">
+<DeviceUsage TimeStamp="Fri Aug 17 05:20:11 2012"><group name="SiteSummary">
 <item name="BUFGMUX" rev="2">
 <attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
 <item name="BUFGMUX_GCLKMUX" rev="2">
@@ -233,7 +233,7 @@
 <attrib name="total" value="1000000"/><attrib name="used" value="84"/></item>
 </group>
 </DeviceUsage>
-<ReportConfigData TimeStamp="Thu Aug 16 14:56:15 2012"><group name="IBUF_PAD">
+<ReportConfigData TimeStamp="Fri Aug 17 05:20:11 2012"><group name="IBUF_PAD">
 <item name="IOATTRBOX" rev="2">
 <attrib name="LVTTL" value="9"/><attrib name="LVCMOS33" value="2"/></item>
 <item name="PULL" rev="2">
@@ -598,7 +598,7 @@
 <attrib name="S0" value="313"/><attrib name="S0_INV" value="0"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Thu Aug 16 14:56:15 2012"><group name="IBUF_PAD">
+<ReportPinData TimeStamp="Fri Aug 17 05:20:11 2012"><group name="IBUF_PAD">
 <item name="PAD" rev="2">
 <attrib name="value" value="11"/></item>
 </group>

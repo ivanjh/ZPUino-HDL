@@ -1,0 +1,39 @@
+mkdir -p xst/projnav.tmp/
+xst -intstyle ise -ifn nexys3.xst -ofn nexys3.syr
+Reading design: nexys3.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/zpu_config.vhd" into library work
+Parsing package <zpu_config>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpupkg.vhd" into library work
+Parsing package <zpupkg>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/zpuino_config.vhd" into library work
+Parsing package <zpuino_config>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuinopkg.vhd" into library work
+Parsing package <zpuinopkg>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/prescaler.vhd" into library work
+Parsing entity <prescaler>.
+Parsing architecture <behave> of entity <prescaler>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/uart_brgen.vhd" into library work
+Parsing entity <uart_brgen>.
+Parsing architecture <behave> of entity <uart_brgen>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/tx_unit.vhd" into library work
+Parsing entity <TxUnit>.
+Parsing architecture <Behaviour> of entity <txunit>.
+Parsing VHDL file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" into library work
+Parsing entity <timer>.
+Parsing architecture <behave> of entity <timer>.
+ERROR:HDLCompiler:69 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 169: <undefined> is not declared.
+ERROR:HDLCompiler:854 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 71: Unit <behave> ignored due to previous errors.
+VHDL file /mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd ignored due to errors
+--> 
+
+
+Total memory usage is 104052 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

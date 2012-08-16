@@ -74,17 +74,17 @@
 <msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd</arg>&quot; line <arg fmt="%d" index="2">215</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">full</arg>&apos; of component &apos;<arg fmt="%s" index="4">fifo</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd</arg>&quot; line <arg fmt="%d" index="2">242</arg>: Mux is complete : default of case is discarded
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Mux is complete : default of case is discarded
 </msg>
 
 <msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_timers.vhd</arg>&quot; line <arg fmt="%d" index="2">178</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd</arg>&quot; line <arg fmt="%d" index="2">190</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd</arg>&quot; line <arg fmt="%d" index="2">194</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;tmrr.pwmr&lt;0&gt;.cmplow&gt;, &lt;tmrr.pwmr&lt;0&gt;.cmphigh&gt;, &lt;tmrr.pwmr&lt;0&gt;.en&gt;, &lt;tmrr.pwmrb&lt;0&gt;.cmplow&gt;, &lt;tmrr.pwmrb&lt;0&gt;.cmphigh&gt;, &lt;tmrr.pwmrb&lt;0&gt;.en&gt;, &lt;tmr0_prescale_event&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd</arg>&quot; line <arg fmt="%d" index="2">190</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd</arg>&quot; line <arg fmt="%d" index="2">194</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;tmrr.pwmr&lt;0&gt;.cmplow&gt;, &lt;tmrr.pwmr&lt;0&gt;.cmphigh&gt;, &lt;tmrr.pwmr&lt;0&gt;.en&gt;, &lt;tmrr.pwmrb&lt;0&gt;.cmplow&gt;, &lt;tmrr.pwmrb&lt;0&gt;.cmphigh&gt;, &lt;tmrr.pwmrb&lt;0&gt;.en&gt;</arg>
 </msg>
 

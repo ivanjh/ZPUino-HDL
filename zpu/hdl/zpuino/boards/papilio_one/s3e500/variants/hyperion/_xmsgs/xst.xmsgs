@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="3014" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd</arg>&quot; Line <arg fmt="%d" index="2">44</arg>. Library unit <arg fmt="%s" index="3">wishbonepkg</arg> is not available in library <arg fmt="%s" index="4">work</arg>.
+<msg type="error" file="HDLParsers" num="3264" delta="new" >Can&apos;t read file &quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/../../../../../wb_char_ram_8x8_sp.vhd</arg>&quot;: <arg fmt="%s" index="2">No such file or directory</arg>
 </msg>
 
 </messages>

@@ -5,52 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpu_core_extreme.vhd" Line 883: Assignment to <arg fmt="%s" index="1">instruction_executed</arg> ignored, since the identifier is never used
+<msg type="error" file="HDLCompiler" num="69" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 169: &lt;<arg fmt="%s" index="1">undefined</arg>&gt; is not declared.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/stack.vhd" Line 31: Using initial value <arg fmt="%s" index="1">&quot;0000&quot;</arg> for <arg fmt="%s" index="2">dipa</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/dualport_ram.vhd" Line 96: Assignment to <arg fmt="%s" index="1">memawriteenable_i</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/dualport_ram.vhd" Line 97: Assignment to <arg fmt="%s" index="1">membwriteenable_i</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_io.vhd" Line 76: Net &lt;<arg fmt="%s" index="1">ivecs[17]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_top.vhd" Line 298: Net &lt;<arg fmt="%s" index="1">rom_wb_adr_i[27]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart.vhd" Line 122: Using initial value <arg fmt="%s" index="1">&quot;0000000000001111&quot;</arg> for <arg fmt="%s" index="2">divider_tx</arg> since it is never assigned
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_rx.vhd" Line 139: Assignment to <arg fmt="%s" index="1">start</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_gpio.vhd" Line 89: Net &lt;<arg fmt="%s" index="1">gpio_i_q[127]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 227: <arg fmt="%s" index="1">do_interrupt</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 254: <arg fmt="%s" index="1">tmr0_prescale_event</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="error" file="HDLCompiler" num="636" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/nexys3_top.vhd" Line 354: Net &lt;<arg fmt="%s" index="1">gpio_o[56]</arg>&gt; is already driven by input port &lt;<arg fmt="%s" index="2">I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/nexys3_top.vhd" Line 119: Net &lt;<arg fmt="%s" index="1">gpio_i[56]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/nexys3_top.vhd" Line 133: Net &lt;<arg fmt="%s" index="1">slot_read[4][31]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/nexys3_top.vhd" Line 136: Net &lt;<arg fmt="%s" index="1">slot_ack[4]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/S6LX16/nexys3_top.vhd" Line 137: Net &lt;<arg fmt="%s" index="1">slot_interrupt[8]</arg>&gt; does not have a driver.
+<msg type="error" file="HDLCompiler" num="854" delta="new" >"/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd" Line 71: Unit &lt;<arg fmt="%s" index="1">behave</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>
