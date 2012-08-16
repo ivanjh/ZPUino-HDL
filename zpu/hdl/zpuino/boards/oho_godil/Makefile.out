@@ -1,0 +1,39 @@
+mkdir -p xst/projnav.tmp/
+xst -intstyle ise -ifn oho_godil.xst -ofn oho_godil.syr
+Reading design: oho_godil.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil/zpu_config.vhd" in Library work.
+Package <zpu_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpupkg.vhd" in Library work.
+Package <zpupkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil/zpuino_config.vhd" in Library work.
+Package <zpuino_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuinopkg.vhd" in Library work.
+Package <zpuinopkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/oho_godil/prom-generic-dp-32.vhd" in Library work.
+Entity <prom_generic_dualport> compiled.
+Entity <prom_generic_dualport> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/prescaler.vhd" in Library work.
+Entity <prescaler> compiled.
+Entity <prescaler> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_mv_filter.vhd" in Library work.
+Entity <zpuino_uart_mv_filter> compiled.
+Entity <zpuino_uart_mv_filter> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/uart_brgen.vhd" in Library work.
+Entity <uart_brgen> compiled.
+Entity <uart_brgen> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" in Library work.
+Entity <zpuino_intr> compiled.
+ERROR:HDLParsers:3312 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" Line 194. Undefined symbol 'Undefined'.
+--> 
+
+
+Total memory usage is 169384 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

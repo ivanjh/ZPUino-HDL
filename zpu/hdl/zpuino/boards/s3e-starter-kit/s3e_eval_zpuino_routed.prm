@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 promgen -w -spi -p bin -o s3e_eval_zpuino_routed.bin -s 1024 -u 0 s3e_eval_zpuino_routed.bit 
 
-PROM s3e_eval_zpuino_routed.prm map: Fri Aug 17 05:20:13 2012
+PROM s3e_eval_zpuino_routed.prm map: Fri Aug 17 10:49:36 2012
 
 Format        Bin
 Size          1024K
@@ -11,4 +11,4 @@ PROM start    00000000
 PROM end      000fffff
 
         Addr1        Addr2                     Date File(s)
-     00000000     0004547f     Aug 17 05:20:10 2012 s3e_eval_zpuino_routed.bit
+     00000000     0004547f     Aug 17 10:47:51 2012 s3e_eval_zpuino_routed.bit

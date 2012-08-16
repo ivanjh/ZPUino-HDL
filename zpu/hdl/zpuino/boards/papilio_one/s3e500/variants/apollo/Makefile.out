@@ -1,0 +1,17 @@
+mkdir -p xst/projnav.tmp/
+xst -intstyle ise -ifn papilio_one.xst -ofn papilio_one.syr
+ERROR:Xst:438 - Can not open file : papilio_one.prj
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.99 secs
+ 
+--> 
+
+
+Total memory usage is 151080 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

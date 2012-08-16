@@ -145,7 +145,7 @@ ERROR:HDLParsers:3264 - Can't read file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/
 --> 
 
 
-Total memory usage is 180396 kilobytes
+Total memory usage is 180400 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

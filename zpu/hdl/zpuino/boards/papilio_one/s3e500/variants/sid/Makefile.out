@@ -1,0 +1,47 @@
+mkdir -p xst/projnav.tmp/
+xst -intstyle ise -ifn papilio_one.xst -ofn papilio_one.syr
+Reading design: papilio_one.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/zpu_config.vhd" in Library work.
+Package <zpu_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpupkg.vhd" in Library work.
+Package <zpupkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/zpuino_config.vhd" in Library work.
+Package <zpuino_config> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuinopkg.vhd" in Library work.
+Package <zpuinopkg> compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/sid/prom-generic-dp-32.vhd" in Library work.
+Entity <prom_generic_dualport> compiled.
+Entity <prom_generic_dualport> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/sid_components.vhd" in Library work.
+Entity <pwm_sddac> compiled.
+Entity <pwm_sddac> (Architecture <rtl>) compiled.
+Entity <pwm_sdadc> compiled.
+Entity <pwm_sdadc> (Architecture <rtl>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/contrib/NetSID/src/sid_voice.vhd" in Library work.
+Entity <sid_voice> compiled.
+Entity <sid_voice> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/prescaler.vhd" in Library work.
+Entity <prescaler> compiled.
+Entity <prescaler> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_uart_mv_filter.vhd" in Library work.
+Entity <zpuino_uart_mv_filter> compiled.
+Entity <zpuino_uart_mv_filter> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/uart_brgen.vhd" in Library work.
+Entity <uart_brgen> compiled.
+Entity <uart_brgen> (Architecture <behave>) compiled.
+Compiling vhdl file "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" in Library work.
+Entity <zpuino_intr> compiled.
+ERROR:HDLParsers:3312 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd" Line 194. Undefined symbol 'Undefined'.
+--> 
+
+
+Total memory usage is 170064 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

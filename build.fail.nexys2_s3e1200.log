@@ -44,7 +44,7 @@ ERROR:HDLParsers:3312 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/zpuino_intr.vhd"
 --> 
 
 
-Total memory usage is 169412 kilobytes
+Total memory usage is 169404 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
