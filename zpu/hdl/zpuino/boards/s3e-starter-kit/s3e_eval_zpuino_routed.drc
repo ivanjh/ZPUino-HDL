@@ -1,7 +1,7 @@
 Release 14.2 Drc P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Fri Aug 17 10:46:25 2012
+Fri Aug 17 15:24:43 2012
 
 drc -z s3e_eval_zpuino_routed.ncd
 

@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.63 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: s3e_eval_zpuino.prj
@@ -3032,13 +3032,13 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 974.00 secs
-Total CPU time to Xst completion: 968.62 secs
+Total REAL time to Xst completion: 1513.00 secs
+Total CPU time to Xst completion: 1500.71 secs
  
 --> 
 
 
-Total memory usage is 303560 kilobytes
+Total memory usage is 303564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  837 (   0 filtered)

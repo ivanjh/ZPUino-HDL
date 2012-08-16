@@ -46,6 +46,6 @@ Total memory usage is 114352 kilobytes
 
 Writing NGD file "s3e_eval_zpuino.ngd" ...
 Total REAL time to NGDBUILD completion:  6 sec
-Total CPU time to NGDBUILD completion:   6 sec
+Total CPU time to NGDBUILD completion:   7 sec
 
 Writing NGDBUILD log file "s3e_eval_zpuino.bld"...

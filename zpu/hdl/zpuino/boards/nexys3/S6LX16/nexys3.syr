@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.19 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.19 secs
  
 --> 
 Reading design: nexys3.prj
@@ -132,7 +132,7 @@ VHDL file /mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/timer.vhd ignored due to errors
 --> 
 
 
-Total memory usage is 104060 kilobytes
+Total memory usage is 104056 kilobytes
 
 Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -2,7 +2,7 @@
 # Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.28xd
-DATE             8/17/2012 - 10:49
+DATE             8/17/2012 - 15:27
 SOURCE          s3e_eval_zpuino_routed.bin
 DEVICE          1024K
 DATA_WIDTH      1

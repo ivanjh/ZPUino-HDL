@@ -1,4 +1,0 @@
-make -C ../../../bootloader BOARD=PAPILIO_PLUS SIZE=16384 DEFINES="-D__S3E_250__ -DBOARD_ID=0xA4030E00 -DBOARD_MEMORYSIZE=0x4000"
-make[1]: Entering directory `/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/bootloader'
-zpu-elf-g++ -O2 -fno-gcse -Wall -mno-callpcrel  -fdata-sections -ffunction-sections -I../common -D__ZPUINO_PAPILIO_PLUS__  -D__S3E_250__ -DBOARD_ID=0xA4030E00 -DBOARD_MEMORYSIZE=0x4000 -fno-exceptions   -c -o boot.o boot.cpp
-make[1]: Leaving directory `/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/bootloader'
