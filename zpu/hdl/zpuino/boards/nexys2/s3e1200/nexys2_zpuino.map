@@ -1,0 +1,152 @@
+Release 14.2 Map P.28xd (lin)
+Xilinx Map Application Log File for Design 'nexys2_zpuino'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-4 -cm speed -detail -ir
+off -ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on -o
+nexys2_zpuino.ncd nexys2_zpuino.ngd nexys2_zpuino.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Fri Aug 24 23:11:46 2012
+
+Mapping design into LUTs...
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_HS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+WARNING:MapLib:23 - Short on signal VGA_VS detected.
+Running directed packing...
+WARNING:Pack:501 - The I/O component UART_TX has conflicting DRIVE property
+   values.  The symbol UART_TX has property value 8.  The symbol obuftx/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol UART_TX.
+WARNING:Pack:501 - The I/O component LED<0> has conflicting DRIVE property
+   values.  The symbol LED<0> has property value 8.  The symbol pin32/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<0>.
+WARNING:Pack:501 - The I/O component LED<1> has conflicting DRIVE property
+   values.  The symbol LED<1> has property value 8.  The symbol pin33/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<1>.
+WARNING:Pack:501 - The I/O component LED<2> has conflicting DRIVE property
+   values.  The symbol LED<2> has property value 8.  The symbol pin34/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<2>.
+WARNING:Pack:501 - The I/O component LED<3> has conflicting DRIVE property
+   values.  The symbol LED<3> has property value 8.  The symbol pin35/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<3>.
+WARNING:Pack:501 - The I/O component LED<4> has conflicting DRIVE property
+   values.  The symbol LED<4> has property value 8.  The symbol pin36/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<4>.
+WARNING:Pack:501 - The I/O component LED<5> has conflicting DRIVE property
+   values.  The symbol LED<5> has property value 8.  The symbol pin37/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<5>.
+WARNING:Pack:501 - The I/O component LED<6> has conflicting DRIVE property
+   values.  The symbol LED<6> has property value 8.  The symbol pin38/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<6>.
+WARNING:Pack:501 - The I/O component LED<7> has conflicting DRIVE property
+   values.  The symbol LED<7> has property value 8.  The symbol pin39/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol LED<7>.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 2 mins 51 secs 
+Total CPU  time at the beginning of Placer: 2 mins 51 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:d1b54788) REAL time: 5 mins 11 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:d1b54788) REAL time: 5 mins 13 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:d1b54788) REAL time: 5 mins 13 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:af6fb150) REAL time: 5 mins 32 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:af6fb150) REAL time: 5 mins 32 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:af6fb150) REAL time: 5 mins 32 secs 
+
+Phase 7.8  Global Placement
+.........................
+......................................................
+.....
+................................................................................
+................
+................
+.................................................................
+Phase 7.8  Global Placement (Checksum:1162e1aa) REAL time: 12 mins 53 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:1162e1aa) REAL time: 12 mins 58 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:edb86ed1) REAL time: 22 mins 58 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:edb86ed1) REAL time: 22 mins 58 secs 
+
+Total REAL time to Placer completion: 22 mins 58 secs 
+Total CPU  time to Placer completion: 22 mins 56 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   21
+Logic Utilization:
+  Number of Slice Flip Flops:         1,918 out of  17,344   11%
+  Number of 4 input LUTs:             3,225 out of  17,344   18%
+Logic Distribution:
+  Number of occupied Slices:          2,554 out of   8,672   29%
+    Number of Slices containing only related logic:   2,554 out of   2,554 100%
+    Number of Slices containing unrelated logic:          0 out of   2,554   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,397 out of  17,344   19%
+    Number used as logic:             3,119
+    Number used as a route-thru:        172
+    Number used as Shift registers:     106
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                108 out of     250   43%
+    IOB Flip Flops:                      69
+  Number of RAMB16s:                     18 out of      28   64%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       8   12%
+  Number of MULT18X18SIOs:                3 out of      28   10%
+
+Average Fanout of Non-Clock Nets:                3.36
+
+Peak Memory Usage:  250 MB
+Total REAL time to MAP completion:  23 mins 3 secs 
+Total CPU time to MAP completion:   23 mins 2 secs 
+
+Mapping completed.
+See MAP report file "nexys2_zpuino.mrp" for details.

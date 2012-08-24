@@ -1,0 +1,7 @@
+INFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys2/s3e1200/nexys2_zpuino_routed.ncd
+OUTFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys2/s3e1200/nexys2_zpuino_routed.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys2/s3e1200
+LICENSE=WebPack
+USER_INFO=202284610_0_0_530
