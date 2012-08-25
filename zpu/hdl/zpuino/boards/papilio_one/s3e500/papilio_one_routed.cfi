@@ -2,7 +2,7 @@
 # Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.28xd
-DATE             8/24/2012 - 14:36
+DATE             8/25/2012 - 14: 9
 SOURCE          papilio_one_routed.bin
 DEVICE          1024K
 DATA_WIDTH      1

@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 promgen -w -spi -p bin -o papilio_one_routed.bin -s 1024 -u 0 papilio_one_routed.bit 
 
-PROM papilio_one_routed.prm map: Fri Aug 24 16:45:33 2012
+PROM papilio_one_routed.prm map: Sat Aug 25 13:53:26 2012
 
 Format        Bin
 Size          1024K
@@ -11,4 +11,4 @@ PROM start    00000000
 PROM end      000fffff
 
         Addr1        Addr2                     Date File(s)
-     00000000     000294ff     Aug 24 16:45:28 2012 papilio_one_routed.bit
+     00000000     000294ff     Aug 25 13:53:22 2012 papilio_one_routed.bit

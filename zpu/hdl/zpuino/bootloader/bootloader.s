@@ -7,8 +7,8 @@ Disassembly of section .fixed_vectors:
    0:	0b          	nop
    1:	0b          	nop
    2:	0b          	nop
-   3:	96          	im 22
-   4:	cd          	im -51
+   3:	97          	im 23
+   4:	fe          	im -2
    5:	04          	poppc
 	...
 
@@ -16,8 +16,8 @@ Disassembly of section .fixed_vectors:
   20:	0b          	nop
   21:	0b          	nop
   22:	0b          	nop
-  23:	96          	im 22
-  24:	ae          	im 46
+  23:	97          	im 23
+  24:	df          	im -33
   25:	04          	poppc
 	...
 
@@ -374,8 +374,8 @@ Disassembly of section .fixed_vectors:
  284:	0b          	nop
  285:	0b          	nop
  286:	0b          	nop
- 287:	9c          	im 28
- 288:	ac          	im 44
+ 287:	9d          	im 29
+ 288:	dc          	im -36
  289:	73          	loadsp 12
  28a:	83          	im 3
  28b:	06          	and
@@ -489,8 +489,8 @@ Disassembly of section .fixed_vectors:
  342:	0b          	nop
  343:	0b          	nop
  344:	0b          	nop
- 345:	9c          	im 28
- 346:	f4          	im -12
+ 345:	9e          	im 30
+ 346:	a4          	im 36
  347:	0c          	store
  348:	51          	storesp 4
  349:	04          	poppc
@@ -541,8 +541,8 @@ Disassembly of section .init:
  400:	81          	im 1
  401:	d4          	im -44
  402:	3f          	callpcrel
- 403:	93          	im 19
- 404:	fa          	im -6
+ 403:	95          	im 21
+ 404:	ab          	im 43
  405:	3f          	callpcrel
  406:	04          	poppc
 Disassembly of section .text:
@@ -654,8 +654,8 @@ Disassembly of section .text:
  464:	08          	load
  465:	75          	loadsp 20
  466:	75          	loadsp 20
- 467:	97          	im 23
- 468:	ad          	im 45
+ 467:	98          	im 24
+ 468:	de          	im -34
  469:	2d          	call
  46a:	50          	storesp 0
  46b:	50          	storesp 0
@@ -680,8 +680,8 @@ Disassembly of section .text:
  47c:	08          	load
  47d:	75          	loadsp 20
  47e:	75          	loadsp 20
- 47f:	96          	im 22
- 480:	e9          	im -23
+ 47f:	98          	im 24
+ 480:	9a          	im 26
  481:	2d          	call
  482:	50          	storesp 0
  483:	50          	storesp 0
@@ -703,7 +703,7 @@ Disassembly of section .text:
  493:	90          	im 16
  494:	08          	load
  495:	8e          	im 14
- 496:	84          	im 4
+ 496:	90          	im 16
  497:	2d          	call
  498:	90          	im 16
  499:	0c          	store
@@ -720,15 +720,15 @@ Disassembly of section .text:
  4a2:	0b          	nop
  4a3:	0b          	nop
  4a4:	0b          	nop
- 4a5:	9d          	im 29
- 4a6:	84          	im 4
+ 4a5:	9e          	im 30
+ 4a6:	b4          	im 52
  4a7:	33          	loadb
  4a8:	51          	storesp 4
  4a9:	70          	loadsp 0
  4aa:	a6          	im 38
  4ab:	38          	neqbranch
- 4ac:	9d          	im 29
- 4ad:	80          	im 0
+ 4ac:	9e          	im 30
+ 4ad:	b0          	im 48
  4ae:	08          	load
  4af:	70          	loadsp 0
  4b0:	08          	load
@@ -743,13 +743,13 @@ Disassembly of section .text:
 000004b8 <.L10>:
  4b8:	84          	im 4
  4b9:	12          	addsp 8
- 4ba:	9d          	im 29
- 4bb:	80          	im 0
+ 4ba:	9e          	im 30
+ 4bb:	b0          	im 48
  4bc:	0c          	store
  4bd:	70          	loadsp 0
  4be:	2d          	call
- 4bf:	9d          	im 29
- 4c0:	80          	im 0
+ 4bf:	9e          	im 30
+ 4c0:	b0          	im 48
  4c1:	08          	load
  4c2:	70          	loadsp 0
  4c3:	08          	load
@@ -765,8 +765,8 @@ Disassembly of section .text:
  4cb:	0b          	nop
  4cc:	0b          	nop
  4cd:	0b          	nop
- 4ce:	9d          	im 29
- 4cf:	84          	im 4
+ 4ce:	9e          	im 30
+ 4cf:	b4          	im 52
  4d0:	34          	storeb
 
 000004d1 <.L1>:
@@ -785,8 +785,8 @@ Disassembly of section .text:
  4d9:	0b          	nop
  4da:	0b          	nop
  4db:	0b          	nop
- 4dc:	9d          	im 29
- 4dd:	a8          	im 40
+ 4dc:	9e          	im 30
+ 4dd:	d8          	im -40
  4de:	08          	load
  4df:	80          	im 0
  4e0:	2e          	eq
@@ -816,8 +816,8 @@ Disassembly of section .text:
  4f4:	0b          	nop
  4f5:	0b          	nop
  4f6:	0b          	nop
- 4f7:	9d          	im 29
- 4f8:	a8          	im 40
+ 4f7:	9e          	im 30
+ 4f8:	d8          	im -40
  4f9:	51          	storesp 4
  4fa:	0b          	nop
  4fb:	0b          	nop
@@ -1036,15 +1036,15 @@ Disassembly of section .text:
  5ba:	70          	loadsp 0
  5bb:	9f          	im 31
  5bc:	38          	neqbranch
- 5bd:	9d          	im 29
- 5be:	90          	im 16
+ 5bd:	9e          	im 30
+ 5be:	c0          	im -64
  5bf:	08          	load
  5c0:	52          	storesp 8
  5c1:	71          	loadsp 4
  5c2:	f0          	im -16
  5c3:	38          	neqbranch
- 5c4:	9d          	im 29
- 5c5:	8c          	im 12
+ 5c4:	9e          	im 30
+ 5c5:	bc          	im 60
  5c6:	08          	load
  5c7:	51          	storesp 4
  5c8:	87          	im 7
@@ -1063,8 +1063,8 @@ Disassembly of section .text:
  5d5:	90          	im 16
  5d6:	0a          	flip
  5d7:	0c          	store
- 5d8:	96          	im 22
- 5d9:	db          	im -37
+ 5d8:	98          	im 24
+ 5d9:	8c          	im 12
  5da:	2d          	call
 
 000005db <.L39>:
@@ -1081,8 +1081,8 @@ Disassembly of section .text:
 
 000005e5 <_Z11enableTimerv>:
  5e5:	82          	im 2
- 5e6:	cc          	im -52
- 5e7:	83          	im 3
+ 5e6:	f6          	im -10
+ 5e7:	ff          	im -1
  5e8:	0b          	nop
  5e9:	80          	im 0
  5ea:	cc          	im -52
@@ -1115,2048 +1115,2012 @@ Disassembly of section .text:
  603:	08          	load
  604:	51          	storesp 4
  605:	51          	storesp 4
- 606:	81          	im 1
- 607:	90          	im 16
- 608:	0a          	flip
- 609:	70          	loadsp 0
- 60a:	08          	load
+ 606:	80          	im 0
+ 607:	c8          	im -56
+ 608:	80          	im 0
+ 609:	80          	im 0
+ 60a:	84          	im 4
  60b:	70          	loadsp 0
- 60c:	82          	im 2
- 60d:	07          	or
- 60e:	72          	loadsp 8
- 60f:	0c          	store
- 610:	52          	storesp 8
- 611:	52          	storesp 8
- 612:	83          	im 3
- 613:	3d          	pushspadd
- 614:	0d          	popsp
- 615:	04          	poppc
-
-00000616 <_Z10spi_enablev>:
- 616:	ff          	im -1
+ 60c:	08          	load
+ 60d:	70          	loadsp 0
+ 60e:	84          	im 4
+ 60f:	80          	im 0
+ 610:	80          	im 0
+ 611:	07          	or
+ 612:	72          	loadsp 8
+ 613:	0c          	store
+ 614:	52          	storesp 8
+ 615:	52          	storesp 8
+ 616:	83          	im 3
  617:	3d          	pushspadd
  618:	0d          	popsp
- 619:	81          	im 1
- 61a:	90          	im 16
- 61b:	0a          	flip
- 61c:	70          	loadsp 0
- 61d:	08          	load
- 61e:	70          	loadsp 0
- 61f:	fd          	im -3
- 620:	06          	and
- 621:	72          	loadsp 8
- 622:	0c          	store
- 623:	52          	storesp 8
- 624:	52          	storesp 8
- 625:	83          	im 3
- 626:	3d          	pushspadd
- 627:	0d          	popsp
- 628:	04          	poppc
+ 619:	04          	poppc
 
-00000629 <start>:
- 629:	a0          	im 32
- 62a:	90          	im 16
- 62b:	0b          	nop
- 62c:	a0          	im 32
- 62d:	80          	im 0
- 62e:	0c          	store
- 62f:	9d          	im 29
- 630:	88          	im 8
- 631:	0b          	nop
- 632:	a0          	im 32
- 633:	84          	im 4
- 634:	0c          	store
- 635:	96          	im 22
- 636:	e2          	im -30
- 637:	2d          	call
+0000061a <_Z10spi_enablev>:
+ 61a:	ff          	im -1
+ 61b:	3d          	pushspadd
+ 61c:	0d          	popsp
+ 61d:	80          	im 0
+ 61e:	c8          	im -56
+ 61f:	80          	im 0
+ 620:	80          	im 0
+ 621:	84          	im 4
+ 622:	70          	loadsp 0
+ 623:	08          	load
+ 624:	70          	loadsp 0
+ 625:	fb          	im -5
+ 626:	ff          	im -1
+ 627:	ff          	im -1
+ 628:	06          	and
+ 629:	72          	loadsp 8
+ 62a:	0c          	store
+ 62b:	52          	storesp 8
+ 62c:	52          	storesp 8
+ 62d:	83          	im 3
+ 62e:	3d          	pushspadd
+ 62f:	0d          	popsp
+ 630:	04          	poppc
 
-00000638 <_Z15start_read_sizePVj>:
- 638:	fe          	im -2
- 639:	3d          	pushspadd
- 63a:	0d          	popsp
- 63b:	74          	loadsp 16
- 63c:	52          	storesp 8
- 63d:	8b          	im 11
- 63e:	72          	loadsp 8
- 63f:	0c          	store
- 640:	90          	im 16
- 641:	12          	addsp 8
- 642:	53          	storesp 12
- 643:	80          	im 0
- 644:	70          	loadsp 0
- 645:	74          	loadsp 16
- 646:	0c          	store
- 647:	73          	loadsp 12
- 648:	0c          	store
- 649:	71          	loadsp 4
- 64a:	08          	load
- 64b:	83          	im 3
- 64c:	ff          	im -1
- 64d:	ff          	im -1
- 64e:	06          	and
- 64f:	88          	im 8
- 650:	0c          	store
- 651:	84          	im 4
- 652:	3d          	pushspadd
- 653:	0d          	popsp
- 654:	04          	poppc
+00000631 <start>:
+ 631:	a0          	im 32
+ 632:	90          	im 16
+ 633:	0b          	nop
+ 634:	a0          	im 32
+ 635:	80          	im 0
+ 636:	0c          	store
+ 637:	9e          	im 30
+ 638:	b8          	im 56
+ 639:	0b          	nop
+ 63a:	a0          	im 32
+ 63b:	84          	im 4
+ 63c:	0c          	store
+ 63d:	98          	im 24
+ 63e:	93          	im 19
+ 63f:	2d          	call
 
-00000655 <spi_copy_impl>:
- 655:	f8          	im -8
- 656:	3d          	pushspadd
- 657:	0d          	popsp
- 658:	a0          	im 32
- 659:	80          	im 0
- 65a:	56          	storesp 24
- 65b:	80          	im 0
- 65c:	c0          	im -64
- 65d:	80          	im 0
- 65e:	80          	im 0
- 65f:	84          	im 4
- 660:	54          	storesp 16
- 661:	83          	im 3
- 662:	d0          	im -48
- 663:	0a          	flip
- 664:	57          	storesp 28
- 665:	8c          	im 12
- 666:	96          	im 22
- 667:	2d          	call
- 668:	73          	loadsp 12
- 669:	51          	storesp 4
- 66a:	8c          	im 12
- 66b:	b8          	im 56
- 66c:	2d          	call
- 66d:	88          	im 8
- 66e:	08          	load
- 66f:	10          	addsp 0
- 670:	10          	addsp 0
- 671:	84          	im 4
- 672:	05          	add
- 673:	9d          	im 29
- 674:	88          	im 8
- 675:	0c          	store
- 676:	80          	im 0
- 677:	70          	loadsp 0
- 678:	75          	loadsp 20
- 679:	0c          	store
- 67a:	74          	loadsp 16
- 67b:	0c          	store
- 67c:	73          	loadsp 12
- 67d:	08          	load
- 67e:	83          	im 3
- 67f:	ff          	im -1
- 680:	ff          	im -1
- 681:	06          	and
- 682:	59          	storesp 36
- 683:	88          	im 8
- 684:	08          	load
- 685:	81          	im 1
- 686:	df          	im -33
- 687:	80          	im 0
- 688:	26          	ulessthan
- 689:	80          	im 0
- 68a:	db          	im -37
- 68b:	38          	neqbranch
- 68c:	83          	im 3
- 68d:	ff          	im -1
- 68e:	ff          	im -1
- 68f:	77          	loadsp 28
- 690:	0c          	store
- 691:	88          	im 8
- 692:	08          	load
- 693:	ff          	im -1
- 694:	05          	add
- 695:	55          	storesp 20
- 696:	74          	loadsp 16
- 697:	ff          	im -1
- 698:	2e          	eq
- 699:	a7          	im 39
- 69a:	38          	neqbranch
- 69b:	80          	im 0
- 69c:	58          	storesp 32
+00000640 <_Z15start_read_sizePVj>:
+ 640:	ff          	im -1
+ 641:	3d          	pushspadd
+ 642:	0d          	popsp
+ 643:	73          	loadsp 12
+ 644:	51          	storesp 4
+ 645:	8b          	im 11
+ 646:	71          	loadsp 4
+ 647:	0c          	store
+ 648:	90          	im 16
+ 649:	11          	addsp 4
+ 64a:	52          	storesp 8
+ 64b:	90          	im 16
+ 64c:	c0          	im -64
+ 64d:	80          	im 0
+ 64e:	72          	loadsp 8
+ 64f:	0c          	store
+ 650:	80          	im 0
+ 651:	72          	loadsp 8
+ 652:	0c          	store
+ 653:	70          	loadsp 0
+ 654:	08          	load
+ 655:	83          	im 3
+ 656:	ff          	im -1
+ 657:	ff          	im -1
+ 658:	06          	and
+ 659:	88          	im 8
+ 65a:	0c          	store
+ 65b:	83          	im 3
+ 65c:	3d          	pushspadd
+ 65d:	0d          	popsp
+ 65e:	04          	poppc
 
-0000069d <.L94>:
- 69d:	84          	im 4
- 69e:	53          	storesp 12
+0000065f <spi_copy_impl>:
+ 65f:	f8          	im -8
+ 660:	3d          	pushspadd
+ 661:	0d          	popsp
+ 662:	a0          	im 32
+ 663:	80          	im 0
+ 664:	56          	storesp 24
+ 665:	80          	im 0
+ 666:	c0          	im -64
+ 667:	80          	im 0
+ 668:	80          	im 0
+ 669:	84          	im 4
+ 66a:	54          	storesp 16
+ 66b:	83          	im 3
+ 66c:	d0          	im -48
+ 66d:	0a          	flip
+ 66e:	57          	storesp 28
+ 66f:	8c          	im 12
+ 670:	9a          	im 26
+ 671:	2d          	call
+ 672:	73          	loadsp 12
+ 673:	51          	storesp 4
+ 674:	8c          	im 12
+ 675:	c0          	im -64
+ 676:	2d          	call
+ 677:	88          	im 8
+ 678:	08          	load
+ 679:	10          	addsp 0
+ 67a:	10          	addsp 0
+ 67b:	90          	im 16
+ 67c:	c0          	im -64
+ 67d:	84          	im 4
+ 67e:	05          	add
+ 67f:	9e          	im 30
+ 680:	b8          	im 56
+ 681:	0c          	store
+ 682:	80          	im 0
+ 683:	70          	loadsp 0
+ 684:	75          	loadsp 20
+ 685:	0c          	store
+ 686:	74          	loadsp 16
+ 687:	0c          	store
+ 688:	73          	loadsp 12
+ 689:	08          	load
+ 68a:	83          	im 3
+ 68b:	ff          	im -1
+ 68c:	ff          	im -1
+ 68d:	06          	and
+ 68e:	59          	storesp 36
+ 68f:	88          	im 8
+ 690:	08          	load
+ 691:	80          	im 0
+ 692:	df          	im -33
+ 693:	80          	im 0
+ 694:	26          	ulessthan
+ 695:	80          	im 0
+ 696:	db          	im -37
+ 697:	38          	neqbranch
+ 698:	83          	im 3
+ 699:	ff          	im -1
+ 69a:	ff          	im -1
+ 69b:	77          	loadsp 28
+ 69c:	0c          	store
+ 69d:	88          	im 8
+ 69e:	08          	load
+ 69f:	ff          	im -1
+ 6a0:	05          	add
+ 6a1:	55          	storesp 20
+ 6a2:	74          	loadsp 16
+ 6a3:	ff          	im -1
+ 6a4:	2e          	eq
+ 6a5:	a7          	im 39
+ 6a6:	38          	neqbranch
+ 6a7:	80          	im 0
+ 6a8:	58          	storesp 32
 
-0000069f <.L91>:
- 69f:	77          	loadsp 28
- 6a0:	74          	loadsp 16
- 6a1:	0c          	store
- 6a2:	73          	loadsp 12
- 6a3:	08          	load
- 6a4:	88          	im 8
- 6a5:	18          	addsp 32
- 6a6:	0c          	store
- 6a7:	ff          	im -1
- 6a8:	13          	addsp 12
- 6a9:	53          	storesp 12
- 6aa:	72          	loadsp 8
- 6ab:	f3          	im -13
- 6ac:	38          	neqbranch
- 6ad:	75          	loadsp 20
- 6ae:	84          	im 4
- 6af:	17          	addsp 28
- 6b0:	75          	loadsp 20
- 6b1:	08          	load
- 6b2:	72          	loadsp 8
- 6b3:	0c          	store
- 6b4:	ff          	im -1
- 6b5:	17          	addsp 28
- 6b6:	57          	storesp 28
- 6b7:	57          	storesp 28
- 6b8:	53          	storesp 12
- 6b9:	74          	loadsp 16
- 6ba:	ff          	im -1
- 6bb:	2e          	eq
- 6bc:	09          	not
- 6bd:	81          	im 1
- 6be:	06          	and
- 6bf:	dd          	im -35
- 6c0:	38          	neqbranch
+000006a9 <.L94>:
+ 6a9:	84          	im 4
+ 6aa:	53          	storesp 12
 
-000006c1 <.L104>:
- 6c1:	73          	loadsp 12
- 6c2:	51          	storesp 4
- 6c3:	8b          	im 11
- 6c4:	fe          	im -2
- 6c5:	2d          	call
- 6c6:	76          	loadsp 24
- 6c7:	08          	load
- 6c8:	52          	storesp 8
- 6c9:	71          	loadsp 4
- 6ca:	79          	loadsp 36
- 6cb:	2e          	eq
- 6cc:	09          	not
- 6cd:	81          	im 1
- 6ce:	06          	and
- 6cf:	98          	im 24
- 6d0:	38          	neqbranch
- 6d1:	a0          	im 32
- 6d2:	84          	im 4
+000006ab <.L91>:
+ 6ab:	77          	loadsp 28
+ 6ac:	74          	loadsp 16
+ 6ad:	0c          	store
+ 6ae:	73          	loadsp 12
+ 6af:	08          	load
+ 6b0:	88          	im 8
+ 6b1:	18          	addsp 32
+ 6b2:	0c          	store
+ 6b3:	ff          	im -1
+ 6b4:	13          	addsp 12
+ 6b5:	53          	storesp 12
+ 6b6:	72          	loadsp 8
+ 6b7:	f3          	im -13
+ 6b8:	38          	neqbranch
+ 6b9:	75          	loadsp 20
+ 6ba:	84          	im 4
+ 6bb:	17          	addsp 28
+ 6bc:	75          	loadsp 20
+ 6bd:	08          	load
+ 6be:	72          	loadsp 8
+ 6bf:	0c          	store
+ 6c0:	ff          	im -1
+ 6c1:	17          	addsp 28
+ 6c2:	57          	storesp 28
+ 6c3:	57          	storesp 28
+ 6c4:	53          	storesp 12
+ 6c5:	74          	loadsp 16
+ 6c6:	ff          	im -1
+ 6c7:	2e          	eq
+ 6c8:	09          	not
+ 6c9:	81          	im 1
+ 6ca:	06          	and
+ 6cb:	dd          	im -35
+ 6cc:	38          	neqbranch
+
+000006cd <.L104>:
+ 6cd:	73          	loadsp 12
+ 6ce:	51          	storesp 4
+ 6cf:	8b          	im 11
+ 6d0:	fe          	im -2
+ 6d1:	2d          	call
+ 6d2:	76          	loadsp 24
  6d3:	08          	load
  6d4:	52          	storesp 8
  6d5:	71          	loadsp 4
- 6d6:	f8          	im -8
- 6d7:	a0          	im 32
- 6d8:	84          	im 4
- 6d9:	9e          	im 30
- 6da:	80          	im 0
- 6db:	2e          	eq
- 6dc:	93          	im 19
- 6dd:	38          	neqbranch
- 6de:	80          	im 0
- 6df:	c2          	im -62
- 6e0:	51          	storesp 4
- 6e1:	8a          	im 10
- 6e2:	a0          	im 32
- 6e3:	2d          	call
+ 6d6:	79          	loadsp 36
+ 6d7:	2e          	eq
+ 6d8:	09          	not
+ 6d9:	81          	im 1
+ 6da:	06          	and
+ 6db:	98          	im 24
+ 6dc:	38          	neqbranch
+ 6dd:	a0          	im 32
+ 6de:	84          	im 4
+ 6df:	08          	load
+ 6e0:	52          	storesp 8
+ 6e1:	71          	loadsp 4
+ 6e2:	fa          	im -6
+ 6e3:	a0          	im 32
+ 6e4:	88          	im 8
+ 6e5:	9c          	im 28
+ 6e6:	80          	im 0
+ 6e7:	2e          	eq
+ 6e8:	93          	im 19
+ 6e9:	38          	neqbranch
+ 6ea:	80          	im 0
+ 6eb:	c2          	im -62
+ 6ec:	51          	storesp 4
+ 6ed:	8a          	im 10
+ 6ee:	a0          	im 32
+ 6ef:	2d          	call
 
-000006e4 <.L99>:
- 6e4:	ff          	im -1
- 6e5:	39          	poppcrel
+000006f0 <.L99>:
+ 6f0:	ff          	im -1
+ 6f1:	39          	poppcrel
 
-000006e6 <.L80>:
- 6e6:	ff          	im -1
- 6e7:	39          	poppcrel
+000006f2 <.L80>:
+ 6f2:	ff          	im -1
+ 6f3:	39          	poppcrel
 
-000006e8 <.L108>:
- 6e8:	80          	im 0
- 6e9:	c3          	im -61
- 6ea:	51          	storesp 4
- 6eb:	8a          	im 10
- 6ec:	a0          	im 32
- 6ed:	2d          	call
+000006f4 <.L108>:
+ 6f4:	80          	im 0
+ 6f5:	c3          	im -61
+ 6f6:	51          	storesp 4
+ 6f7:	8a          	im 10
+ 6f8:	a0          	im 32
+ 6f9:	2d          	call
 
-000006ee <.L96>:
- 6ee:	ff          	im -1
- 6ef:	39          	poppcrel
+000006fa <.L96>:
+ 6fa:	ff          	im -1
+ 6fb:	39          	poppcrel
 
-000006f0 <.L98>:
- 6f0:	90          	im 16
- 6f1:	0a          	flip
- 6f2:	70          	loadsp 0
- 6f3:	08          	load
- 6f4:	70          	loadsp 0
- 6f5:	ff          	im -1
- 6f6:	bf          	im 63
- 6f7:	06          	and
- 6f8:	72          	loadsp 8
- 6f9:	0c          	store
- 6fa:	53          	storesp 12
- 6fb:	53          	storesp 12
- 6fc:	8a          	im 10
- 6fd:	85          	im 5
- 6fe:	2d          	call
- 6ff:	8c          	im 12
- 700:	a9          	im 41
- 701:	2d          	call
+000006fc <.L98>:
+ 6fc:	90          	im 16
+ 6fd:	0a          	flip
+ 6fe:	70          	loadsp 0
+ 6ff:	08          	load
+ 700:	70          	loadsp 0
+ 701:	ff          	im -1
+ 702:	bf          	im 63
+ 703:	06          	and
+ 704:	72          	loadsp 8
+ 705:	0c          	store
+ 706:	53          	storesp 12
+ 707:	53          	storesp 12
+ 708:	8a          	im 10
+ 709:	85          	im 5
+ 70a:	2d          	call
+ 70b:	8c          	im 12
+ 70c:	b1          	im 49
+ 70d:	2d          	call
 
-00000702 <.L101>:
- 702:	ff          	im -1
- 703:	39          	poppcrel
+0000070e <.L101>:
+ 70e:	ff          	im -1
+ 70f:	39          	poppcrel
 
-00000704 <_zpu_interrupt>:
- 704:	ff          	im -1
- 705:	3d          	pushspadd
- 706:	0d          	popsp
- 707:	9d          	im 29
- 708:	8c          	im 12
- 709:	08          	load
- 70a:	81          	im 1
- 70b:	11          	addsp 4
- 70c:	9d          	im 29
- 70d:	8c          	im 12
- 70e:	0c          	store
- 70f:	51          	storesp 4
- 710:	83          	im 3
- 711:	90          	im 16
- 712:	0a          	flip
- 713:	70          	loadsp 0
- 714:	08          	load
- 715:	70          	loadsp 0
- 716:	fe          	im -2
- 717:	ff          	im -1
- 718:	06          	and
- 719:	72          	loadsp 8
+00000710 <_zpu_interrupt>:
+ 710:	ff          	im -1
+ 711:	3d          	pushspadd
+ 712:	0d          	popsp
+ 713:	9e          	im 30
+ 714:	bc          	im 60
+ 715:	08          	load
+ 716:	81          	im 1
+ 717:	11          	addsp 4
+ 718:	9e          	im 30
+ 719:	bc          	im 60
  71a:	0c          	store
- 71b:	52          	storesp 8
- 71c:	52          	storesp 8
- 71d:	83          	im 3
- 71e:	3d          	pushspadd
- 71f:	0d          	popsp
- 720:	04          	poppc
+ 71b:	51          	storesp 4
+ 71c:	83          	im 3
+ 71d:	90          	im 16
+ 71e:	0a          	flip
+ 71f:	70          	loadsp 0
+ 720:	08          	load
+ 721:	70          	loadsp 0
+ 722:	fe          	im -2
+ 723:	ff          	im -1
+ 724:	06          	and
+ 725:	72          	loadsp 8
+ 726:	0c          	store
+ 727:	52          	storesp 8
+ 728:	52          	storesp 8
+ 729:	83          	im 3
+ 72a:	3d          	pushspadd
+ 72b:	0d          	popsp
+ 72c:	04          	poppc
 
-00000721 <_Z11simpleReplyj>:
- 721:	80          	im 0
- 722:	3d          	pushspadd
- 723:	0d          	popsp
- 724:	8a          	im 10
- 725:	f4          	im -12
- 726:	2d          	call
- 727:	72          	loadsp 8
- 728:	81          	im 1
- 729:	80          	im 0
- 72a:	07          	or
- 72b:	51          	storesp 4
- 72c:	8a          	im 10
- 72d:	c0          	im -64
- 72e:	2d          	call
- 72f:	8b          	im 11
- 730:	89          	im 9
- 731:	2d          	call
- 732:	82          	im 2
- 733:	3d          	pushspadd
- 734:	0d          	popsp
- 735:	04          	poppc
+0000072d <_Z11simpleReplyj>:
+ 72d:	80          	im 0
+ 72e:	3d          	pushspadd
+ 72f:	0d          	popsp
+ 730:	8a          	im 10
+ 731:	f4          	im -12
+ 732:	2d          	call
+ 733:	72          	loadsp 8
+ 734:	81          	im 1
+ 735:	80          	im 0
+ 736:	07          	or
+ 737:	51          	storesp 4
+ 738:	8a          	im 10
+ 739:	c0          	im -64
+ 73a:	2d          	call
+ 73b:	8b          	im 11
+ 73c:	89          	im 9
+ 73d:	2d          	call
+ 73e:	82          	im 2
+ 73f:	3d          	pushspadd
+ 740:	0d          	popsp
+ 741:	04          	poppc
 
-00000736 <_Z15spi_read_statusv>:
- 736:	fe          	im -2
- 737:	3d          	pushspadd
- 738:	0d          	popsp
- 739:	80          	im 0
- 73a:	c0          	im -64
- 73b:	80          	im 0
- 73c:	80          	im 0
- 73d:	84          	im 4
- 73e:	53          	storesp 12
- 73f:	8c          	im 12
- 740:	96          	im 22
- 741:	2d          	call
- 742:	85          	im 5
- 743:	73          	loadsp 12
- 744:	0c          	store
+00000742 <_Z15spi_read_statusv>:
+ 742:	fe          	im -2
+ 743:	3d          	pushspadd
+ 744:	0d          	popsp
  745:	80          	im 0
- 746:	73          	loadsp 12
- 747:	0c          	store
- 748:	72          	loadsp 8
- 749:	08          	load
- 74a:	70          	loadsp 0
- 74b:	81          	im 1
- 74c:	ff          	im -1
- 74d:	06          	and
- 74e:	74          	loadsp 16
- 74f:	53          	storesp 12
- 750:	51          	storesp 4
- 751:	52          	storesp 8
- 752:	8b          	im 11
- 753:	fe          	im -2
- 754:	2d          	call
- 755:	71          	loadsp 4
- 756:	88          	im 8
- 757:	0c          	store
- 758:	84          	im 4
- 759:	3d          	pushspadd
- 75a:	0d          	popsp
- 75b:	04          	poppc
+ 746:	c0          	im -64
+ 747:	80          	im 0
+ 748:	80          	im 0
+ 749:	84          	im 4
+ 74a:	53          	storesp 12
+ 74b:	8c          	im 12
+ 74c:	9a          	im 26
+ 74d:	2d          	call
+ 74e:	85          	im 5
+ 74f:	73          	loadsp 12
+ 750:	0c          	store
+ 751:	80          	im 0
+ 752:	73          	loadsp 12
+ 753:	0c          	store
+ 754:	72          	loadsp 8
+ 755:	08          	load
+ 756:	70          	loadsp 0
+ 757:	81          	im 1
+ 758:	ff          	im -1
+ 759:	06          	and
+ 75a:	74          	loadsp 16
+ 75b:	53          	storesp 12
+ 75c:	51          	storesp 4
+ 75d:	52          	storesp 8
+ 75e:	8b          	im 11
+ 75f:	fe          	im -2
+ 760:	2d          	call
+ 761:	71          	loadsp 4
+ 762:	88          	im 8
+ 763:	0c          	store
+ 764:	84          	im 4
+ 765:	3d          	pushspadd
+ 766:	0d          	popsp
+ 767:	04          	poppc
 
-0000075c <_Z11cmd_progmemPh>:
- 75c:	fc          	im -4
- 75d:	3d          	pushspadd
- 75e:	0d          	popsp
- 75f:	76          	loadsp 24
- 760:	81          	im 1
- 761:	11          	addsp 4
- 762:	33          	loadb
- 763:	82          	im 2
- 764:	12          	addsp 8
- 765:	33          	loadb
- 766:	71          	loadsp 4
- 767:	81          	im 1
- 768:	80          	im 0
- 769:	0a          	flip
- 76a:	29          	mult
- 76b:	71          	loadsp 4
- 76c:	84          	im 4
- 76d:	80          	im 0
- 76e:	80          	im 0
- 76f:	29          	mult
- 770:	05          	add
- 771:	83          	im 3
- 772:	14          	addsp 16
- 773:	33          	loadb
- 774:	70          	loadsp 0
- 775:	82          	im 2
- 776:	80          	im 0
- 777:	29          	mult
- 778:	12          	addsp 8
- 779:	84          	im 4
- 77a:	16          	addsp 24
- 77b:	33          	loadb
- 77c:	52          	storesp 8
- 77d:	71          	loadsp 4
- 77e:	05          	add
- 77f:	a0          	im 32
- 780:	80          	im 0
- 781:	05          	add
- 782:	86          	im 6
- 783:	16          	addsp 24
- 784:	85          	im 5
- 785:	17          	addsp 28
- 786:	33          	loadb
- 787:	ff          	im -1
- 788:	11          	addsp 4
- 789:	51          	storesp 4
- 78a:	57          	storesp 28
- 78b:	52          	storesp 8
- 78c:	53          	storesp 12
- 78d:	53          	storesp 12
- 78e:	55          	storesp 20
- 78f:	57          	storesp 28
- 790:	55          	storesp 20
- 791:	53          	storesp 12
- 792:	72          	loadsp 8
+00000768 <_Z11cmd_progmemPh>:
+ 768:	fc          	im -4
+ 769:	3d          	pushspadd
+ 76a:	0d          	popsp
+ 76b:	76          	loadsp 24
+ 76c:	81          	im 1
+ 76d:	11          	addsp 4
+ 76e:	33          	loadb
+ 76f:	82          	im 2
+ 770:	12          	addsp 8
+ 771:	33          	loadb
+ 772:	71          	loadsp 4
+ 773:	81          	im 1
+ 774:	80          	im 0
+ 775:	0a          	flip
+ 776:	29          	mult
+ 777:	71          	loadsp 4
+ 778:	84          	im 4
+ 779:	80          	im 0
+ 77a:	80          	im 0
+ 77b:	29          	mult
+ 77c:	05          	add
+ 77d:	83          	im 3
+ 77e:	14          	addsp 16
+ 77f:	33          	loadb
+ 780:	70          	loadsp 0
+ 781:	82          	im 2
+ 782:	80          	im 0
+ 783:	29          	mult
+ 784:	12          	addsp 8
+ 785:	84          	im 4
+ 786:	16          	addsp 24
+ 787:	33          	loadb
+ 788:	52          	storesp 8
+ 789:	71          	loadsp 4
+ 78a:	05          	add
+ 78b:	a0          	im 32
+ 78c:	80          	im 0
+ 78d:	05          	add
+ 78e:	86          	im 6
+ 78f:	16          	addsp 24
+ 790:	85          	im 5
+ 791:	17          	addsp 28
+ 792:	33          	loadb
  793:	ff          	im -1
- 794:	2e          	eq
- 795:	9a          	im 26
- 796:	38          	neqbranch
+ 794:	11          	addsp 4
+ 795:	51          	storesp 4
+ 796:	57          	storesp 28
+ 797:	52          	storesp 8
+ 798:	53          	storesp 12
+ 799:	53          	storesp 12
+ 79a:	55          	storesp 20
+ 79b:	57          	storesp 28
+ 79c:	55          	storesp 20
+ 79d:	53          	storesp 12
+ 79e:	72          	loadsp 8
+ 79f:	ff          	im -1
+ 7a0:	2e          	eq
+ 7a1:	9a          	im 26
+ 7a2:	38          	neqbranch
 
-00000797 <.L131>:
- 797:	73          	loadsp 12
- 798:	70          	loadsp 0
- 799:	81          	im 1
- 79a:	05          	add
- 79b:	55          	storesp 20
- 79c:	33          	loadb
- 79d:	52          	storesp 8
- 79e:	71          	loadsp 4
- 79f:	75          	loadsp 20
- 7a0:	70          	loadsp 0
- 7a1:	81          	im 1
- 7a2:	05          	add
- 7a3:	57          	storesp 28
- 7a4:	34          	storeb
- 7a5:	ff          	im -1
- 7a6:	13          	addsp 12
- 7a7:	53          	storesp 12
- 7a8:	72          	loadsp 8
- 7a9:	ff          	im -1
- 7aa:	2e          	eq
- 7ab:	09          	not
- 7ac:	81          	im 1
- 7ad:	06          	and
- 7ae:	e8          	im -24
- 7af:	38          	neqbranch
+000007a3 <.L131>:
+ 7a3:	73          	loadsp 12
+ 7a4:	70          	loadsp 0
+ 7a5:	81          	im 1
+ 7a6:	05          	add
+ 7a7:	55          	storesp 20
+ 7a8:	33          	loadb
+ 7a9:	52          	storesp 8
+ 7aa:	71          	loadsp 4
+ 7ab:	75          	loadsp 20
+ 7ac:	70          	loadsp 0
+ 7ad:	81          	im 1
+ 7ae:	05          	add
+ 7af:	57          	storesp 28
+ 7b0:	34          	storeb
+ 7b1:	ff          	im -1
+ 7b2:	13          	addsp 12
+ 7b3:	53          	storesp 12
+ 7b4:	72          	loadsp 8
+ 7b5:	ff          	im -1
+ 7b6:	2e          	eq
+ 7b7:	09          	not
+ 7b8:	81          	im 1
+ 7b9:	06          	and
+ 7ba:	e8          	im -24
+ 7bb:	38          	neqbranch
 
-000007b0 <.L128>:
- 7b0:	89          	im 9
- 7b1:	51          	storesp 4
- 7b2:	8e          	im 14
- 7b3:	a1          	im 33
- 7b4:	2d          	call
- 7b5:	86          	im 6
- 7b6:	3d          	pushspadd
- 7b7:	0d          	popsp
- 7b8:	04          	poppc
+000007bc <.L128>:
+ 7bc:	89          	im 9
+ 7bd:	51          	storesp 4
+ 7be:	8e          	im 14
+ 7bf:	ad          	im 45
+ 7c0:	2d          	call
+ 7c1:	86          	im 6
+ 7c2:	3d          	pushspadd
+ 7c3:	0d          	popsp
+ 7c4:	04          	poppc
 
-000007b9 <_Z20cmd_raw_send_receivePh>:
- 7b9:	f9          	im -7
- 7ba:	3d          	pushspadd
- 7bb:	0d          	popsp
- 7bc:	79          	loadsp 36
- 7bd:	57          	storesp 28
- 7be:	80          	im 0
- 7bf:	c0          	im -64
- 7c0:	80          	im 0
- 7c1:	80          	im 0
- 7c2:	84          	im 4
- 7c3:	56          	storesp 24
- 7c4:	8c          	im 12
- 7c5:	96          	im 22
- 7c6:	2d          	call
- 7c7:	81          	im 1
- 7c8:	17          	addsp 28
- 7c9:	33          	loadb
- 7ca:	82          	im 2
- 7cb:	18          	addsp 32
- 7cc:	33          	loadb
- 7cd:	71          	loadsp 4
- 7ce:	82          	im 2
- 7cf:	80          	im 0
- 7d0:	29          	mult
- 7d1:	05          	add
- 7d2:	53          	storesp 12
- 7d3:	53          	storesp 12
- 7d4:	71          	loadsp 4
- 7d5:	80          	im 0
- 7d6:	2e          	eq
- 7d7:	94          	im 20
- 7d8:	38          	neqbranch
- 7d9:	85          	im 5
- 7da:	17          	addsp 28
- 7db:	72          	loadsp 8
- 7dc:	55          	storesp 20
- 7dd:	53          	storesp 12
+000007c5 <_Z20cmd_raw_send_receivePh>:
+ 7c5:	f9          	im -7
+ 7c6:	3d          	pushspadd
+ 7c7:	0d          	popsp
+ 7c8:	79          	loadsp 36
+ 7c9:	57          	storesp 28
+ 7ca:	80          	im 0
+ 7cb:	c0          	im -64
+ 7cc:	80          	im 0
+ 7cd:	80          	im 0
+ 7ce:	84          	im 4
+ 7cf:	56          	storesp 24
+ 7d0:	8c          	im 12
+ 7d1:	9a          	im 26
+ 7d2:	2d          	call
+ 7d3:	81          	im 1
+ 7d4:	17          	addsp 28
+ 7d5:	33          	loadb
+ 7d6:	82          	im 2
+ 7d7:	18          	addsp 32
+ 7d8:	33          	loadb
+ 7d9:	71          	loadsp 4
+ 7da:	82          	im 2
+ 7db:	80          	im 0
+ 7dc:	29          	mult
+ 7dd:	05          	add
+ 7de:	53          	storesp 12
+ 7df:	53          	storesp 12
+ 7e0:	71          	loadsp 4
+ 7e1:	80          	im 0
+ 7e2:	2e          	eq
+ 7e3:	94          	im 20
+ 7e4:	38          	neqbranch
+ 7e5:	85          	im 5
+ 7e6:	17          	addsp 28
+ 7e7:	72          	loadsp 8
+ 7e8:	55          	storesp 20
+ 7e9:	53          	storesp 12
 
-000007de <.L138>:
- 7de:	72          	loadsp 8
- 7df:	70          	loadsp 0
- 7e0:	81          	im 1
- 7e1:	05          	add
- 7e2:	54          	storesp 16
- 7e3:	33          	loadb
- 7e4:	76          	loadsp 24
- 7e5:	0c          	store
- 7e6:	ff          	im -1
- 7e7:	14          	addsp 16
- 7e8:	54          	storesp 16
- 7e9:	73          	loadsp 12
- 7ea:	f3          	im -13
- 7eb:	38          	neqbranch
+000007ea <.L138>:
+ 7ea:	72          	loadsp 8
+ 7eb:	70          	loadsp 0
+ 7ec:	81          	im 1
+ 7ed:	05          	add
+ 7ee:	54          	storesp 16
+ 7ef:	33          	loadb
+ 7f0:	76          	loadsp 24
+ 7f1:	0c          	store
+ 7f2:	ff          	im -1
+ 7f3:	14          	addsp 16
+ 7f4:	54          	storesp 16
+ 7f5:	73          	loadsp 12
+ 7f6:	f3          	im -13
+ 7f7:	38          	neqbranch
 
-000007ec <.L152>:
- 7ec:	83          	im 3
- 7ed:	17          	addsp 28
- 7ee:	33          	loadb
- 7ef:	84          	im 4
- 7f0:	18          	addsp 32
- 7f1:	33          	loadb
- 7f2:	71          	loadsp 4
- 7f3:	82          	im 2
- 7f4:	80          	im 0
- 7f5:	29          	mult
- 7f6:	05          	add
- 7f7:	56          	storesp 24
- 7f8:	52          	storesp 8
- 7f9:	80          	im 0
- 7fa:	54          	storesp 16
- 7fb:	73          	loadsp 12
- 7fc:	75          	loadsp 20
- 7fd:	27          	ulessthanorequal
- 7fe:	97          	im 23
- 7ff:	38          	neqbranch
- 800:	73          	loadsp 12
- 801:	58          	storesp 32
-
-00000802 <.L146>:
- 802:	77          	loadsp 28
- 803:	76          	loadsp 24
- 804:	0c          	store
- 805:	73          	loadsp 12
- 806:	17          	addsp 28
- 807:	76          	loadsp 24
- 808:	08          	load
- 809:	53          	storesp 12
- 80a:	53          	storesp 12
- 80b:	71          	loadsp 4
+000007f8 <.L152>:
+ 7f8:	83          	im 3
+ 7f9:	17          	addsp 28
+ 7fa:	33          	loadb
+ 7fb:	84          	im 4
+ 7fc:	18          	addsp 32
+ 7fd:	33          	loadb
+ 7fe:	71          	loadsp 4
+ 7ff:	82          	im 2
+ 800:	80          	im 0
+ 801:	29          	mult
+ 802:	05          	add
+ 803:	56          	storesp 24
+ 804:	52          	storesp 8
+ 805:	80          	im 0
+ 806:	54          	storesp 16
+ 807:	73          	loadsp 12
+ 808:	75          	loadsp 20
+ 809:	27          	ulessthanorequal
+ 80a:	97          	im 23
+ 80b:	38          	neqbranch
  80c:	73          	loadsp 12
- 80d:	34          	storeb
- 80e:	81          	im 1
- 80f:	14          	addsp 16
- 810:	54          	storesp 16
- 811:	74          	loadsp 16
- 812:	74          	loadsp 16
- 813:	26          	ulessthan
- 814:	ed          	im -19
- 815:	38          	neqbranch
+ 80d:	58          	storesp 32
 
-00000816 <.L154>:
- 816:	75          	loadsp 20
- 817:	51          	storesp 4
- 818:	8b          	im 11
- 819:	fe          	im -2
- 81a:	2d          	call
- 81b:	8a          	im 10
- 81c:	f4          	im -12
- 81d:	2d          	call
- 81e:	81          	im 1
- 81f:	84          	im 4
- 820:	51          	storesp 4
- 821:	8a          	im 10
- 822:	c0          	im -64
- 823:	2d          	call
- 824:	74          	loadsp 16
- 825:	88          	im 8
- 826:	2a          	lshiftright
- 827:	51          	storesp 4
- 828:	8a          	im 10
- 829:	c0          	im -64
- 82a:	2d          	call
- 82b:	74          	loadsp 16
+0000080e <.L146>:
+ 80e:	77          	loadsp 28
+ 80f:	76          	loadsp 24
+ 810:	0c          	store
+ 811:	73          	loadsp 12
+ 812:	17          	addsp 28
+ 813:	76          	loadsp 24
+ 814:	08          	load
+ 815:	53          	storesp 12
+ 816:	53          	storesp 12
+ 817:	71          	loadsp 4
+ 818:	73          	loadsp 12
+ 819:	34          	storeb
+ 81a:	81          	im 1
+ 81b:	14          	addsp 16
+ 81c:	54          	storesp 16
+ 81d:	74          	loadsp 16
+ 81e:	74          	loadsp 16
+ 81f:	26          	ulessthan
+ 820:	ed          	im -19
+ 821:	38          	neqbranch
+
+00000822 <.L154>:
+ 822:	75          	loadsp 20
+ 823:	51          	storesp 4
+ 824:	8b          	im 11
+ 825:	fe          	im -2
+ 826:	2d          	call
+ 827:	8a          	im 10
+ 828:	f4          	im -12
+ 829:	2d          	call
+ 82a:	81          	im 1
+ 82b:	84          	im 4
  82c:	51          	storesp 4
  82d:	8a          	im 10
  82e:	c0          	im -64
  82f:	2d          	call
- 830:	80          	im 0
- 831:	54          	storesp 16
- 832:	73          	loadsp 12
- 833:	75          	loadsp 20
- 834:	27          	ulessthanorequal
- 835:	92          	im 18
- 836:	38          	neqbranch
+ 830:	74          	loadsp 16
+ 831:	88          	im 8
+ 832:	2a          	lshiftright
+ 833:	51          	storesp 4
+ 834:	8a          	im 10
+ 835:	c0          	im -64
+ 836:	2d          	call
+ 837:	74          	loadsp 16
+ 838:	51          	storesp 4
+ 839:	8a          	im 10
+ 83a:	c0          	im -64
+ 83b:	2d          	call
+ 83c:	80          	im 0
+ 83d:	54          	storesp 16
+ 83e:	73          	loadsp 12
+ 83f:	75          	loadsp 20
+ 840:	27          	ulessthanorequal
+ 841:	92          	im 18
+ 842:	38          	neqbranch
 
-00000837 <.L159>:
- 837:	73          	loadsp 12
- 838:	17          	addsp 28
- 839:	70          	loadsp 0
- 83a:	33          	loadb
- 83b:	52          	storesp 8
- 83c:	52          	storesp 8
- 83d:	8a          	im 10
- 83e:	c0          	im -64
- 83f:	2d          	call
- 840:	81          	im 1
- 841:	14          	addsp 16
- 842:	54          	storesp 16
- 843:	74          	loadsp 16
- 844:	74          	loadsp 16
- 845:	26          	ulessthan
- 846:	f0          	im -16
- 847:	38          	neqbranch
+00000843 <.L159>:
+ 843:	73          	loadsp 12
+ 844:	17          	addsp 28
+ 845:	70          	loadsp 0
+ 846:	33          	loadb
+ 847:	52          	storesp 8
+ 848:	52          	storesp 8
+ 849:	8a          	im 10
+ 84a:	c0          	im -64
+ 84b:	2d          	call
+ 84c:	81          	im 1
+ 84d:	14          	addsp 16
+ 84e:	54          	storesp 16
+ 84f:	74          	loadsp 16
+ 850:	74          	loadsp 16
+ 851:	26          	ulessthan
+ 852:	f0          	im -16
+ 853:	38          	neqbranch
 
-00000848 <.L156>:
- 848:	8b          	im 11
- 849:	89          	im 9
- 84a:	2d          	call
- 84b:	89          	im 9
- 84c:	3d          	pushspadd
- 84d:	0d          	popsp
- 84e:	04          	poppc
+00000854 <.L156>:
+ 854:	8b          	im 11
+ 855:	89          	im 9
+ 856:	2d          	call
+ 857:	89          	im 9
+ 858:	3d          	pushspadd
+ 859:	0d          	popsp
+ 85a:	04          	poppc
 
-0000084f <_Z19cmd_sst_aai_programPh>:
- 84f:	04          	poppc
-
-00000850 <_Z16cmd_set_baudratePh>:
- 850:	fc          	im -4
- 851:	3d          	pushspadd
- 852:	0d          	popsp
- 853:	76          	loadsp 24
- 854:	81          	im 1
- 855:	11          	addsp 4
- 856:	33          	loadb
- 857:	82          	im 2
- 858:	12          	addsp 8
- 859:	33          	loadb
- 85a:	71          	loadsp 4
- 85b:	90          	im 16
- 85c:	2b          	ashiftleft
- 85d:	71          	loadsp 4
- 85e:	88          	im 8
- 85f:	2b          	ashiftleft
- 860:	07          	or
- 861:	83          	im 3
- 862:	14          	addsp 16
- 863:	33          	loadb
- 864:	70          	loadsp 0
- 865:	72          	loadsp 8
- 866:	07          	or
- 867:	88          	im 8
- 868:	2b          	ashiftleft
- 869:	84          	im 4
- 86a:	16          	addsp 24
- 86b:	33          	loadb
- 86c:	71          	loadsp 4
- 86d:	07          	or
- 86e:	51          	storesp 4
- 86f:	52          	storesp 8
- 870:	53          	storesp 12
- 871:	57          	storesp 28
- 872:	57          	storesp 28
- 873:	54          	storesp 16
- 874:	52          	storesp 8
- 875:	88          	im 8
- 876:	51          	storesp 4
- 877:	8e          	im 14
- 878:	a1          	im 33
- 879:	2d          	call
- 87a:	81          	im 1
- 87b:	ff          	im -1
- 87c:	51          	storesp 4
- 87d:	8a          	im 10
- 87e:	a0          	im 32
- 87f:	2d          	call
- 880:	80          	im 0
- 881:	c4          	im -60
- 882:	80          	im 0
- 883:	80          	im 0
- 884:	84          	im 4
- 885:	53          	storesp 12
-
-00000886 <.L162>:
- 886:	72          	loadsp 8
- 887:	08          	load
- 888:	70          	loadsp 0
- 889:	81          	im 1
- 88a:	2a          	lshiftright
- 88b:	70          	loadsp 0
- 88c:	81          	im 1
- 88d:	06          	and
- 88e:	51          	storesp 4
- 88f:	51          	storesp 4
- 890:	52          	storesp 8
- 891:	71          	loadsp 4
- 892:	f3          	im -13
- 893:	38          	neqbranch
- 894:	73          	loadsp 12
- 895:	84          	im 4
+0000085b <_Z19cmd_sst_aai_programPh>:
+ 85b:	f9          	im -7
+ 85c:	3d          	pushspadd
+ 85d:	0d          	popsp
+ 85e:	79          	loadsp 36
+ 85f:	56          	storesp 24
+ 860:	80          	im 0
+ 861:	c0          	im -64
+ 862:	80          	im 0
+ 863:	80          	im 0
+ 864:	84          	im 4
+ 865:	55          	storesp 20
+ 866:	8c          	im 12
+ 867:	9a          	im 26
+ 868:	2d          	call
+ 869:	86          	im 6
+ 86a:	75          	loadsp 20
+ 86b:	0c          	store
+ 86c:	74          	loadsp 16
+ 86d:	51          	storesp 4
+ 86e:	8b          	im 11
+ 86f:	fe          	im -2
+ 870:	2d          	call
+ 871:	8c          	im 12
+ 872:	9a          	im 26
+ 873:	2d          	call
+ 874:	81          	im 1
+ 875:	ad          	im 45
+ 876:	70          	loadsp 0
+ 877:	76          	loadsp 24
+ 878:	0c          	store
+ 879:	81          	im 1
+ 87a:	17          	addsp 28
+ 87b:	33          	loadb
+ 87c:	82          	im 2
+ 87d:	18          	addsp 32
+ 87e:	33          	loadb
+ 87f:	71          	loadsp 4
+ 880:	82          	im 2
+ 881:	80          	im 0
+ 882:	29          	mult
+ 883:	05          	add
+ 884:	83          	im 3
+ 885:	19          	addsp 36
+ 886:	33          	loadb
+ 887:	78          	loadsp 32
+ 888:	0c          	store
+ 889:	84          	im 4
+ 88a:	19          	addsp 36
+ 88b:	33          	loadb
+ 88c:	78          	loadsp 32
+ 88d:	0c          	store
+ 88e:	85          	im 5
+ 88f:	19          	addsp 36
+ 890:	33          	loadb
+ 891:	78          	loadsp 32
+ 892:	0c          	store
+ 893:	59          	storesp 36
+ 894:	53          	storesp 12
+ 895:	53          	storesp 12
  896:	80          	im 0
- 897:	80          	im 0
- 898:	07          	or
- 899:	80          	im 0
- 89a:	c4          	im -60
- 89b:	80          	im 0
- 89c:	80          	im 0
- 89d:	84          	im 4
- 89e:	0c          	store
- 89f:	86          	im 6
- 8a0:	3d          	pushspadd
- 8a1:	0d          	popsp
- 8a2:	04          	poppc
+ 897:	54          	storesp 16
+ 898:	73          	loadsp 12
+ 899:	77          	loadsp 28
+ 89a:	27          	ulessthanorequal
+ 89b:	ac          	im 44
+ 89c:	38          	neqbranch
+ 89d:	72          	loadsp 8
+ 89e:	58          	storesp 32
 
-000008a3 <_Z13cmd_waitreadyPh>:
- 8a3:	fe          	im -2
- 8a4:	3d          	pushspadd
- 8a5:	0d          	popsp
+0000089f <.L184>:
+ 89f:	73          	loadsp 12
+ 8a0:	80          	im 0
+ 8a1:	c1          	im -63
+ 8a2:	38          	neqbranch
+ 8a3:	73          	loadsp 12
+ 8a4:	16          	addsp 24
+ 8a5:	86          	im 6
+ 8a6:	11          	addsp 4
+ 8a7:	33          	loadb
+ 8a8:	76          	loadsp 24
+ 8a9:	0c          	store
+ 8aa:	87          	im 7
+ 8ab:	11          	addsp 4
+ 8ac:	33          	loadb
+ 8ad:	76          	loadsp 24
+ 8ae:	0c          	store
+ 8af:	52          	storesp 8
+ 8b0:	74          	loadsp 16
+ 8b1:	51          	storesp 4
+ 8b2:	8b          	im 11
+ 8b3:	fe          	im -2
+ 8b4:	2d          	call
 
-000008a6 <.L173>:
- 8a6:	8e          	im 14
- 8a7:	b6          	im 54
- 8a8:	2d          	call
- 8a9:	88          	im 8
- 8aa:	08          	load
- 8ab:	88          	im 8
- 8ac:	08          	load
- 8ad:	81          	im 1
- 8ae:	06          	and
- 8af:	53          	storesp 12
- 8b0:	53          	storesp 12
- 8b1:	71          	loadsp 4
- 8b2:	f3          	im -13
- 8b3:	38          	neqbranch
- 8b4:	8a          	im 10
- 8b5:	f4          	im -12
- 8b6:	2d          	call
- 8b7:	81          	im 1
- 8b8:	83          	im 3
- 8b9:	51          	storesp 4
- 8ba:	8a          	im 10
- 8bb:	c0          	im -64
- 8bc:	2d          	call
- 8bd:	72          	loadsp 8
- 8be:	51          	storesp 4
- 8bf:	8a          	im 10
- 8c0:	c0          	im -64
- 8c1:	2d          	call
- 8c2:	8b          	im 11
- 8c3:	89          	im 9
- 8c4:	2d          	call
- 8c5:	84          	im 4
- 8c6:	3d          	pushspadd
- 8c7:	0d          	popsp
- 8c8:	04          	poppc
+000008b5 <.L181>:
+ 8b5:	8e          	im 14
+ 8b6:	c2          	im -62
+ 8b7:	2d          	call
+ 8b8:	88          	im 8
+ 8b9:	08          	load
+ 8ba:	81          	im 1
+ 8bb:	06          	and
+ 8bc:	52          	storesp 8
+ 8bd:	71          	loadsp 4
+ 8be:	f6          	im -10
+ 8bf:	38          	neqbranch
+ 8c0:	82          	im 2
+ 8c1:	14          	addsp 16
+ 8c2:	54          	storesp 16
+ 8c3:	76          	loadsp 24
+ 8c4:	74          	loadsp 16
+ 8c5:	26          	ulessthan
+ 8c6:	d8          	im -40
+ 8c7:	38          	neqbranch
 
-000008c9 <_Z11cmd_versionPh>:
- 8c9:	fe          	im -2
- 8ca:	3d          	pushspadd
- 8cb:	0d          	popsp
- 8cc:	80          	im 0
- 8cd:	0b          	nop
- 8ce:	9d          	im 29
- 8cf:	8c          	im 12
- 8d0:	0c          	store
- 8d1:	8a          	im 10
- 8d2:	f4          	im -12
- 8d3:	2d          	call
- 8d4:	81          	im 1
- 8d5:	81          	im 1
- 8d6:	51          	storesp 4
- 8d7:	8a          	im 10
- 8d8:	c0          	im -64
- 8d9:	2d          	call
- 8da:	9c          	im 28
- 8db:	e4          	im -28
- 8dc:	53          	storesp 12
- 8dd:	8f          	im 15
- 8de:	52          	storesp 8
+000008c8 <.L188>:
+ 8c8:	8c          	im 12
+ 8c9:	9a          	im 26
+ 8ca:	2d          	call
+ 8cb:	84          	im 4
+ 8cc:	75          	loadsp 20
+ 8cd:	0c          	store
+ 8ce:	74          	loadsp 16
+ 8cf:	51          	storesp 4
+ 8d0:	8b          	im 11
+ 8d1:	fe          	im -2
+ 8d2:	2d          	call
+ 8d3:	8a          	im 10
+ 8d4:	f4          	im -12
+ 8d5:	2d          	call
+ 8d6:	81          	im 1
+ 8d7:	87          	im 7
+ 8d8:	51          	storesp 4
+ 8d9:	8a          	im 10
+ 8da:	c0          	im -64
+ 8db:	2d          	call
+ 8dc:	8b          	im 11
+ 8dd:	89          	im 9
+ 8de:	2d          	call
+ 8df:	89          	im 9
+ 8e0:	3d          	pushspadd
+ 8e1:	0d          	popsp
+ 8e2:	04          	poppc
 
-000008df <.L180>:
- 8df:	72          	loadsp 8
- 8e0:	70          	loadsp 0
- 8e1:	81          	im 1
- 8e2:	05          	add
- 8e3:	54          	storesp 16
- 8e4:	33          	loadb
- 8e5:	51          	storesp 4
- 8e6:	8a          	im 10
- 8e7:	c0          	im -64
- 8e8:	2d          	call
- 8e9:	ff          	im -1
- 8ea:	12          	addsp 8
- 8eb:	52          	storesp 8
- 8ec:	71          	loadsp 4
- 8ed:	ff          	im -1
- 8ee:	2e          	eq
- 8ef:	09          	not
- 8f0:	81          	im 1
- 8f1:	06          	and
- 8f2:	ec          	im -20
- 8f3:	38          	neqbranch
- 8f4:	8b          	im 11
- 8f5:	89          	im 9
- 8f6:	2d          	call
- 8f7:	84          	im 4
- 8f8:	3d          	pushspadd
- 8f9:	0d          	popsp
- 8fa:	04          	poppc
+000008e3 <.L190>:
+ 8e3:	8c          	im 12
+ 8e4:	9a          	im 26
+ 8e5:	2d          	call
+ 8e6:	77          	loadsp 28
+ 8e7:	75          	loadsp 20
+ 8e8:	0c          	store
+ 8e9:	73          	loadsp 12
+ 8ea:	16          	addsp 24
+ 8eb:	86          	im 6
+ 8ec:	11          	addsp 4
+ 8ed:	33          	loadb
+ 8ee:	76          	loadsp 24
+ 8ef:	0c          	store
+ 8f0:	87          	im 7
+ 8f1:	11          	addsp 4
+ 8f2:	33          	loadb
+ 8f3:	76          	loadsp 24
+ 8f4:	0c          	store
+ 8f5:	52          	storesp 8
+ 8f6:	74          	loadsp 16
+ 8f7:	51          	storesp 4
+ 8f8:	8b          	im 11
+ 8f9:	fe          	im -2
+ 8fa:	2d          	call
+ 8fb:	ff          	im -1
+ 8fc:	b8          	im 56
+ 8fd:	39          	poppcrel
 
-000008fb <_Z12cmd_identifyPh>:
- 8fb:	fe          	im -2
- 8fc:	3d          	pushspadd
- 8fd:	0d          	popsp
- 8fe:	80          	im 0
- 8ff:	0b          	nop
- 900:	9d          	im 29
- 901:	8c          	im 12
- 902:	0c          	store
- 903:	8a          	im 10
- 904:	f4          	im -12
- 905:	2d          	call
- 906:	81          	im 1
- 907:	82          	im 2
- 908:	51          	storesp 4
- 909:	8a          	im 10
- 90a:	c0          	im -64
- 90b:	2d          	call
- 90c:	80          	im 0
- 90d:	c0          	im -64
- 90e:	80          	im 0
- 90f:	80          	im 0
- 910:	84          	im 4
- 911:	52          	storesp 8
- 912:	8c          	im 12
- 913:	96          	im 22
- 914:	2d          	call
- 915:	81          	im 1
- 916:	f9          	im -7
- 917:	0a          	flip
- 918:	0b          	nop
- 919:	80          	im 0
- 91a:	c0          	im -64
- 91b:	80          	im 0
- 91c:	80          	im 0
- 91d:	9c          	im 28
- 91e:	0c          	store
- 91f:	71          	loadsp 4
- 920:	08          	load
- 921:	72          	loadsp 8
+000008fe <_Z16cmd_set_baudratePh>:
+ 8fe:	fc          	im -4
+ 8ff:	3d          	pushspadd
+ 900:	0d          	popsp
+ 901:	76          	loadsp 24
+ 902:	81          	im 1
+ 903:	11          	addsp 4
+ 904:	33          	loadb
+ 905:	82          	im 2
+ 906:	12          	addsp 8
+ 907:	33          	loadb
+ 908:	71          	loadsp 4
+ 909:	90          	im 16
+ 90a:	2b          	ashiftleft
+ 90b:	71          	loadsp 4
+ 90c:	88          	im 8
+ 90d:	2b          	ashiftleft
+ 90e:	07          	or
+ 90f:	83          	im 3
+ 910:	14          	addsp 16
+ 911:	33          	loadb
+ 912:	70          	loadsp 0
+ 913:	72          	loadsp 8
+ 914:	07          	or
+ 915:	88          	im 8
+ 916:	2b          	ashiftleft
+ 917:	84          	im 4
+ 918:	16          	addsp 24
+ 919:	33          	loadb
+ 91a:	71          	loadsp 4
+ 91b:	07          	or
+ 91c:	51          	storesp 4
+ 91d:	52          	storesp 8
+ 91e:	53          	storesp 12
+ 91f:	57          	storesp 28
+ 920:	57          	storesp 28
+ 921:	54          	storesp 16
  922:	52          	storesp 8
- 923:	53          	storesp 12
- 924:	8b          	im 11
- 925:	fe          	im -2
- 926:	2d          	call
- 927:	72          	loadsp 8
- 928:	9d          	im 29
- 929:	94          	im 20
- 92a:	0c          	store
- 92b:	72          	loadsp 8
- 92c:	90          	im 16
- 92d:	2a          	lshiftright
- 92e:	51          	storesp 4
- 92f:	8a          	im 10
- 930:	c0          	im -64
- 931:	2d          	call
- 932:	9d          	im 29
- 933:	94          	im 20
- 934:	08          	load
- 935:	88          	im 8
- 936:	2a          	lshiftright
- 937:	51          	storesp 4
- 938:	8a          	im 10
- 939:	c0          	im -64
- 93a:	2d          	call
- 93b:	9d          	im 29
- 93c:	94          	im 20
- 93d:	08          	load
- 93e:	51          	storesp 4
- 93f:	8a          	im 10
- 940:	c0          	im -64
- 941:	2d          	call
- 942:	8e          	im 14
- 943:	b6          	im 54
- 944:	2d          	call
- 945:	88          	im 8
- 946:	08          	load
- 947:	51          	storesp 4
- 948:	8a          	im 10
- 949:	c0          	im -64
- 94a:	2d          	call
- 94b:	8b          	im 11
- 94c:	89          	im 9
- 94d:	2d          	call
- 94e:	84          	im 4
- 94f:	3d          	pushspadd
- 950:	0d          	popsp
- 951:	04          	poppc
+ 923:	88          	im 8
+ 924:	51          	storesp 4
+ 925:	8e          	im 14
+ 926:	ad          	im 45
+ 927:	2d          	call
+ 928:	81          	im 1
+ 929:	ff          	im -1
+ 92a:	51          	storesp 4
+ 92b:	8a          	im 10
+ 92c:	a0          	im 32
+ 92d:	2d          	call
+ 92e:	80          	im 0
+ 92f:	c4          	im -60
+ 930:	80          	im 0
+ 931:	80          	im 0
+ 932:	84          	im 4
+ 933:	53          	storesp 12
 
-00000952 <_Z12cmd_enterpgmPh>:
- 952:	80          	im 0
- 953:	3d          	pushspadd
- 954:	0d          	popsp
- 955:	81          	im 1
- 956:	0b          	nop
- 957:	9d          	im 29
- 958:	90          	im 16
- 959:	0c          	store
- 95a:	80          	im 0
- 95b:	0b          	nop
- 95c:	83          	im 3
- 95d:	90          	im 16
- 95e:	0a          	flip
- 95f:	0c          	store
- 960:	85          	im 5
- 961:	51          	storesp 4
- 962:	8e          	im 14
- 963:	a1          	im 33
+00000934 <.L192>:
+ 934:	72          	loadsp 8
+ 935:	08          	load
+ 936:	70          	loadsp 0
+ 937:	81          	im 1
+ 938:	2a          	lshiftright
+ 939:	70          	loadsp 0
+ 93a:	81          	im 1
+ 93b:	06          	and
+ 93c:	51          	storesp 4
+ 93d:	51          	storesp 4
+ 93e:	52          	storesp 8
+ 93f:	71          	loadsp 4
+ 940:	f3          	im -13
+ 941:	38          	neqbranch
+ 942:	73          	loadsp 12
+ 943:	84          	im 4
+ 944:	80          	im 0
+ 945:	80          	im 0
+ 946:	07          	or
+ 947:	80          	im 0
+ 948:	c4          	im -60
+ 949:	80          	im 0
+ 94a:	80          	im 0
+ 94b:	84          	im 4
+ 94c:	0c          	store
+ 94d:	86          	im 6
+ 94e:	3d          	pushspadd
+ 94f:	0d          	popsp
+ 950:	04          	poppc
+
+00000951 <_Z13cmd_waitreadyPh>:
+ 951:	fe          	im -2
+ 952:	3d          	pushspadd
+ 953:	0d          	popsp
+
+00000954 <.L203>:
+ 954:	8e          	im 14
+ 955:	c2          	im -62
+ 956:	2d          	call
+ 957:	88          	im 8
+ 958:	08          	load
+ 959:	88          	im 8
+ 95a:	08          	load
+ 95b:	81          	im 1
+ 95c:	06          	and
+ 95d:	53          	storesp 12
+ 95e:	53          	storesp 12
+ 95f:	71          	loadsp 4
+ 960:	f3          	im -13
+ 961:	38          	neqbranch
+ 962:	8a          	im 10
+ 963:	f4          	im -12
  964:	2d          	call
- 965:	82          	im 2
- 966:	3d          	pushspadd
- 967:	0d          	popsp
- 968:	04          	poppc
+ 965:	81          	im 1
+ 966:	83          	im 3
+ 967:	51          	storesp 4
+ 968:	8a          	im 10
+ 969:	c0          	im -64
+ 96a:	2d          	call
+ 96b:	72          	loadsp 8
+ 96c:	51          	storesp 4
+ 96d:	8a          	im 10
+ 96e:	c0          	im -64
+ 96f:	2d          	call
+ 970:	8b          	im 11
+ 971:	89          	im 9
+ 972:	2d          	call
+ 973:	84          	im 4
+ 974:	3d          	pushspadd
+ 975:	0d          	popsp
+ 976:	04          	poppc
 
-00000969 <_Z12cmd_leavepgmPh>:
- 969:	80          	im 0
- 96a:	3d          	pushspadd
- 96b:	0d          	popsp
- 96c:	80          	im 0
- 96d:	0b          	nop
- 96e:	9d          	im 29
- 96f:	90          	im 16
- 970:	0c          	store
- 971:	8b          	im 11
- 972:	e5          	im -27
- 973:	2d          	call
- 974:	86          	im 6
- 975:	51          	storesp 4
- 976:	8e          	im 14
- 977:	a1          	im 33
- 978:	2d          	call
- 979:	82          	im 2
- 97a:	3d          	pushspadd
- 97b:	0d          	popsp
- 97c:	04          	poppc
+00000977 <_Z11cmd_versionPh>:
+ 977:	fe          	im -2
+ 978:	3d          	pushspadd
+ 979:	0d          	popsp
+ 97a:	80          	im 0
+ 97b:	0b          	nop
+ 97c:	9e          	im 30
+ 97d:	bc          	im 60
+ 97e:	0c          	store
+ 97f:	8a          	im 10
+ 980:	f4          	im -12
+ 981:	2d          	call
+ 982:	81          	im 1
+ 983:	81          	im 1
+ 984:	51          	storesp 4
+ 985:	8a          	im 10
+ 986:	c0          	im -64
+ 987:	2d          	call
+ 988:	9e          	im 30
+ 989:	94          	im 20
+ 98a:	53          	storesp 12
+ 98b:	8f          	im 15
+ 98c:	52          	storesp 8
 
-0000097d <_Z9cmd_startPh>:
- 97d:	ff          	im -1
- 97e:	3d          	pushspadd
- 97f:	0d          	popsp
- 980:	80          	im 0
- 981:	c0          	im -64
- 982:	80          	im 0
- 983:	80          	im 0
- 984:	84          	im 4
- 985:	52          	storesp 8
- 986:	8a          	im 10
- 987:	51          	storesp 4
- 988:	8e          	im 14
- 989:	a1          	im 33
- 98a:	2d          	call
- 98b:	8c          	im 12
- 98c:	96          	im 22
- 98d:	2d          	call
- 98e:	71          	loadsp 4
- 98f:	51          	storesp 4
- 990:	8c          	im 12
- 991:	b8          	im 56
- 992:	2d          	call
- 993:	88          	im 8
- 994:	08          	load
- 995:	10          	addsp 0
- 996:	10          	addsp 0
- 997:	84          	im 4
- 998:	05          	add
- 999:	9d          	im 29
- 99a:	88          	im 8
- 99b:	0c          	store
- 99c:	71          	loadsp 4
- 99d:	51          	storesp 4
- 99e:	8b          	im 11
- 99f:	fe          	im -2
- 9a0:	2d          	call
- 9a1:	8a          	im 10
- 9a2:	85          	im 5
- 9a3:	2d          	call
- 9a4:	8c          	im 12
- 9a5:	a9          	im 41
- 9a6:	2d          	call
- 9a7:	83          	im 3
- 9a8:	3d          	pushspadd
- 9a9:	0d          	popsp
- 9aa:	04          	poppc
+0000098d <.L210>:
+ 98d:	72          	loadsp 8
+ 98e:	70          	loadsp 0
+ 98f:	81          	im 1
+ 990:	05          	add
+ 991:	54          	storesp 16
+ 992:	33          	loadb
+ 993:	51          	storesp 4
+ 994:	8a          	im 10
+ 995:	c0          	im -64
+ 996:	2d          	call
+ 997:	ff          	im -1
+ 998:	12          	addsp 8
+ 999:	52          	storesp 8
+ 99a:	71          	loadsp 4
+ 99b:	ff          	im -1
+ 99c:	2e          	eq
+ 99d:	09          	not
+ 99e:	81          	im 1
+ 99f:	06          	and
+ 9a0:	ec          	im -20
+ 9a1:	38          	neqbranch
+ 9a2:	8b          	im 11
+ 9a3:	89          	im 9
+ 9a4:	2d          	call
+ 9a5:	84          	im 4
+ 9a6:	3d          	pushspadd
+ 9a7:	0d          	popsp
+ 9a8:	04          	poppc
 
-000009ab <main>:
- 9ab:	ff          	im -1
- 9ac:	ad          	im 45
- 9ad:	3d          	pushspadd
- 9ae:	0d          	popsp
- 9af:	80          	im 0
- 9b0:	0b          	nop
- 9b1:	9d          	im 29
- 9b2:	90          	im 16
- 9b3:	0c          	store
- 9b4:	80          	im 0
- 9b5:	0b          	nop
- 9b6:	9d          	im 29
- 9b7:	8c          	im 12
- 9b8:	0c          	store
- 9b9:	80          	im 0
- 9ba:	0b          	nop
- 9bb:	8e          	im 14
- 9bc:	84          	im 4
- 9bd:	0b          	nop
- 9be:	a0          	im 32
- 9bf:	80          	im 0
- 9c0:	0c          	store
- 9c1:	57          	storesp 28
- 9c2:	84          	im 4
- 9c3:	80          	im 0
- 9c4:	ad          	im 45
- 9c5:	0b          	nop
- 9c6:	80          	im 0
- 9c7:	c4          	im -60
- 9c8:	80          	im 0
+000009a9 <_Z12cmd_identifyPh>:
+ 9a9:	fe          	im -2
+ 9aa:	3d          	pushspadd
+ 9ab:	0d          	popsp
+ 9ac:	80          	im 0
+ 9ad:	0b          	nop
+ 9ae:	9e          	im 30
+ 9af:	bc          	im 60
+ 9b0:	0c          	store
+ 9b1:	8a          	im 10
+ 9b2:	f4          	im -12
+ 9b3:	2d          	call
+ 9b4:	81          	im 1
+ 9b5:	82          	im 2
+ 9b6:	51          	storesp 4
+ 9b7:	8a          	im 10
+ 9b8:	c0          	im -64
+ 9b9:	2d          	call
+ 9ba:	80          	im 0
+ 9bb:	c0          	im -64
+ 9bc:	80          	im 0
+ 9bd:	80          	im 0
+ 9be:	84          	im 4
+ 9bf:	52          	storesp 8
+ 9c0:	8c          	im 12
+ 9c1:	9a          	im 26
+ 9c2:	2d          	call
+ 9c3:	81          	im 1
+ 9c4:	f9          	im -7
+ 9c5:	0a          	flip
+ 9c6:	0b          	nop
+ 9c7:	80          	im 0
+ 9c8:	c0          	im -64
  9c9:	80          	im 0
- 9ca:	84          	im 4
- 9cb:	0c          	store
- 9cc:	80          	im 0
- 9cd:	c8          	im -56
- 9ce:	80          	im 0
- 9cf:	80          	im 0
- 9d0:	a0          	im 32
+ 9ca:	80          	im 0
+ 9cb:	9c          	im 28
+ 9cc:	0c          	store
+ 9cd:	71          	loadsp 4
+ 9ce:	08          	load
+ 9cf:	72          	loadsp 8
+ 9d0:	52          	storesp 8
  9d1:	53          	storesp 12
- 9d2:	fd          	im -3
- 9d3:	73          	loadsp 12
- 9d4:	08          	load
- 9d5:	70          	loadsp 0
- 9d6:	72          	loadsp 8
- 9d7:	06          	and
- 9d8:	75          	loadsp 20
- 9d9:	0c          	store
- 9da:	53          	storesp 12
- 9db:	54          	storesp 16
- 9dc:	80          	im 0
- 9dd:	c8          	im -56
- 9de:	80          	im 0
- 9df:	80          	im 0
- 9e0:	90          	im 16
- 9e1:	70          	loadsp 0
+ 9d2:	8b          	im 11
+ 9d3:	fe          	im -2
+ 9d4:	2d          	call
+ 9d5:	72          	loadsp 8
+ 9d6:	9e          	im 30
+ 9d7:	c4          	im -60
+ 9d8:	0c          	store
+ 9d9:	72          	loadsp 8
+ 9da:	90          	im 16
+ 9db:	2a          	lshiftright
+ 9dc:	51          	storesp 4
+ 9dd:	8a          	im 10
+ 9de:	c0          	im -64
+ 9df:	2d          	call
+ 9e0:	9e          	im 30
+ 9e1:	c4          	im -60
  9e2:	08          	load
- 9e3:	70          	loadsp 0
- 9e4:	76          	loadsp 24
- 9e5:	06          	and
- 9e6:	72          	loadsp 8
- 9e7:	0c          	store
- 9e8:	53          	storesp 12
- 9e9:	53          	storesp 12
- 9ea:	81          	im 1
- 9eb:	90          	im 16
- 9ec:	0a          	flip
- 9ed:	70          	loadsp 0
- 9ee:	08          	load
- 9ef:	70          	loadsp 0
- 9f0:	82          	im 2
- 9f1:	07          	or
- 9f2:	72          	loadsp 8
- 9f3:	0c          	store
- 9f4:	53          	storesp 12
- 9f5:	53          	storesp 12
- 9f6:	a8          	im 40
- 9f7:	70          	loadsp 0
- 9f8:	97          	im 23
- 9f9:	e5          	im -27
- 9fa:	71          	loadsp 4
- 9fb:	70          	loadsp 0
+ 9e3:	88          	im 8
+ 9e4:	2a          	lshiftright
+ 9e5:	51          	storesp 4
+ 9e6:	8a          	im 10
+ 9e7:	c0          	im -64
+ 9e8:	2d          	call
+ 9e9:	9e          	im 30
+ 9ea:	c4          	im -60
+ 9eb:	08          	load
+ 9ec:	51          	storesp 4
+ 9ed:	8a          	im 10
+ 9ee:	c0          	im -64
+ 9ef:	2d          	call
+ 9f0:	8e          	im 14
+ 9f1:	c2          	im -62
+ 9f2:	2d          	call
+ 9f3:	88          	im 8
+ 9f4:	08          	load
+ 9f5:	51          	storesp 4
+ 9f6:	8a          	im 10
+ 9f7:	c0          	im -64
+ 9f8:	2d          	call
+ 9f9:	8b          	im 11
+ 9fa:	89          	im 9
+ 9fb:	2d          	call
  9fc:	84          	im 4
- 9fd:	05          	add
- 9fe:	53          	storesp 12
- 9ff:	0c          	store
- a00:	98          	im 24
- a01:	c2          	im -62
- a02:	71          	loadsp 4
- a03:	0c          	store
- a04:	53          	storesp 12
- a05:	99          	im 25
- a06:	db          	im -37
- a07:	0b          	nop
- a08:	88          	im 8
- a09:	12          	addsp 8
- a0a:	0c          	store
- a0b:	9a          	im 26
- a0c:	ea          	im -22
- a0d:	0b          	nop
- a0e:	8c          	im 12
- a0f:	12          	addsp 8
- a10:	0c          	store
- a11:	53          	storesp 12
- a12:	88          	im 8
- a13:	0b          	nop
- a14:	80          	im 0
- a15:	d0          	im -48
- a16:	80          	im 0
+ 9fd:	3d          	pushspadd
+ 9fe:	0d          	popsp
+ 9ff:	04          	poppc
+
+00000a00 <_Z12cmd_enterpgmPh>:
+ a00:	80          	im 0
+ a01:	3d          	pushspadd
+ a02:	0d          	popsp
+ a03:	81          	im 1
+ a04:	0b          	nop
+ a05:	9e          	im 30
+ a06:	c0          	im -64
+ a07:	0c          	store
+ a08:	80          	im 0
+ a09:	0b          	nop
+ a0a:	83          	im 3
+ a0b:	90          	im 16
+ a0c:	0a          	flip
+ a0d:	0c          	store
+ a0e:	85          	im 5
+ a0f:	51          	storesp 4
+ a10:	8e          	im 14
+ a11:	ad          	im 45
+ a12:	2d          	call
+ a13:	82          	im 2
+ a14:	3d          	pushspadd
+ a15:	0d          	popsp
+ a16:	04          	poppc
+
+00000a17 <_Z12cmd_leavepgmPh>:
  a17:	80          	im 0
- a18:	84          	im 4
- a19:	0c          	store
- a1a:	81          	im 1
+ a18:	3d          	pushspadd
+ a19:	0d          	popsp
+ a1a:	80          	im 0
  a1b:	0b          	nop
- a1c:	80          	im 0
- a1d:	d0          	im -48
- a1e:	0a          	flip
- a1f:	0c          	store
- a20:	8b          	im 11
- a21:	e5          	im -27
- a22:	2d          	call
- a23:	82          	im 2
- a24:	88          	im 8
- a25:	88          	im 8
- a26:	0b          	nop
- a27:	80          	im 0
- a28:	dc          	im -36
- a29:	80          	im 0
- a2a:	80          	im 0
- a2b:	84          	im 4
- a2c:	0c          	store
- a2d:	81          	im 1
- a2e:	f4          	im -12
- a2f:	0b          	nop
- a30:	90          	im 16
- a31:	0a          	flip
- a32:	0c          	store
- a33:	80          	im 0
- a34:	c0          	im -64
- a35:	80          	im 0
- a36:	80          	im 0
- a37:	84          	im 4
- a38:	70          	loadsp 0
- a39:	52          	storesp 8
- a3a:	52          	storesp 8
- a3b:	8b          	im 11
- a3c:	fe          	im -2
- a3d:	2d          	call
+ a1c:	9e          	im 30
+ a1d:	c0          	im -64
+ a1e:	0c          	store
+ a1f:	8b          	im 11
+ a20:	e5          	im -27
+ a21:	2d          	call
+ a22:	86          	im 6
+ a23:	51          	storesp 4
+ a24:	8e          	im 14
+ a25:	ad          	im 45
+ a26:	2d          	call
+ a27:	82          	im 2
+ a28:	3d          	pushspadd
+ a29:	0d          	popsp
+ a2a:	04          	poppc
+
+00000a2b <_Z9cmd_startPh>:
+ a2b:	ff          	im -1
+ a2c:	3d          	pushspadd
+ a2d:	0d          	popsp
+ a2e:	80          	im 0
+ a2f:	c0          	im -64
+ a30:	80          	im 0
+ a31:	80          	im 0
+ a32:	84          	im 4
+ a33:	52          	storesp 8
+ a34:	8a          	im 10
+ a35:	51          	storesp 4
+ a36:	8e          	im 14
+ a37:	ad          	im 45
+ a38:	2d          	call
+ a39:	8c          	im 12
+ a3a:	9a          	im 26
+ a3b:	2d          	call
+ a3c:	71          	loadsp 4
+ a3d:	51          	storesp 4
  a3e:	8c          	im 12
- a3f:	96          	im 22
+ a3f:	c0          	im -64
  a40:	2d          	call
- a41:	71          	loadsp 4
- a42:	51          	storesp 4
- a43:	8b          	im 11
- a44:	fe          	im -2
- a45:	2d          	call
- a46:	76          	loadsp 24
- a47:	77          	loadsp 28
- a48:	8f          	im 15
- a49:	3d          	pushspadd
- a4a:	5e          	storesp 56
- a4b:	5a          	storesp 40
- a4c:	5a          	storesp 40
- a4d:	83          	im 3
- a4e:	d0          	im -48
- a4f:	0a          	flip
- a50:	5b          	storesp 44
-
-00000a51 <.L245>:
- a51:	8b          	im 11
- a52:	aa          	im 42
+ a41:	88          	im 8
+ a42:	08          	load
+ a43:	10          	addsp 0
+ a44:	10          	addsp 0
+ a45:	90          	im 16
+ a46:	c0          	im -64
+ a47:	84          	im 4
+ a48:	05          	add
+ a49:	9e          	im 30
+ a4a:	b8          	im 56
+ a4b:	0c          	store
+ a4c:	71          	loadsp 4
+ a4d:	51          	storesp 4
+ a4e:	8b          	im 11
+ a4f:	fe          	im -2
+ a50:	2d          	call
+ a51:	8a          	im 10
+ a52:	85          	im 5
  a53:	2d          	call
- a54:	88          	im 8
- a55:	08          	load
- a56:	53          	storesp 12
- a57:	78          	loadsp 32
- a58:	80          	im 0
- a59:	2e          	eq
- a5a:	bc          	im 60
- a5b:	38          	neqbranch
+ a54:	8c          	im 12
+ a55:	b1          	im 49
+ a56:	2d          	call
+ a57:	83          	im 3
+ a58:	3d          	pushspadd
+ a59:	0d          	popsp
+ a5a:	04          	poppc
 
-00000a5c <.L249>:
- a5c:	88          	im 8
- a5d:	08          	load
- a5e:	80          	im 0
- a5f:	fe          	im -2
- a60:	2e          	eq
- a61:	80          	im 0
- a62:	d2          	im -46
- a63:	38          	neqbranch
- a64:	88          	im 8
- a65:	08          	load
- a66:	80          	im 0
- a67:	fd          	im -3
- a68:	2e          	eq
- a69:	81          	im 1
- a6a:	be          	im 62
- a6b:	38          	neqbranch
- a6c:	76          	loadsp 24
- a6d:	82          	im 2
- a6e:	9f          	im 31
- a6f:	26          	ulessthan
- a70:	bf          	im 63
- a71:	38          	neqbranch
- a72:	79          	loadsp 36
+00000a5b <main>:
+ a5b:	ff          	im -1
+ a5c:	ad          	im 45
+ a5d:	3d          	pushspadd
+ a5e:	0d          	popsp
+ a5f:	80          	im 0
+ a60:	0b          	nop
+ a61:	9e          	im 30
+ a62:	c0          	im -64
+ a63:	0c          	store
+ a64:	80          	im 0
+ a65:	0b          	nop
+ a66:	9e          	im 30
+ a67:	bc          	im 60
+ a68:	0c          	store
+ a69:	80          	im 0
+ a6a:	0b          	nop
+ a6b:	8e          	im 14
+ a6c:	90          	im 16
+ a6d:	0b          	nop
+ a6e:	a0          	im 32
+ a6f:	80          	im 0
+ a70:	0c          	store
+ a71:	57          	storesp 28
+ a72:	84          	im 4
  a73:	80          	im 0
- a74:	2e          	eq
- a75:	89          	im 9
- a76:	38          	neqbranch
- a77:	80          	im 0
- a78:	0b          	nop
- a79:	88          	im 8
- a7a:	08          	load
- a7b:	a0          	im 32
- a7c:	32          	xor
- a7d:	54          	storesp 16
- a7e:	5a          	storesp 40
-
-00000a7f <.L235>:
+ a74:	b3          	im 51
+ a75:	0b          	nop
+ a76:	80          	im 0
+ a77:	c4          	im -60
+ a78:	80          	im 0
+ a79:	80          	im 0
+ a7a:	84          	im 4
+ a7b:	0c          	store
+ a7c:	80          	im 0
+ a7d:	c8          	im -56
+ a7e:	80          	im 0
  a7f:	80          	im 0
- a80:	d5          	im -43
- a81:	3d          	pushspadd
- a82:	77          	loadsp 28
- a83:	05          	add
- a84:	fd          	im -3
- a85:	e0          	im -32
- a86:	05          	add
- a87:	52          	storesp 8
+ a80:	a4          	im 36
+ a81:	53          	storesp 12
+ a82:	fb          	im -5
+ a83:	ff          	im -1
+ a84:	ff          	im -1
+ a85:	73          	loadsp 12
+ a86:	08          	load
+ a87:	70          	loadsp 0
  a88:	72          	loadsp 8
- a89:	72          	loadsp 8
- a8a:	34          	storeb
- a8b:	81          	im 1
- a8c:	17          	addsp 28
- a8d:	57          	storesp 28
- a8e:	8b          	im 11
- a8f:	aa          	im 42
- a90:	2d          	call
- a91:	88          	im 8
- a92:	08          	load
- a93:	53          	storesp 12
- a94:	78          	loadsp 32
- a95:	c6          	im -58
- a96:	38          	neqbranch
-
-00000a97 <.L220>:
- a97:	88          	im 8
- a98:	08          	load
- a99:	80          	im 0
- a9a:	fe          	im -2
- a9b:	2e          	eq
- a9c:	09          	not
- a9d:	81          	im 1
- a9e:	06          	and
- a9f:	ff          	im -1
- aa0:	b0          	im 48
- aa1:	38          	neqbranch
- aa2:	78          	loadsp 32
- aa3:	57          	storesp 28
- aa4:	83          	im 3
- aa5:	ff          	im -1
- aa6:	ff          	im -1
- aa7:	7b          	loadsp 44
- aa8:	0c          	store
- aa9:	81          	im 1
- aaa:	77          	loadsp 28
- aab:	5b          	storesp 44
- aac:	59          	storesp 36
- aad:	ff          	im -1
- aae:	a2          	im 34
- aaf:	39          	poppcrel
-
-00000ab0 <.L234>:
- ab0:	80          	im 0
- ab1:	59          	storesp 36
- ab2:	ff          	im -1
- ab3:	9d          	im 29
- ab4:	39          	poppcrel
-
-00000ab5 <.L247>:
- ab5:	76          	loadsp 24
- ab6:	80          	im 0
- ab7:	2e          	eq
- ab8:	ff          	im -1
- ab9:	97          	im 23
- aba:	38          	neqbranch
- abb:	80          	im 0
- abc:	7c          	loadsp 48
- abd:	78          	loadsp 32
- abe:	58          	storesp 32
- abf:	56          	storesp 24
- ac0:	59          	storesp 36
- ac1:	82          	im 2
- ac2:	77          	loadsp 28
- ac3:	27          	ulessthanorequal
- ac4:	ff          	im -1
- ac5:	8b          	im 11
- ac6:	38          	neqbranch
- ac7:	83          	im 3
- ac8:	ff          	im -1
- ac9:	ff          	im -1
- aca:	7b          	loadsp 44
- acb:	0c          	store
- acc:	78          	loadsp 32
- acd:	fe          	im -2
- ace:	18          	addsp 32
- acf:	53          	storesp 12
- ad0:	53          	storesp 12
- ad1:	78          	loadsp 32
- ad2:	72          	loadsp 8
- ad3:	27          	ulessthanorequal
- ad4:	98          	im 24
- ad5:	38          	neqbranch
- ad6:	80          	im 0
- ad7:	dc          	im -36
- ad8:	80          	im 0
+ a89:	06          	and
+ a8a:	75          	loadsp 20
+ a8b:	0c          	store
+ a8c:	53          	storesp 12
+ a8d:	54          	storesp 16
+ a8e:	80          	im 0
+ a8f:	c8          	im -56
+ a90:	80          	im 0
+ a91:	80          	im 0
+ a92:	94          	im 20
+ a93:	70          	loadsp 0
+ a94:	08          	load
+ a95:	70          	loadsp 0
+ a96:	76          	loadsp 24
+ a97:	06          	and
+ a98:	72          	loadsp 8
+ a99:	0c          	store
+ a9a:	53          	storesp 12
+ a9b:	53          	storesp 12
+ a9c:	a8          	im 40
+ a9d:	70          	loadsp 0
+ a9e:	99          	im 25
+ a9f:	96          	im 22
+ aa0:	71          	loadsp 4
+ aa1:	70          	loadsp 0
+ aa2:	84          	im 4
+ aa3:	05          	add
+ aa4:	53          	storesp 12
+ aa5:	0c          	store
+ aa6:	99          	im 25
+ aa7:	f3          	im -13
+ aa8:	71          	loadsp 4
+ aa9:	0c          	store
+ aaa:	53          	storesp 12
+ aab:	9b          	im 27
+ aac:	8c          	im 12
+ aad:	0b          	nop
+ aae:	88          	im 8
+ aaf:	12          	addsp 8
+ ab0:	0c          	store
+ ab1:	9c          	im 28
+ ab2:	9b          	im 27
+ ab3:	0b          	nop
+ ab4:	8c          	im 12
+ ab5:	12          	addsp 8
+ ab6:	0c          	store
+ ab7:	53          	storesp 12
+ ab8:	88          	im 8
+ ab9:	0b          	nop
+ aba:	80          	im 0
+ abb:	d0          	im -48
+ abc:	80          	im 0
+ abd:	80          	im 0
+ abe:	84          	im 4
+ abf:	0c          	store
+ ac0:	81          	im 1
+ ac1:	0b          	nop
+ ac2:	80          	im 0
+ ac3:	d0          	im -48
+ ac4:	0a          	flip
+ ac5:	0c          	store
+ ac6:	8b          	im 11
+ ac7:	e5          	im -27
+ ac8:	2d          	call
+ ac9:	82          	im 2
+ aca:	88          	im 8
+ acb:	88          	im 8
+ acc:	0b          	nop
+ acd:	80          	im 0
+ ace:	dc          	im -36
+ acf:	80          	im 0
+ ad0:	80          	im 0
+ ad1:	84          	im 4
+ ad2:	0c          	store
+ ad3:	81          	im 1
+ ad4:	f2          	im -14
+ ad5:	0b          	nop
+ ad6:	90          	im 16
+ ad7:	0a          	flip
+ ad8:	0c          	store
  ad9:	80          	im 0
- ada:	88          	im 8
- adb:	72          	loadsp 8
- adc:	55          	storesp 20
- add:	58          	storesp 32
+ ada:	c0          	im -64
+ adb:	80          	im 0
+ adc:	80          	im 0
+ add:	84          	im 4
+ ade:	70          	loadsp 0
+ adf:	52          	storesp 8
+ ae0:	52          	storesp 8
+ ae1:	8b          	im 11
+ ae2:	fe          	im -2
+ ae3:	2d          	call
+ ae4:	8c          	im 12
+ ae5:	9a          	im 26
+ ae6:	2d          	call
+ ae7:	71          	loadsp 4
+ ae8:	51          	storesp 4
+ ae9:	8b          	im 11
+ aea:	fe          	im -2
+ aeb:	2d          	call
+ aec:	8c          	im 12
+ aed:	9a          	im 26
+ aee:	2d          	call
+ aef:	84          	im 4
+ af0:	72          	loadsp 8
+ af1:	0c          	store
+ af2:	71          	loadsp 4
+ af3:	51          	storesp 4
+ af4:	8b          	im 11
+ af5:	fe          	im -2
+ af6:	2d          	call
+ af7:	76          	loadsp 24
+ af8:	77          	loadsp 28
+ af9:	8f          	im 15
+ afa:	3d          	pushspadd
+ afb:	5e          	storesp 56
+ afc:	5a          	storesp 40
+ afd:	5a          	storesp 40
+ afe:	83          	im 3
+ aff:	d0          	im -48
+ b00:	0a          	flip
+ b01:	5b          	storesp 44
 
-00000ade <.L228>:
- ade:	72          	loadsp 8
- adf:	15          	addsp 20
- ae0:	70          	loadsp 0
- ae1:	33          	loadb
- ae2:	79          	loadsp 36
- ae3:	0c          	store
- ae4:	52          	storesp 8
- ae5:	81          	im 1
- ae6:	13          	addsp 12
- ae7:	53          	storesp 12
- ae8:	73          	loadsp 12
- ae9:	73          	loadsp 12
- aea:	26          	ulessthan
- aeb:	f2          	im -14
- aec:	38          	neqbranch
+00000b02 <.L270>:
+ b02:	8b          	im 11
+ b03:	aa          	im 42
+ b04:	2d          	call
+ b05:	88          	im 8
+ b06:	08          	load
+ b07:	53          	storesp 12
+ b08:	78          	loadsp 32
+ b09:	80          	im 0
+ b0a:	2e          	eq
+ b0b:	bc          	im 60
+ b0c:	38          	neqbranch
 
-00000aed <.L241>:
- aed:	ff          	im -1
- aee:	16          	addsp 24
- aef:	75          	loadsp 20
- af0:	11          	addsp 4
- af1:	54          	storesp 16
- af2:	75          	loadsp 20
- af3:	05          	add
- af4:	ff          	im -1
- af5:	05          	add
- af6:	70          	loadsp 0
- af7:	33          	loadb
- af8:	74          	loadsp 16
- af9:	33          	loadb
- afa:	70          	loadsp 0
- afb:	72          	loadsp 8
- afc:	88          	im 8
- afd:	2b          	ashiftleft
- afe:	07          	or
- aff:	7e          	loadsp 56
- b00:	08          	load
- b01:	53          	storesp 12
- b02:	51          	storesp 4
- b03:	55          	storesp 20
- b04:	51          	storesp 4
- b05:	52          	storesp 8
- b06:	71          	loadsp 4
- b07:	73          	loadsp 12
- b08:	2e          	eq
- b09:	09          	not
- b0a:	81          	im 1
- b0b:	06          	and
- b0c:	fe          	im -2
- b0d:	c3          	im -61
- b0e:	38          	neqbranch
- b0f:	74          	loadsp 16
- b10:	33          	loadb
- b11:	53          	storesp 12
- b12:	72          	loadsp 8
- b13:	8a          	im 10
- b14:	26          	ulessthan
- b15:	fe          	im -2
- b16:	ba          	im 58
- b17:	38          	neqbranch
- b18:	72          	loadsp 8
- b19:	10          	addsp 0
- b1a:	10          	addsp 0
- b1b:	9c          	im 28
- b1c:	b8          	im 56
- b1d:	05          	add
- b1e:	75          	loadsp 20
- b1f:	52          	storesp 8
- b20:	70          	loadsp 0
- b21:	08          	load
- b22:	51          	storesp 4
- b23:	52          	storesp 8
- b24:	71          	loadsp 4
- b25:	2d          	call
- b26:	fe          	im -2
- b27:	a9          	im 41
- b28:	39          	poppcrel
+00000b0d <.L274>:
+ b0d:	88          	im 8
+ b0e:	08          	load
+ b0f:	80          	im 0
+ b10:	fe          	im -2
+ b11:	2e          	eq
+ b12:	80          	im 0
+ b13:	d2          	im -46
+ b14:	38          	neqbranch
+ b15:	88          	im 8
+ b16:	08          	load
+ b17:	80          	im 0
+ b18:	fd          	im -3
+ b19:	2e          	eq
+ b1a:	81          	im 1
+ b1b:	be          	im 62
+ b1c:	38          	neqbranch
+ b1d:	76          	loadsp 24
+ b1e:	82          	im 2
+ b1f:	9f          	im 31
+ b20:	26          	ulessthan
+ b21:	bf          	im 63
+ b22:	38          	neqbranch
+ b23:	79          	loadsp 36
+ b24:	80          	im 0
+ b25:	2e          	eq
+ b26:	89          	im 9
+ b27:	38          	neqbranch
+ b28:	80          	im 0
+ b29:	0b          	nop
+ b2a:	88          	im 8
+ b2b:	08          	load
+ b2c:	a0          	im 32
+ b2d:	32          	xor
+ b2e:	54          	storesp 16
+ b2f:	5a          	storesp 40
 
-00000b29 <.L248>:
- b29:	81          	im 1
- b2a:	5a          	storesp 40
- b2b:	fe          	im -2
- b2c:	a4          	im 36
- b2d:	39          	poppcrel
+00000b30 <.L260>:
+ b30:	80          	im 0
+ b31:	d5          	im -43
+ b32:	3d          	pushspadd
+ b33:	77          	loadsp 28
+ b34:	05          	add
+ b35:	fd          	im -3
+ b36:	e0          	im -32
+ b37:	05          	add
+ b38:	52          	storesp 8
+ b39:	72          	loadsp 8
+ b3a:	72          	loadsp 8
+ b3b:	34          	storeb
+ b3c:	81          	im 1
+ b3d:	17          	addsp 28
+ b3e:	57          	storesp 28
+ b3f:	8b          	im 11
+ b40:	aa          	im 42
+ b41:	2d          	call
+ b42:	88          	im 8
+ b43:	08          	load
+ b44:	53          	storesp 12
+ b45:	78          	loadsp 32
+ b46:	c6          	im -58
+ b47:	38          	neqbranch
 
-00000b2e <___zpu_interrupt_vector>:
- b2e:	80          	im 0
- b2f:	3d          	pushspadd
- b30:	0d          	popsp
- b31:	88          	im 8
- b32:	08          	load
- b33:	8c          	im 12
- b34:	08          	load
- b35:	90          	im 16
- b36:	08          	load
- b37:	a0          	im 32
- b38:	80          	im 0
- b39:	08          	load
- b3a:	51          	storesp 4
- b3b:	70          	loadsp 0
- b3c:	2d          	call
- b3d:	90          	im 16
- b3e:	0c          	store
- b3f:	8c          	im 12
- b40:	0c          	store
- b41:	8a          	im 10
- b42:	0c          	store
- b43:	81          	im 1
- b44:	0b          	nop
- b45:	80          	im 0
- b46:	d0          	im -48
- b47:	0a          	flip
- b48:	0c          	store
- b49:	82          	im 2
- b4a:	3d          	pushspadd
- b4b:	0d          	popsp
- b4c:	04          	poppc
+00000b48 <.L245>:
+ b48:	88          	im 8
+ b49:	08          	load
+ b4a:	80          	im 0
+ b4b:	fe          	im -2
+ b4c:	2e          	eq
+ b4d:	09          	not
+ b4e:	81          	im 1
+ b4f:	06          	and
+ b50:	ff          	im -1
+ b51:	b0          	im 48
+ b52:	38          	neqbranch
+ b53:	78          	loadsp 32
+ b54:	57          	storesp 28
+ b55:	83          	im 3
+ b56:	ff          	im -1
+ b57:	ff          	im -1
+ b58:	7b          	loadsp 44
+ b59:	0c          	store
+ b5a:	81          	im 1
+ b5b:	77          	loadsp 28
+ b5c:	5b          	storesp 44
+ b5d:	59          	storesp 36
+ b5e:	ff          	im -1
+ b5f:	a2          	im 34
+ b60:	39          	poppcrel
 
-00000b4d <_premain>:
- b4d:	ff          	im -1
- b4e:	3d          	pushspadd
- b4f:	0d          	popsp
- b50:	80          	im 0
- b51:	52          	storesp 8
- b52:	80          	im 0
- b53:	51          	storesp 4
- b54:	93          	im 19
- b55:	ab          	im 43
- b56:	2d          	call
- b57:	83          	im 3
- b58:	3d          	pushspadd
- b59:	0d          	popsp
- b5a:	04          	poppc
-
-00000b5b <spi_copy>:
- b5b:	81          	im 1
- b5c:	ff          	im -1
- b5d:	f8          	im -8
- b5e:	0d          	popsp
- b5f:	8c          	im 12
- b60:	d5          	im -43
- b61:	04          	poppc
-
-00000b62 <start_sketch>:
- b62:	81          	im 1
+00000b61 <.L259>:
+ b61:	80          	im 0
+ b62:	59          	storesp 36
  b63:	ff          	im -1
- b64:	f8          	im -8
- b65:	0d          	popsp
- b66:	a0          	im 32
- b67:	88          	im 8
- b68:	04          	poppc
+ b64:	9d          	im 29
+ b65:	39          	poppcrel
 
-00000b69 <__divsi3>:
- b69:	fb          	im -5
- b6a:	3d          	pushspadd
- b6b:	0d          	popsp
- b6c:	77          	loadsp 28
- b6d:	79          	loadsp 36
- b6e:	55          	storesp 20
- b6f:	55          	storesp 20
- b70:	80          	im 0
- b71:	56          	storesp 24
- b72:	75          	loadsp 20
- b73:	75          	loadsp 20
- b74:	24          	lessthan
- b75:	ab          	im 43
- b76:	38          	neqbranch
- b77:	80          	im 0
- b78:	74          	loadsp 16
- b79:	24          	lessthan
- b7a:	9d          	im 29
- b7b:	38          	neqbranch
-
-00000b7c <.L4>:
- b7c:	80          	im 0
- b7d:	53          	storesp 12
- b7e:	73          	loadsp 12
- b7f:	52          	storesp 8
- b80:	74          	loadsp 16
- b81:	51          	storesp 4
- b82:	80          	im 0
- b83:	e1          	im -31
- b84:	3f          	callpcrel
- b85:	88          	im 8
- b86:	08          	load
- b87:	54          	storesp 16
- b88:	75          	loadsp 20
+00000b66 <.L272>:
+ b66:	76          	loadsp 24
+ b67:	80          	im 0
+ b68:	2e          	eq
+ b69:	ff          	im -1
+ b6a:	97          	im 23
+ b6b:	38          	neqbranch
+ b6c:	80          	im 0
+ b6d:	7c          	loadsp 48
+ b6e:	78          	loadsp 32
+ b6f:	58          	storesp 32
+ b70:	56          	storesp 24
+ b71:	59          	storesp 36
+ b72:	82          	im 2
+ b73:	77          	loadsp 28
+ b74:	27          	ulessthanorequal
+ b75:	ff          	im -1
+ b76:	8b          	im 11
+ b77:	38          	neqbranch
+ b78:	83          	im 3
+ b79:	ff          	im -1
+ b7a:	ff          	im -1
+ b7b:	7b          	loadsp 44
+ b7c:	0c          	store
+ b7d:	78          	loadsp 32
+ b7e:	fe          	im -2
+ b7f:	18          	addsp 32
+ b80:	53          	storesp 12
+ b81:	53          	storesp 12
+ b82:	78          	loadsp 32
+ b83:	72          	loadsp 8
+ b84:	27          	ulessthanorequal
+ b85:	98          	im 24
+ b86:	38          	neqbranch
+ b87:	80          	im 0
+ b88:	dc          	im -36
  b89:	80          	im 0
- b8a:	2e          	eq
- b8b:	85          	im 5
- b8c:	38          	neqbranch
- b8d:	88          	im 8
- b8e:	08          	load
- b8f:	30          	neg
- b90:	54          	storesp 16
+ b8a:	80          	im 0
+ b8b:	88          	im 8
+ b8c:	72          	loadsp 8
+ b8d:	55          	storesp 20
+ b8e:	58          	storesp 32
 
-00000b91 <.L6>:
- b91:	73          	loadsp 12
- b92:	88          	im 8
- b93:	0c          	store
- b94:	87          	im 7
- b95:	3d          	pushspadd
- b96:	0d          	popsp
- b97:	04          	poppc
+00000b8f <.L253>:
+ b8f:	72          	loadsp 8
+ b90:	15          	addsp 20
+ b91:	70          	loadsp 0
+ b92:	33          	loadb
+ b93:	79          	loadsp 36
+ b94:	0c          	store
+ b95:	52          	storesp 8
+ b96:	81          	im 1
+ b97:	13          	addsp 12
+ b98:	53          	storesp 12
+ b99:	73          	loadsp 12
+ b9a:	73          	loadsp 12
+ b9b:	26          	ulessthan
+ b9c:	f2          	im -14
+ b9d:	38          	neqbranch
 
-00000b98 <.L9>:
- b98:	73          	loadsp 12
- b99:	30          	neg
- b9a:	76          	loadsp 24
- b9b:	81          	im 1
- b9c:	32          	xor
- b9d:	57          	storesp 28
- b9e:	54          	storesp 16
- b9f:	dc          	im -36
- ba0:	39          	poppcrel
+00000b9e <.L266>:
+ b9e:	ff          	im -1
+ b9f:	16          	addsp 24
+ ba0:	75          	loadsp 20
+ ba1:	11          	addsp 4
+ ba2:	54          	storesp 16
+ ba3:	75          	loadsp 20
+ ba4:	05          	add
+ ba5:	ff          	im -1
+ ba6:	05          	add
+ ba7:	70          	loadsp 0
+ ba8:	33          	loadb
+ ba9:	74          	loadsp 16
+ baa:	33          	loadb
+ bab:	70          	loadsp 0
+ bac:	72          	loadsp 8
+ bad:	88          	im 8
+ bae:	2b          	ashiftleft
+ baf:	07          	or
+ bb0:	7e          	loadsp 56
+ bb1:	08          	load
+ bb2:	53          	storesp 12
+ bb3:	51          	storesp 4
+ bb4:	55          	storesp 20
+ bb5:	51          	storesp 4
+ bb6:	52          	storesp 8
+ bb7:	71          	loadsp 4
+ bb8:	73          	loadsp 12
+ bb9:	2e          	eq
+ bba:	09          	not
+ bbb:	81          	im 1
+ bbc:	06          	and
+ bbd:	fe          	im -2
+ bbe:	c3          	im -61
+ bbf:	38          	neqbranch
+ bc0:	74          	loadsp 16
+ bc1:	33          	loadb
+ bc2:	53          	storesp 12
+ bc3:	72          	loadsp 8
+ bc4:	8a          	im 10
+ bc5:	26          	ulessthan
+ bc6:	fe          	im -2
+ bc7:	ba          	im 58
+ bc8:	38          	neqbranch
+ bc9:	72          	loadsp 8
+ bca:	10          	addsp 0
+ bcb:	10          	addsp 0
+ bcc:	9d          	im 29
+ bcd:	e8          	im -24
+ bce:	05          	add
+ bcf:	75          	loadsp 20
+ bd0:	52          	storesp 8
+ bd1:	70          	loadsp 0
+ bd2:	08          	load
+ bd3:	51          	storesp 4
+ bd4:	52          	storesp 8
+ bd5:	71          	loadsp 4
+ bd6:	2d          	call
+ bd7:	fe          	im -2
+ bd8:	a9          	im 41
+ bd9:	39          	poppcrel
 
-00000ba1 <.L8>:
- ba1:	74          	loadsp 16
- ba2:	30          	neg
- ba3:	55          	storesp 20
- ba4:	81          	im 1
- ba5:	56          	storesp 24
- ba6:	73          	loadsp 12
- ba7:	80          	im 0
- ba8:	25          	lessthanorequal
- ba9:	d2          	im -46
- baa:	38          	neqbranch
- bab:	ec          	im -20
- bac:	39          	poppcrel
+00000bda <.L273>:
+ bda:	81          	im 1
+ bdb:	5a          	storesp 40
+ bdc:	fe          	im -2
+ bdd:	a4          	im 36
+ bde:	39          	poppcrel
 
-00000bad <__modsi3>:
- bad:	fa          	im -6
- bae:	3d          	pushspadd
- baf:	0d          	popsp
- bb0:	78          	loadsp 32
- bb1:	7a          	loadsp 40
- bb2:	57          	storesp 28
- bb3:	55          	storesp 20
- bb4:	80          	im 0
- bb5:	57          	storesp 28
- bb6:	76          	loadsp 24
- bb7:	75          	loadsp 20
- bb8:	24          	lessthan
- bb9:	a4          	im 36
- bba:	38          	neqbranch
+00000bdf <___zpu_interrupt_vector>:
+ bdf:	80          	im 0
+ be0:	3d          	pushspadd
+ be1:	0d          	popsp
+ be2:	88          	im 8
+ be3:	08          	load
+ be4:	8c          	im 12
+ be5:	08          	load
+ be6:	90          	im 16
+ be7:	08          	load
+ be8:	a0          	im 32
+ be9:	80          	im 0
+ bea:	08          	load
+ beb:	51          	storesp 4
+ bec:	70          	loadsp 0
+ bed:	2d          	call
+ bee:	90          	im 16
+ bef:	0c          	store
+ bf0:	8c          	im 12
+ bf1:	0c          	store
+ bf2:	8a          	im 10
+ bf3:	0c          	store
+ bf4:	81          	im 1
+ bf5:	0b          	nop
+ bf6:	80          	im 0
+ bf7:	d0          	im -48
+ bf8:	0a          	flip
+ bf9:	0c          	store
+ bfa:	82          	im 2
+ bfb:	3d          	pushspadd
+ bfc:	0d          	popsp
+ bfd:	04          	poppc
 
-00000bbb <.L11>:
- bbb:	75          	loadsp 20
- bbc:	9f          	im 31
- bbd:	2c          	ashiftright
- bbe:	54          	storesp 16
- bbf:	81          	im 1
- bc0:	53          	storesp 12
- bc1:	75          	loadsp 20
- bc2:	74          	loadsp 16
- bc3:	32          	xor
- bc4:	74          	loadsp 16
- bc5:	31          	sub
- bc6:	52          	storesp 8
- bc7:	74          	loadsp 16
- bc8:	51          	storesp 4
- bc9:	9b          	im 27
- bca:	3f          	callpcrel
- bcb:	88          	im 8
- bcc:	08          	load
- bcd:	54          	storesp 16
- bce:	76          	loadsp 24
- bcf:	80          	im 0
- bd0:	2e          	eq
- bd1:	85          	im 5
- bd2:	38          	neqbranch
- bd3:	88          	im 8
- bd4:	08          	load
- bd5:	30          	neg
- bd6:	54          	storesp 16
+00000bfe <_premain>:
+ bfe:	ff          	im -1
+ bff:	3d          	pushspadd
+ c00:	0d          	popsp
+ c01:	80          	im 0
+ c02:	52          	storesp 8
+ c03:	80          	im 0
+ c04:	51          	storesp 4
+ c05:	94          	im 20
+ c06:	db          	im -37
+ c07:	2d          	call
+ c08:	83          	im 3
+ c09:	3d          	pushspadd
+ c0a:	0d          	popsp
+ c0b:	04          	poppc
 
-00000bd7 <.L13>:
- bd7:	73          	loadsp 12
- bd8:	88          	im 8
- bd9:	0c          	store
- bda:	88          	im 8
- bdb:	3d          	pushspadd
- bdc:	0d          	popsp
- bdd:	04          	poppc
+00000c0c <spi_copy>:
+ c0c:	80          	im 0
+ c0d:	ff          	im -1
+ c0e:	f8          	im -8
+ c0f:	0d          	popsp
+ c10:	8c          	im 12
+ c11:	df          	im -33
+ c12:	04          	poppc
 
-00000bde <.L15>:
- bde:	74          	loadsp 16
- bdf:	30          	neg
- be0:	55          	storesp 20
- be1:	81          	im 1
- be2:	57          	storesp 28
- be3:	d7          	im -41
- be4:	39          	poppcrel
-
-00000be5 <udivmodsi4>:
- be5:	fc          	im -4
- be6:	3d          	pushspadd
- be7:	0d          	popsp
- be8:	76          	loadsp 24
- be9:	78          	loadsp 32
- bea:	53          	storesp 12
- beb:	54          	storesp 16
- bec:	81          	im 1
- bed:	53          	storesp 12
- bee:	80          	im 0
- bef:	74          	loadsp 16
- bf0:	73          	loadsp 12
- bf1:	26          	ulessthan
- bf2:	52          	storesp 8
- bf3:	55          	storesp 20
- bf4:	72          	loadsp 8
- bf5:	80          	im 0
- bf6:	2e          	eq
- bf7:	98          	im 24
- bf8:	38          	neqbranch
-
-00000bf9 <.L16>:
- bf9:	70          	loadsp 0
- bfa:	80          	im 0
- bfb:	2e          	eq
- bfc:	a9          	im 41
- bfd:	38          	neqbranch
- bfe:	80          	im 0
- bff:	72          	loadsp 8
- c00:	24          	lessthan
- c01:	a4          	im 36
- c02:	38          	neqbranch
- c03:	71          	loadsp 4
- c04:	10          	addsp 0
- c05:	73          	loadsp 12
- c06:	10          	addsp 0
- c07:	75          	loadsp 20
- c08:	72          	loadsp 8
- c09:	26          	ulessthan
- c0a:	53          	storesp 12
- c0b:	54          	storesp 16
- c0c:	52          	storesp 8
- c0d:	72          	loadsp 8
- c0e:	ea          	im -22
- c0f:	38          	neqbranch
-
-00000c10 <.L13>:
- c10:	73          	loadsp 12
- c11:	51          	storesp 4
- c12:	78          	loadsp 32
- c13:	83          	im 3
- c14:	38          	neqbranch
- c15:	74          	loadsp 16
- c16:	51          	storesp 4
-
-00000c17 <.L1>:
- c17:	70          	loadsp 0
+00000c13 <start_sketch>:
+ c13:	80          	im 0
+ c14:	ff          	im -1
+ c15:	f8          	im -8
+ c16:	0d          	popsp
+ c17:	a0          	im 32
  c18:	88          	im 8
- c19:	0c          	store
- c1a:	86          	im 6
+ c19:	04          	poppc
+
+00000c1a <__divsi3>:
+ c1a:	fb          	im -5
  c1b:	3d          	pushspadd
  c1c:	0d          	popsp
- c1d:	04          	poppc
+ c1d:	77          	loadsp 28
+ c1e:	79          	loadsp 36
+ c1f:	55          	storesp 20
+ c20:	55          	storesp 20
+ c21:	80          	im 0
+ c22:	56          	storesp 24
+ c23:	75          	loadsp 20
+ c24:	75          	loadsp 20
+ c25:	24          	lessthan
+ c26:	ab          	im 43
+ c27:	38          	neqbranch
+ c28:	80          	im 0
+ c29:	74          	loadsp 16
+ c2a:	24          	lessthan
+ c2b:	9d          	im 29
+ c2c:	38          	neqbranch
 
-00000c1e <.L9>:
- c1e:	72          	loadsp 8
- c1f:	81          	im 1
- c20:	2a          	lshiftright
- c21:	72          	loadsp 8
- c22:	81          	im 1
- c23:	2a          	lshiftright
- c24:	53          	storesp 12
- c25:	53          	storesp 12
+00000c2d <.L4>:
+ c2d:	80          	im 0
+ c2e:	53          	storesp 12
+ c2f:	73          	loadsp 12
+ c30:	52          	storesp 8
+ c31:	74          	loadsp 16
+ c32:	51          	storesp 4
+ c33:	80          	im 0
+ c34:	e1          	im -31
+ c35:	3f          	callpcrel
+ c36:	88          	im 8
+ c37:	08          	load
+ c38:	54          	storesp 16
+ c39:	75          	loadsp 20
+ c3a:	80          	im 0
+ c3b:	2e          	eq
+ c3c:	85          	im 5
+ c3d:	38          	neqbranch
+ c3e:	88          	im 8
+ c3f:	08          	load
+ c40:	30          	neg
+ c41:	54          	storesp 16
 
-00000c26 <.L3>:
- c26:	72          	loadsp 8
- c27:	80          	im 0
- c28:	2e          	eq
- c29:	e6          	im -26
- c2a:	38          	neqbranch
- c2b:	71          	loadsp 4
- c2c:	74          	loadsp 16
- c2d:	26          	ulessthan
- c2e:	ef          	im -17
- c2f:	38          	neqbranch
- c30:	73          	loadsp 12
- c31:	72          	loadsp 8
- c32:	31          	sub
- c33:	75          	loadsp 20
- c34:	74          	loadsp 16
- c35:	07          	or
- c36:	74          	loadsp 16
- c37:	81          	im 1
- c38:	2a          	lshiftright
- c39:	74          	loadsp 16
- c3a:	81          	im 1
- c3b:	2a          	lshiftright
- c3c:	55          	storesp 20
- c3d:	55          	storesp 20
- c3e:	56          	storesp 24
- c3f:	54          	storesp 16
- c40:	e5          	im -27
- c41:	39          	poppcrel
+00000c42 <.L6>:
+ c42:	73          	loadsp 12
+ c43:	88          	im 8
+ c44:	0c          	store
+ c45:	87          	im 7
+ c46:	3d          	pushspadd
+ c47:	0d          	popsp
+ c48:	04          	poppc
 
-00000c42 <memcpy>:
- c42:	fc          	im -4
- c43:	3d          	pushspadd
- c44:	0d          	popsp
- c45:	76          	loadsp 24
+00000c49 <.L9>:
+ c49:	73          	loadsp 12
+ c4a:	30          	neg
+ c4b:	76          	loadsp 24
+ c4c:	81          	im 1
+ c4d:	32          	xor
+ c4e:	57          	storesp 28
+ c4f:	54          	storesp 16
+ c50:	dc          	im -36
+ c51:	39          	poppcrel
 
-00000c46 <.LM2>:
- c46:	70          	loadsp 0
+00000c52 <.L8>:
+ c52:	74          	loadsp 16
+ c53:	30          	neg
+ c54:	55          	storesp 20
+ c55:	81          	im 1
+ c56:	56          	storesp 24
+ c57:	73          	loadsp 12
+ c58:	80          	im 0
+ c59:	25          	lessthanorequal
+ c5a:	d2          	im -46
+ c5b:	38          	neqbranch
+ c5c:	ec          	im -20
+ c5d:	39          	poppcrel
 
-00000c47 <.LM3>:
- c47:	79          	loadsp 36
+00000c5e <__modsi3>:
+ c5e:	fa          	im -6
+ c5f:	3d          	pushspadd
+ c60:	0d          	popsp
+ c61:	78          	loadsp 32
+ c62:	7a          	loadsp 40
+ c63:	57          	storesp 28
+ c64:	55          	storesp 20
+ c65:	80          	im 0
+ c66:	57          	storesp 28
+ c67:	76          	loadsp 24
+ c68:	75          	loadsp 20
+ c69:	24          	lessthan
+ c6a:	a4          	im 36
+ c6b:	38          	neqbranch
 
-00000c48 <.LM4>:
- c48:	7b          	loadsp 44
- c49:	55          	storesp 20
- c4a:	55          	storesp 20
- c4b:	55          	storesp 20
- c4c:	55          	storesp 20
+00000c6c <.L11>:
+ c6c:	75          	loadsp 20
+ c6d:	9f          	im 31
+ c6e:	2c          	ashiftright
+ c6f:	54          	storesp 16
+ c70:	81          	im 1
+ c71:	53          	storesp 12
+ c72:	75          	loadsp 20
+ c73:	74          	loadsp 16
+ c74:	32          	xor
+ c75:	74          	loadsp 16
+ c76:	31          	sub
+ c77:	52          	storesp 8
+ c78:	74          	loadsp 16
+ c79:	51          	storesp 4
+ c7a:	9b          	im 27
+ c7b:	3f          	callpcrel
+ c7c:	88          	im 8
+ c7d:	08          	load
+ c7e:	54          	storesp 16
+ c7f:	76          	loadsp 24
+ c80:	80          	im 0
+ c81:	2e          	eq
+ c82:	85          	im 5
+ c83:	38          	neqbranch
+ c84:	88          	im 8
+ c85:	08          	load
+ c86:	30          	neg
+ c87:	54          	storesp 16
 
-00000c4d <.LM5>:
- c4d:	8f          	im 15
- c4e:	72          	loadsp 8
- c4f:	27          	ulessthanorequal
- c50:	8c          	im 12
- c51:	38          	neqbranch
- c52:	72          	loadsp 8
- c53:	75          	loadsp 20
- c54:	07          	or
- c55:	83          	im 3
- c56:	06          	and
- c57:	51          	storesp 4
- c58:	70          	loadsp 0
- c59:	80          	im 0
- c5a:	2e          	eq
- c5b:	a7          	im 39
- c5c:	38          	neqbranch
+00000c88 <.L13>:
+ c88:	73          	loadsp 12
+ c89:	88          	im 8
+ c8a:	0c          	store
+ c8b:	88          	im 8
+ c8c:	3d          	pushspadd
+ c8d:	0d          	popsp
+ c8e:	04          	poppc
 
-00000c5d <.L2>:
- c5d:	ff          	im -1
- c5e:	12          	addsp 8
- c5f:	52          	storesp 8
- c60:	71          	loadsp 4
- c61:	ff          	im -1
- c62:	2e          	eq
- c63:	98          	im 24
- c64:	38          	neqbranch
+00000c8f <.L15>:
+ c8f:	74          	loadsp 16
+ c90:	30          	neg
+ c91:	55          	storesp 20
+ c92:	81          	im 1
+ c93:	57          	storesp 28
+ c94:	d7          	im -41
+ c95:	39          	poppcrel
 
-00000c65 <.L21>:
- c65:	72          	loadsp 8
- c66:	70          	loadsp 0
- c67:	81          	im 1
- c68:	05          	add
- c69:	54          	storesp 16
- c6a:	33          	loadb
- c6b:	74          	loadsp 16
- c6c:	70          	loadsp 0
- c6d:	81          	im 1
- c6e:	05          	add
- c6f:	56          	storesp 24
- c70:	34          	storeb
- c71:	ff          	im -1
- c72:	12          	addsp 8
- c73:	52          	storesp 8
- c74:	71          	loadsp 4
- c75:	ff          	im -1
- c76:	2e          	eq
- c77:	09          	not
- c78:	81          	im 1
- c79:	06          	and
- c7a:	ea          	im -22
- c7b:	38          	neqbranch
-
-00000c7c <.L17>:
- c7c:	74          	loadsp 16
- c7d:	88          	im 8
- c7e:	0c          	store
- c7f:	86          	im 6
- c80:	3d          	pushspadd
- c81:	0d          	popsp
- c82:	04          	poppc
-
-00000c83 <.L20>:
- c83:	74          	loadsp 16
- c84:	51          	storesp 4
-
-00000c85 <.L5>:
- c85:	72          	loadsp 8
- c86:	70          	loadsp 0
- c87:	84          	im 4
- c88:	05          	add
- c89:	54          	storesp 16
- c8a:	08          	load
- c8b:	71          	loadsp 4
- c8c:	70          	loadsp 0
- c8d:	84          	im 4
- c8e:	05          	add
- c8f:	53          	storesp 12
- c90:	0c          	store
-
-00000c91 <.LM10>:
- c91:	72          	loadsp 8
- c92:	70          	loadsp 0
- c93:	84          	im 4
- c94:	05          	add
- c95:	54          	storesp 16
- c96:	08          	load
- c97:	71          	loadsp 4
- c98:	70          	loadsp 0
- c99:	84          	im 4
- c9a:	05          	add
+00000c96 <udivmodsi4>:
+ c96:	fc          	im -4
+ c97:	3d          	pushspadd
+ c98:	0d          	popsp
+ c99:	76          	loadsp 24
+ c9a:	78          	loadsp 32
  c9b:	53          	storesp 12
- c9c:	0c          	store
+ c9c:	54          	storesp 16
+ c9d:	81          	im 1
+ c9e:	53          	storesp 12
+ c9f:	80          	im 0
+ ca0:	74          	loadsp 16
+ ca1:	73          	loadsp 12
+ ca2:	26          	ulessthan
+ ca3:	52          	storesp 8
+ ca4:	55          	storesp 20
+ ca5:	72          	loadsp 8
+ ca6:	80          	im 0
+ ca7:	2e          	eq
+ ca8:	98          	im 24
+ ca9:	38          	neqbranch
 
-00000c9d <.LM11>:
- c9d:	72          	loadsp 8
- c9e:	70          	loadsp 0
- c9f:	84          	im 4
- ca0:	05          	add
- ca1:	54          	storesp 16
- ca2:	08          	load
- ca3:	71          	loadsp 4
- ca4:	70          	loadsp 0
- ca5:	84          	im 4
- ca6:	05          	add
- ca7:	53          	storesp 12
- ca8:	0c          	store
-
-00000ca9 <.LM12>:
- ca9:	72          	loadsp 8
+00000caa <.L16>:
  caa:	70          	loadsp 0
- cab:	84          	im 4
- cac:	05          	add
- cad:	54          	storesp 16
- cae:	08          	load
- caf:	71          	loadsp 4
- cb0:	70          	loadsp 0
- cb1:	84          	im 4
- cb2:	05          	add
- cb3:	53          	storesp 12
- cb4:	0c          	store
-
-00000cb5 <.LM13>:
- cb5:	f0          	im -16
- cb6:	12          	addsp 8
- cb7:	52          	storesp 8
- cb8:	71          	loadsp 4
- cb9:	8f          	im 15
+ cab:	80          	im 0
+ cac:	2e          	eq
+ cad:	a9          	im 41
+ cae:	38          	neqbranch
+ caf:	80          	im 0
+ cb0:	72          	loadsp 8
+ cb1:	24          	lessthan
+ cb2:	a4          	im 36
+ cb3:	38          	neqbranch
+ cb4:	71          	loadsp 4
+ cb5:	10          	addsp 0
+ cb6:	73          	loadsp 12
+ cb7:	10          	addsp 0
+ cb8:	75          	loadsp 20
+ cb9:	72          	loadsp 8
  cba:	26          	ulessthan
- cbb:	c9          	im -55
- cbc:	38          	neqbranch
-
-00000cbd <.LM14>:
- cbd:	83          	im 3
+ cbb:	53          	storesp 12
+ cbc:	54          	storesp 16
+ cbd:	52          	storesp 8
  cbe:	72          	loadsp 8
- cbf:	27          	ulessthanorequal
- cc0:	95          	im 21
- cc1:	38          	neqbranch
+ cbf:	ea          	im -22
+ cc0:	38          	neqbranch
 
-00000cc2 <.L22>:
- cc2:	72          	loadsp 8
- cc3:	70          	loadsp 0
- cc4:	84          	im 4
- cc5:	05          	add
- cc6:	54          	storesp 16
- cc7:	08          	load
- cc8:	71          	loadsp 4
- cc9:	70          	loadsp 0
- cca:	84          	im 4
- ccb:	05          	add
- ccc:	53          	storesp 12
- ccd:	0c          	store
+00000cc1 <.L13>:
+ cc1:	73          	loadsp 12
+ cc2:	51          	storesp 4
+ cc3:	78          	loadsp 32
+ cc4:	83          	im 3
+ cc5:	38          	neqbranch
+ cc6:	74          	loadsp 16
+ cc7:	51          	storesp 4
 
-00000cce <.LM16>:
- cce:	fc          	im -4
- ccf:	12          	addsp 8
- cd0:	52          	storesp 8
- cd1:	71          	loadsp 4
- cd2:	83          	im 3
- cd3:	26          	ulessthan
- cd4:	ed          	im -19
- cd5:	38          	neqbranch
+00000cc8 <.L1>:
+ cc8:	70          	loadsp 0
+ cc9:	88          	im 8
+ cca:	0c          	store
+ ccb:	86          	im 6
+ ccc:	3d          	pushspadd
+ ccd:	0d          	popsp
+ cce:	04          	poppc
 
-00000cd6 <.L15>:
- cd6:	70          	loadsp 0
- cd7:	54          	storesp 16
- cd8:	ff          	im -1
- cd9:	83          	im 3
- cda:	39          	poppcrel
+00000ccf <.L9>:
+ ccf:	72          	loadsp 8
+ cd0:	81          	im 1
+ cd1:	2a          	lshiftright
+ cd2:	72          	loadsp 8
+ cd3:	81          	im 1
+ cd4:	2a          	lshiftright
+ cd5:	53          	storesp 12
+ cd6:	53          	storesp 12
 
-00000cdb <memset>:
- cdb:	fc          	im -4
- cdc:	3d          	pushspadd
- cdd:	0d          	popsp
- cde:	76          	loadsp 24
- cdf:	79          	loadsp 36
+00000cd7 <.L3>:
+ cd7:	72          	loadsp 8
+ cd8:	80          	im 0
+ cd9:	2e          	eq
+ cda:	e6          	im -26
+ cdb:	38          	neqbranch
+ cdc:	71          	loadsp 4
+ cdd:	74          	loadsp 16
+ cde:	26          	ulessthan
+ cdf:	ef          	im -17
+ ce0:	38          	neqbranch
+ ce1:	73          	loadsp 12
+ ce2:	72          	loadsp 8
+ ce3:	31          	sub
+ ce4:	75          	loadsp 20
+ ce5:	74          	loadsp 16
+ ce6:	07          	or
+ ce7:	74          	loadsp 16
+ ce8:	81          	im 1
+ ce9:	2a          	lshiftright
+ cea:	74          	loadsp 16
+ ceb:	81          	im 1
+ cec:	2a          	lshiftright
+ ced:	55          	storesp 20
+ cee:	55          	storesp 20
+ cef:	56          	storesp 24
+ cf0:	54          	storesp 16
+ cf1:	e5          	im -27
+ cf2:	39          	poppcrel
 
-00000ce0 <.LM2>:
- ce0:	71          	loadsp 4
+00000cf3 <memcpy>:
+ cf3:	fc          	im -4
+ cf4:	3d          	pushspadd
+ cf5:	0d          	popsp
+ cf6:	76          	loadsp 24
 
-00000ce1 <.LM3>:
- ce1:	02          	pushsp
- ce2:	8c          	im 12
- ce3:	05          	add
- ce4:	9f          	im 31
- ce5:	05          	add
- ce6:	33          	loadb
- ce7:	57          	storesp 28
- ce8:	55          	storesp 20
- ce9:	53          	storesp 12
- cea:	55          	storesp 20
+00000cf7 <.LM2>:
+ cf7:	70          	loadsp 0
 
-00000ceb <.LM4>:
- ceb:	83          	im 3
- cec:	72          	loadsp 8
- ced:	27          	ulessthanorequal
- cee:	8a          	im 10
- cef:	38          	neqbranch
- cf0:	74          	loadsp 16
- cf1:	83          	im 3
- cf2:	06          	and
- cf3:	51          	storesp 4
- cf4:	70          	loadsp 0
- cf5:	80          	im 0
- cf6:	2e          	eq
- cf7:	a2          	im 34
- cf8:	38          	neqbranch
+00000cf8 <.LM3>:
+ cf8:	79          	loadsp 36
 
-00000cf9 <.L2>:
- cf9:	ff          	im -1
- cfa:	12          	addsp 8
- cfb:	52          	storesp 8
- cfc:	71          	loadsp 4
- cfd:	ff          	im -1
- cfe:	2e          	eq
- cff:	93          	im 19
- d00:	38          	neqbranch
+00000cf9 <.LM4>:
+ cf9:	7b          	loadsp 44
+ cfa:	55          	storesp 20
+ cfb:	55          	storesp 20
+ cfc:	55          	storesp 20
+ cfd:	55          	storesp 20
 
-00000d01 <.L27>:
- d01:	73          	loadsp 12
- d02:	73          	loadsp 12
- d03:	70          	loadsp 0
- d04:	81          	im 1
- d05:	05          	add
- d06:	55          	storesp 20
- d07:	34          	storeb
- d08:	ff          	im -1
- d09:	12          	addsp 8
- d0a:	52          	storesp 8
- d0b:	71          	loadsp 4
- d0c:	ff          	im -1
- d0d:	2e          	eq
- d0e:	09          	not
- d0f:	81          	im 1
- d10:	06          	and
- d11:	ef          	im -17
- d12:	38          	neqbranch
+00000cfe <.LM5>:
+ cfe:	8f          	im 15
+ cff:	72          	loadsp 8
+ d00:	27          	ulessthanorequal
+ d01:	8c          	im 12
+ d02:	38          	neqbranch
+ d03:	72          	loadsp 8
+ d04:	75          	loadsp 20
+ d05:	07          	or
+ d06:	83          	im 3
+ d07:	06          	and
+ d08:	51          	storesp 4
+ d09:	70          	loadsp 0
+ d0a:	80          	im 0
+ d0b:	2e          	eq
+ d0c:	a7          	im 39
+ d0d:	38          	neqbranch
 
-00000d13 <.L23>:
- d13:	74          	loadsp 16
- d14:	88          	im 8
- d15:	0c          	store
- d16:	86          	im 6
- d17:	3d          	pushspadd
- d18:	0d          	popsp
- d19:	04          	poppc
+00000d0e <.L2>:
+ d0e:	ff          	im -1
+ d0f:	12          	addsp 8
+ d10:	52          	storesp 8
+ d11:	71          	loadsp 4
+ d12:	ff          	im -1
+ d13:	2e          	eq
+ d14:	98          	im 24
+ d15:	38          	neqbranch
 
-00000d1a <.L26>:
- d1a:	74          	loadsp 16
-
-00000d1b <.LM8>:
- d1b:	74          	loadsp 16
- d1c:	88          	im 8
- d1d:	2b          	ashiftleft
- d1e:	75          	loadsp 20
- d1f:	07          	or
-
-00000d20 <.LM9>:
- d20:	70          	loadsp 0
- d21:	71          	loadsp 4
- d22:	90          	im 16
- d23:	2b          	ashiftleft
- d24:	07          	or
- d25:	51          	storesp 4
- d26:	54          	storesp 16
- d27:	51          	storesp 4
-
-00000d28 <.LM10>:
- d28:	8f          	im 15
- d29:	72          	loadsp 8
- d2a:	27          	ulessthanorequal
- d2b:	a5          	im 37
+00000d16 <.L21>:
+ d16:	72          	loadsp 8
+ d17:	70          	loadsp 0
+ d18:	81          	im 1
+ d19:	05          	add
+ d1a:	54          	storesp 16
+ d1b:	33          	loadb
+ d1c:	74          	loadsp 16
+ d1d:	70          	loadsp 0
+ d1e:	81          	im 1
+ d1f:	05          	add
+ d20:	56          	storesp 24
+ d21:	34          	storeb
+ d22:	ff          	im -1
+ d23:	12          	addsp 8
+ d24:	52          	storesp 8
+ d25:	71          	loadsp 4
+ d26:	ff          	im -1
+ d27:	2e          	eq
+ d28:	09          	not
+ d29:	81          	im 1
+ d2a:	06          	and
+ d2b:	ea          	im -22
  d2c:	38          	neqbranch
 
-00000d2d <.L28>:
- d2d:	72          	loadsp 8
- d2e:	71          	loadsp 4
- d2f:	70          	loadsp 0
- d30:	84          	im 4
- d31:	05          	add
- d32:	53          	storesp 12
- d33:	0c          	store
+00000d2d <.L17>:
+ d2d:	74          	loadsp 16
+ d2e:	88          	im 8
+ d2f:	0c          	store
+ d30:	86          	im 6
+ d31:	3d          	pushspadd
+ d32:	0d          	popsp
+ d33:	04          	poppc
 
-00000d34 <.LM12>:
- d34:	72          	loadsp 8
- d35:	71          	loadsp 4
- d36:	70          	loadsp 0
- d37:	84          	im 4
- d38:	05          	add
- d39:	53          	storesp 12
- d3a:	0c          	store
+00000d34 <.L20>:
+ d34:	74          	loadsp 16
+ d35:	51          	storesp 4
 
-00000d3b <.LM13>:
- d3b:	72          	loadsp 8
+00000d36 <.L5>:
+ d36:	72          	loadsp 8
+ d37:	70          	loadsp 0
+ d38:	84          	im 4
+ d39:	05          	add
+ d3a:	54          	storesp 16
+ d3b:	08          	load
  d3c:	71          	loadsp 4
  d3d:	70          	loadsp 0
  d3e:	84          	im 4
@@ -3164,457 +3128,678 @@ Disassembly of section .text:
  d40:	53          	storesp 12
  d41:	0c          	store
 
-00000d42 <.LM14>:
+00000d42 <.LM10>:
  d42:	72          	loadsp 8
- d43:	71          	loadsp 4
- d44:	70          	loadsp 0
- d45:	84          	im 4
- d46:	05          	add
- d47:	53          	storesp 12
- d48:	0c          	store
+ d43:	70          	loadsp 0
+ d44:	84          	im 4
+ d45:	05          	add
+ d46:	54          	storesp 16
+ d47:	08          	load
+ d48:	71          	loadsp 4
+ d49:	70          	loadsp 0
+ d4a:	84          	im 4
+ d4b:	05          	add
+ d4c:	53          	storesp 12
+ d4d:	0c          	store
 
-00000d49 <.LM15>:
- d49:	f0          	im -16
- d4a:	12          	addsp 8
- d4b:	52          	storesp 8
- d4c:	71          	loadsp 4
- d4d:	8f          	im 15
- d4e:	26          	ulessthan
- d4f:	dd          	im -35
- d50:	38          	neqbranch
+00000d4e <.LM11>:
+ d4e:	72          	loadsp 8
+ d4f:	70          	loadsp 0
+ d50:	84          	im 4
+ d51:	05          	add
+ d52:	54          	storesp 16
+ d53:	08          	load
+ d54:	71          	loadsp 4
+ d55:	70          	loadsp 0
+ d56:	84          	im 4
+ d57:	05          	add
+ d58:	53          	storesp 12
+ d59:	0c          	store
 
-00000d51 <.L19>:
- d51:	83          	im 3
- d52:	72          	loadsp 8
- d53:	27          	ulessthanorequal
- d54:	90          	im 16
- d55:	38          	neqbranch
-
-00000d56 <.L29>:
- d56:	72          	loadsp 8
- d57:	71          	loadsp 4
- d58:	70          	loadsp 0
- d59:	84          	im 4
- d5a:	05          	add
- d5b:	53          	storesp 12
- d5c:	0c          	store
-
-00000d5d <.LM18>:
- d5d:	fc          	im -4
- d5e:	12          	addsp 8
- d5f:	52          	storesp 8
+00000d5a <.LM12>:
+ d5a:	72          	loadsp 8
+ d5b:	70          	loadsp 0
+ d5c:	84          	im 4
+ d5d:	05          	add
+ d5e:	54          	storesp 16
+ d5f:	08          	load
  d60:	71          	loadsp 4
- d61:	83          	im 3
- d62:	26          	ulessthan
- d63:	f2          	im -14
- d64:	38          	neqbranch
+ d61:	70          	loadsp 0
+ d62:	84          	im 4
+ d63:	05          	add
+ d64:	53          	storesp 12
+ d65:	0c          	store
 
-00000d65 <.L21>:
- d65:	70          	loadsp 0
- d66:	53          	storesp 12
- d67:	ff          	im -1
- d68:	90          	im 16
- d69:	39          	poppcrel
+00000d66 <.LM13>:
+ d66:	f0          	im -16
+ d67:	12          	addsp 8
+ d68:	52          	storesp 8
+ d69:	71          	loadsp 4
+ d6a:	8f          	im 15
+ d6b:	26          	ulessthan
+ d6c:	c9          	im -55
+ d6d:	38          	neqbranch
 
-00000d6a <strcmp>:
- d6a:	fb          	im -5
- d6b:	3d          	pushspadd
- d6c:	0d          	popsp
- d6d:	77          	loadsp 28
- d6e:	79          	loadsp 36
+00000d6e <.LM14>:
+ d6e:	83          	im 3
+ d6f:	72          	loadsp 8
+ d70:	27          	ulessthanorequal
+ d71:	95          	im 21
+ d72:	38          	neqbranch
 
-00000d6f <.LM2>:
- d6f:	70          	loadsp 0
- d70:	72          	loadsp 8
- d71:	07          	or
- d72:	83          	im 3
- d73:	06          	and
- d74:	53          	storesp 12
- d75:	54          	storesp 16
- d76:	52          	storesp 8
- d77:	70          	loadsp 0
- d78:	93          	im 19
- d79:	38          	neqbranch
+00000d73 <.L22>:
+ d73:	72          	loadsp 8
+ d74:	70          	loadsp 0
+ d75:	84          	im 4
+ d76:	05          	add
+ d77:	54          	storesp 16
+ d78:	08          	load
+ d79:	71          	loadsp 4
+ d7a:	70          	loadsp 0
+ d7b:	84          	im 4
+ d7c:	05          	add
+ d7d:	53          	storesp 12
+ d7e:	0c          	store
 
-00000d7a <.LM3>:
- d7a:	71          	loadsp 4
+00000d7f <.LM16>:
+ d7f:	fc          	im -4
+ d80:	12          	addsp 8
+ d81:	52          	storesp 8
+ d82:	71          	loadsp 4
+ d83:	83          	im 3
+ d84:	26          	ulessthan
+ d85:	ed          	im -19
+ d86:	38          	neqbranch
 
-00000d7b <.LM4>:
- d7b:	73          	loadsp 12
+00000d87 <.L15>:
+ d87:	70          	loadsp 0
+ d88:	54          	storesp 16
+ d89:	ff          	im -1
+ d8a:	83          	im 3
+ d8b:	39          	poppcrel
 
-00000d7c <.LM5>:
- d7c:	73          	loadsp 12
- d7d:	08          	load
- d7e:	54          	storesp 16
- d7f:	56          	storesp 24
- d80:	54          	storesp 16
- d81:	71          	loadsp 4
- d82:	73          	loadsp 12
- d83:	08          	load
- d84:	2e          	eq
- d85:	80          	im 0
- d86:	c4          	im -60
- d87:	38          	neqbranch
+00000d8c <memset>:
+ d8c:	fc          	im -4
+ d8d:	3d          	pushspadd
+ d8e:	0d          	popsp
+ d8f:	76          	loadsp 24
+ d90:	79          	loadsp 36
 
-00000d88 <.LM6>:
- d88:	73          	loadsp 12
+00000d91 <.LM2>:
+ d91:	71          	loadsp 4
 
-00000d89 <.LM7>:
- d89:	75          	loadsp 20
- d8a:	54          	storesp 16
- d8b:	52          	storesp 8
-
-00000d8c <.L2>:
- d8c:	71          	loadsp 4
- d8d:	33          	loadb
- d8e:	70          	loadsp 0
- d8f:	81          	im 1
- d90:	ff          	im -1
- d91:	06          	and
- d92:	52          	storesp 8
- d93:	54          	storesp 16
- d94:	70          	loadsp 0
- d95:	80          	im 0
- d96:	2e          	eq
- d97:	9d          	im 29
- d98:	38          	neqbranch
-
-00000d99 <.L18>:
- d99:	72          	loadsp 8
- d9a:	33          	loadb
+00000d92 <.LM3>:
+ d92:	02          	pushsp
+ d93:	8c          	im 12
+ d94:	05          	add
+ d95:	9f          	im 31
+ d96:	05          	add
+ d97:	33          	loadb
+ d98:	57          	storesp 28
+ d99:	55          	storesp 20
+ d9a:	53          	storesp 12
  d9b:	55          	storesp 20
- d9c:	70          	loadsp 0
- d9d:	75          	loadsp 20
- d9e:	2e          	eq
- d9f:	09          	not
- da0:	81          	im 1
- da1:	06          	and
- da2:	95          	im 21
- da3:	38          	neqbranch
 
-00000da4 <.LM9>:
- da4:	81          	im 1
- da5:	12          	addsp 8
+00000d9c <.LM4>:
+ d9c:	83          	im 3
+ d9d:	72          	loadsp 8
+ d9e:	27          	ulessthanorequal
+ d9f:	8a          	im 10
+ da0:	38          	neqbranch
+ da1:	74          	loadsp 16
+ da2:	83          	im 3
+ da3:	06          	and
+ da4:	51          	storesp 4
+ da5:	70          	loadsp 0
+ da6:	80          	im 0
+ da7:	2e          	eq
+ da8:	a2          	im 34
+ da9:	38          	neqbranch
 
-00000da6 <.LM10>:
- da6:	81          	im 1
- da7:	14          	addsp 16
- da8:	71          	loadsp 4
- da9:	33          	loadb
- daa:	70          	loadsp 0
- dab:	81          	im 1
- dac:	ff          	im -1
- dad:	06          	and
- dae:	54          	storesp 16
- daf:	56          	storesp 24
- db0:	54          	storesp 16
- db1:	52          	storesp 8
- db2:	70          	loadsp 0
- db3:	e5          	im -27
- db4:	38          	neqbranch
+00000daa <.L2>:
+ daa:	ff          	im -1
+ dab:	12          	addsp 8
+ dac:	52          	storesp 8
+ dad:	71          	loadsp 4
+ dae:	ff          	im -1
+ daf:	2e          	eq
+ db0:	93          	im 19
+ db1:	38          	neqbranch
 
-00000db5 <.L14>:
- db5:	72          	loadsp 8
- db6:	33          	loadb
+00000db2 <.L27>:
+ db2:	73          	loadsp 12
+ db3:	73          	loadsp 12
+ db4:	70          	loadsp 0
+ db5:	81          	im 1
+ db6:	05          	add
  db7:	55          	storesp 20
+ db8:	34          	storeb
+ db9:	ff          	im -1
+ dba:	12          	addsp 8
+ dbb:	52          	storesp 8
+ dbc:	71          	loadsp 4
+ dbd:	ff          	im -1
+ dbe:	2e          	eq
+ dbf:	09          	not
+ dc0:	81          	im 1
+ dc1:	06          	and
+ dc2:	ef          	im -17
+ dc3:	38          	neqbranch
 
-00000db8 <.L8>:
- db8:	73          	loadsp 12
- db9:	81          	im 1
- dba:	ff          	im -1
- dbb:	06          	and
- dbc:	75          	loadsp 20
- dbd:	81          	im 1
- dbe:	ff          	im -1
- dbf:	06          	and
- dc0:	71          	loadsp 4
- dc1:	71          	loadsp 4
- dc2:	31          	sub
-
-00000dc3 <.LM12>:
- dc3:	88          	im 8
- dc4:	0c          	store
- dc5:	52          	storesp 8
- dc6:	52          	storesp 8
- dc7:	87          	im 7
+00000dc4 <.L23>:
+ dc4:	74          	loadsp 16
+ dc5:	88          	im 8
+ dc6:	0c          	store
+ dc7:	86          	im 6
  dc8:	3d          	pushspadd
  dc9:	0d          	popsp
  dca:	04          	poppc
 
-00000dcb <.L6>:
- dcb:	71          	loadsp 4
- dcc:	09          	not
- dcd:	70          	loadsp 0
- dce:	f7          	im -9
- dcf:	fb          	im -5
- dd0:	fd          	im -3
- dd1:	ff          	im -1
- dd2:	14          	addsp 16
- dd3:	06          	and
- dd4:	70          	loadsp 0
- dd5:	f8          	im -8
- dd6:	84          	im 4
- dd7:	82          	im 2
- dd8:	81          	im 1
- dd9:	80          	im 0
- dda:	06          	and
- ddb:	51          	storesp 4
- ddc:	51          	storesp 4
- ddd:	51          	storesp 4
- dde:	70          	loadsp 0
- ddf:	97          	im 23
- de0:	38          	neqbranch
+00000dcb <.L26>:
+ dcb:	74          	loadsp 16
 
-00000de1 <.LM14>:
+00000dcc <.LM8>:
+ dcc:	74          	loadsp 16
+ dcd:	88          	im 8
+ dce:	2b          	ashiftleft
+ dcf:	75          	loadsp 20
+ dd0:	07          	or
+
+00000dd1 <.LM9>:
+ dd1:	70          	loadsp 0
+ dd2:	71          	loadsp 4
+ dd3:	90          	im 16
+ dd4:	2b          	ashiftleft
+ dd5:	07          	or
+ dd6:	51          	storesp 4
+ dd7:	54          	storesp 16
+ dd8:	51          	storesp 4
+
+00000dd9 <.LM10>:
+ dd9:	8f          	im 15
+ dda:	72          	loadsp 8
+ ddb:	27          	ulessthanorequal
+ ddc:	a5          	im 37
+ ddd:	38          	neqbranch
+
+00000dde <.L28>:
+ dde:	72          	loadsp 8
+ ddf:	71          	loadsp 4
+ de0:	70          	loadsp 0
  de1:	84          	im 4
- de2:	14          	addsp 16
+ de2:	05          	add
+ de3:	53          	storesp 12
+ de4:	0c          	store
 
-00000de3 <.LM15>:
- de3:	84          	im 4
- de4:	16          	addsp 24
- de5:	71          	loadsp 4
- de6:	08          	load
- de7:	54          	storesp 16
- de8:	56          	storesp 24
- de9:	54          	storesp 16
- dea:	71          	loadsp 4
- deb:	75          	loadsp 20
- dec:	08          	load
- ded:	2e          	eq
- dee:	dc          	im -36
- def:	38          	neqbranch
+00000de5 <.LM12>:
+ de5:	72          	loadsp 8
+ de6:	71          	loadsp 4
+ de7:	70          	loadsp 0
+ de8:	84          	im 4
+ de9:	05          	add
+ dea:	53          	storesp 12
+ deb:	0c          	store
 
-00000df0 <.LM16>:
- df0:	73          	loadsp 12
+00000dec <.LM13>:
+ dec:	72          	loadsp 8
+ ded:	71          	loadsp 4
+ dee:	70          	loadsp 0
+ def:	84          	im 4
+ df0:	05          	add
+ df1:	53          	storesp 12
+ df2:	0c          	store
 
-00000df1 <.LM17>:
- df1:	75          	loadsp 20
- df2:	54          	storesp 16
- df3:	52          	storesp 8
- df4:	ff          	im -1
- df5:	96          	im 22
- df6:	39          	poppcrel
+00000df3 <.LM14>:
+ df3:	72          	loadsp 8
+ df4:	71          	loadsp 4
+ df5:	70          	loadsp 0
+ df6:	84          	im 4
+ df7:	05          	add
+ df8:	53          	storesp 12
+ df9:	0c          	store
 
-00000df7 <.L15>:
- df7:	80          	im 0
+00000dfa <.LM15>:
+ dfa:	f0          	im -16
+ dfb:	12          	addsp 8
+ dfc:	52          	storesp 8
+ dfd:	71          	loadsp 4
+ dfe:	8f          	im 15
+ dff:	26          	ulessthan
+ e00:	dd          	im -35
+ e01:	38          	neqbranch
 
-00000df8 <.LM19>:
- df8:	0b          	nop
- df9:	88          	im 8
- dfa:	0c          	store
- dfb:	87          	im 7
- dfc:	3d          	pushspadd
- dfd:	0d          	popsp
- dfe:	04          	poppc
+00000e02 <.L19>:
+ e02:	83          	im 3
+ e03:	72          	loadsp 8
+ e04:	27          	ulessthanorequal
+ e05:	90          	im 16
+ e06:	38          	neqbranch
 
-00000dff <__do_global_ctors_aux>:
- dff:	ff          	im -1
- e00:	3d          	pushspadd
- e01:	0d          	popsp
- e02:	9d          	im 29
- e03:	9c          	im 28
- e04:	0b          	nop
- e05:	fc          	im -4
- e06:	05          	add
- e07:	70          	loadsp 0
- e08:	08          	load
- e09:	52          	storesp 8
- e0a:	52          	storesp 8
- e0b:	70          	loadsp 0
- e0c:	ff          	im -1
- e0d:	2e          	eq
- e0e:	91          	im 17
- e0f:	38          	neqbranch
+00000e07 <.L29>:
+ e07:	72          	loadsp 8
+ e08:	71          	loadsp 4
+ e09:	70          	loadsp 0
+ e0a:	84          	im 4
+ e0b:	05          	add
+ e0c:	53          	storesp 12
+ e0d:	0c          	store
 
-00000e10 <.L10>:
- e10:	70          	loadsp 0
- e11:	2d          	call
- e12:	fc          	im -4
- e13:	12          	addsp 8
- e14:	70          	loadsp 0
- e15:	08          	load
- e16:	52          	storesp 8
- e17:	52          	storesp 8
- e18:	70          	loadsp 0
- e19:	ff          	im -1
- e1a:	2e          	eq
- e1b:	09          	not
- e1c:	81          	im 1
- e1d:	06          	and
- e1e:	f1          	im -15
- e1f:	38          	neqbranch
+00000e0e <.LM18>:
+ e0e:	fc          	im -4
+ e0f:	12          	addsp 8
+ e10:	52          	storesp 8
+ e11:	71          	loadsp 4
+ e12:	83          	im 3
+ e13:	26          	ulessthan
+ e14:	f2          	im -14
+ e15:	38          	neqbranch
 
-00000e20 <.L7>:
- e20:	83          	im 3
- e21:	3d          	pushspadd
- e22:	0d          	popsp
- e23:	04          	poppc
+00000e16 <.L21>:
+ e16:	70          	loadsp 0
+ e17:	53          	storesp 12
+ e18:	ff          	im -1
+ e19:	90          	im 16
+ e1a:	39          	poppcrel
 
-00000e24 <call___do_global_ctors_aux>:
- e24:	04          	poppc
+00000e1b <strcmp>:
+ e1b:	fb          	im -5
+ e1c:	3d          	pushspadd
+ e1d:	0d          	popsp
+ e1e:	77          	loadsp 28
+ e1f:	79          	loadsp 36
+
+00000e20 <.LM2>:
+ e20:	70          	loadsp 0
+ e21:	72          	loadsp 8
+ e22:	07          	or
+ e23:	83          	im 3
+ e24:	06          	and
+ e25:	53          	storesp 12
+ e26:	54          	storesp 16
+ e27:	52          	storesp 8
+ e28:	70          	loadsp 0
+ e29:	93          	im 19
+ e2a:	38          	neqbranch
+
+00000e2b <.LM3>:
+ e2b:	71          	loadsp 4
+
+00000e2c <.LM4>:
+ e2c:	73          	loadsp 12
+
+00000e2d <.LM5>:
+ e2d:	73          	loadsp 12
+ e2e:	08          	load
+ e2f:	54          	storesp 16
+ e30:	56          	storesp 24
+ e31:	54          	storesp 16
+ e32:	71          	loadsp 4
+ e33:	73          	loadsp 12
+ e34:	08          	load
+ e35:	2e          	eq
+ e36:	80          	im 0
+ e37:	c4          	im -60
+ e38:	38          	neqbranch
+
+00000e39 <.LM6>:
+ e39:	73          	loadsp 12
+
+00000e3a <.LM7>:
+ e3a:	75          	loadsp 20
+ e3b:	54          	storesp 16
+ e3c:	52          	storesp 8
+
+00000e3d <.L2>:
+ e3d:	71          	loadsp 4
+ e3e:	33          	loadb
+ e3f:	70          	loadsp 0
+ e40:	81          	im 1
+ e41:	ff          	im -1
+ e42:	06          	and
+ e43:	52          	storesp 8
+ e44:	54          	storesp 16
+ e45:	70          	loadsp 0
+ e46:	80          	im 0
+ e47:	2e          	eq
+ e48:	9d          	im 29
+ e49:	38          	neqbranch
+
+00000e4a <.L18>:
+ e4a:	72          	loadsp 8
+ e4b:	33          	loadb
+ e4c:	55          	storesp 20
+ e4d:	70          	loadsp 0
+ e4e:	75          	loadsp 20
+ e4f:	2e          	eq
+ e50:	09          	not
+ e51:	81          	im 1
+ e52:	06          	and
+ e53:	95          	im 21
+ e54:	38          	neqbranch
+
+00000e55 <.LM9>:
+ e55:	81          	im 1
+ e56:	12          	addsp 8
+
+00000e57 <.LM10>:
+ e57:	81          	im 1
+ e58:	14          	addsp 16
+ e59:	71          	loadsp 4
+ e5a:	33          	loadb
+ e5b:	70          	loadsp 0
+ e5c:	81          	im 1
+ e5d:	ff          	im -1
+ e5e:	06          	and
+ e5f:	54          	storesp 16
+ e60:	56          	storesp 24
+ e61:	54          	storesp 16
+ e62:	52          	storesp 8
+ e63:	70          	loadsp 0
+ e64:	e5          	im -27
+ e65:	38          	neqbranch
+
+00000e66 <.L14>:
+ e66:	72          	loadsp 8
+ e67:	33          	loadb
+ e68:	55          	storesp 20
+
+00000e69 <.L8>:
+ e69:	73          	loadsp 12
+ e6a:	81          	im 1
+ e6b:	ff          	im -1
+ e6c:	06          	and
+ e6d:	75          	loadsp 20
+ e6e:	81          	im 1
+ e6f:	ff          	im -1
+ e70:	06          	and
+ e71:	71          	loadsp 4
+ e72:	71          	loadsp 4
+ e73:	31          	sub
+
+00000e74 <.LM12>:
+ e74:	88          	im 8
+ e75:	0c          	store
+ e76:	52          	storesp 8
+ e77:	52          	storesp 8
+ e78:	87          	im 7
+ e79:	3d          	pushspadd
+ e7a:	0d          	popsp
+ e7b:	04          	poppc
+
+00000e7c <.L6>:
+ e7c:	71          	loadsp 4
+ e7d:	09          	not
+ e7e:	70          	loadsp 0
+ e7f:	f7          	im -9
+ e80:	fb          	im -5
+ e81:	fd          	im -3
+ e82:	ff          	im -1
+ e83:	14          	addsp 16
+ e84:	06          	and
+ e85:	70          	loadsp 0
+ e86:	f8          	im -8
+ e87:	84          	im 4
+ e88:	82          	im 2
+ e89:	81          	im 1
+ e8a:	80          	im 0
+ e8b:	06          	and
+ e8c:	51          	storesp 4
+ e8d:	51          	storesp 4
+ e8e:	51          	storesp 4
+ e8f:	70          	loadsp 0
+ e90:	97          	im 23
+ e91:	38          	neqbranch
+
+00000e92 <.LM14>:
+ e92:	84          	im 4
+ e93:	14          	addsp 16
+
+00000e94 <.LM15>:
+ e94:	84          	im 4
+ e95:	16          	addsp 24
+ e96:	71          	loadsp 4
+ e97:	08          	load
+ e98:	54          	storesp 16
+ e99:	56          	storesp 24
+ e9a:	54          	storesp 16
+ e9b:	71          	loadsp 4
+ e9c:	75          	loadsp 20
+ e9d:	08          	load
+ e9e:	2e          	eq
+ e9f:	dc          	im -36
+ ea0:	38          	neqbranch
+
+00000ea1 <.LM16>:
+ ea1:	73          	loadsp 12
+
+00000ea2 <.LM17>:
+ ea2:	75          	loadsp 20
+ ea3:	54          	storesp 16
+ ea4:	52          	storesp 8
+ ea5:	ff          	im -1
+ ea6:	96          	im 22
+ ea7:	39          	poppcrel
+
+00000ea8 <.L15>:
+ ea8:	80          	im 0
+
+00000ea9 <.LM19>:
+ ea9:	0b          	nop
+ eaa:	88          	im 8
+ eab:	0c          	store
+ eac:	87          	im 7
+ ead:	3d          	pushspadd
+ eae:	0d          	popsp
+ eaf:	04          	poppc
+
+00000eb0 <__do_global_ctors_aux>:
+ eb0:	ff          	im -1
+ eb1:	3d          	pushspadd
+ eb2:	0d          	popsp
+ eb3:	9e          	im 30
+ eb4:	cc          	im -52
+ eb5:	0b          	nop
+ eb6:	fc          	im -4
+ eb7:	05          	add
+ eb8:	70          	loadsp 0
+ eb9:	08          	load
+ eba:	52          	storesp 8
+ ebb:	52          	storesp 8
+ ebc:	70          	loadsp 0
+ ebd:	ff          	im -1
+ ebe:	2e          	eq
+ ebf:	91          	im 17
+ ec0:	38          	neqbranch
+
+00000ec1 <.L10>:
+ ec1:	70          	loadsp 0
+ ec2:	2d          	call
+ ec3:	fc          	im -4
+ ec4:	12          	addsp 8
+ ec5:	70          	loadsp 0
+ ec6:	08          	load
+ ec7:	52          	storesp 8
+ ec8:	52          	storesp 8
+ ec9:	70          	loadsp 0
+ eca:	ff          	im -1
+ ecb:	2e          	eq
+ ecc:	09          	not
+ ecd:	81          	im 1
+ ece:	06          	and
+ ecf:	f1          	im -15
+ ed0:	38          	neqbranch
+
+00000ed1 <.L7>:
+ ed1:	83          	im 3
+ ed2:	3d          	pushspadd
+ ed3:	0d          	popsp
+ ed4:	04          	poppc
+
+00000ed5 <call___do_global_ctors_aux>:
+ ed5:	04          	poppc
 Disassembly of section .fini:
 
-00000e25 <_fini>:
- e25:	ec          	im -20
- e26:	f8          	im -8
- e27:	3f          	callpcrel
- e28:	04          	poppc
+00000ed6 <_fini>:
+ ed6:	eb          	im -21
+ ed7:	c7          	im -57
+ ed8:	3f          	callpcrel
+ ed9:	04          	poppc
 Disassembly of section .rodata:
 
-00000e2c <_mask>:
- e2c:	00          	breakpoint
- e2d:	ff          	im -1
- e2e:	ff          	im -1
- e2f:	ff          	im -1
- e30:	ff          	im -1
- e31:	00          	breakpoint
- e32:	ff          	im -1
- e33:	ff          	im -1
- e34:	ff          	im -1
- e35:	ff          	im -1
- e36:	00          	breakpoint
- e37:	ff          	im -1
- e38:	ff          	im -1
- e39:	ff          	im -1
- e3a:	ff          	im -1
+00000edc <_mask>:
+ edc:	00          	breakpoint
+ edd:	ff          	im -1
+ ede:	ff          	im -1
+ edf:	ff          	im -1
+ ee0:	ff          	im -1
+ ee1:	00          	breakpoint
+ ee2:	ff          	im -1
+ ee3:	ff          	im -1
+ ee4:	ff          	im -1
+ ee5:	ff          	im -1
+ ee6:	00          	breakpoint
+ ee7:	ff          	im -1
+ ee8:	ff          	im -1
+ ee9:	ff          	im -1
+ eea:	ff          	im -1
 	...
 
-00000e3c <handlers>:
- e3c:	00          	breakpoint
- e3d:	00          	breakpoint
- e3e:	08          	load
- e3f:	c9          	im -55
- e40:	00          	breakpoint
- e41:	00          	breakpoint
- e42:	08          	load
- e43:	fb          	im -5
- e44:	00          	breakpoint
- e45:	00          	breakpoint
- e46:	08          	load
- e47:	a3          	im 35
- e48:	00          	breakpoint
- e49:	00          	breakpoint
- e4a:	07          	or
- e4b:	b9          	im 57
- e4c:	00          	breakpoint
- e4d:	00          	breakpoint
- e4e:	09          	not
- e4f:	52          	storesp 8
- e50:	00          	breakpoint
- e51:	00          	breakpoint
- e52:	09          	not
- e53:	69          	loadsp 100
- e54:	00          	breakpoint
- e55:	00          	breakpoint
- e56:	08          	load
- e57:	4f          	storesp 124
- e58:	00          	breakpoint
- e59:	00          	breakpoint
- e5a:	08          	load
- e5b:	50          	storesp 0
- e5c:	00          	breakpoint
- e5d:	00          	breakpoint
- e5e:	07          	or
- e5f:	5c          	storesp 48
- e60:	00          	breakpoint
- e61:	00          	breakpoint
- e62:	09          	not
- e63:	7d          	loadsp 52
+00000eec <handlers>:
+ eec:	00          	breakpoint
+ eed:	00          	breakpoint
+ eee:	09          	not
+ eef:	77          	loadsp 28
+ ef0:	00          	breakpoint
+ ef1:	00          	breakpoint
+ ef2:	09          	not
+ ef3:	a9          	im 41
+ ef4:	00          	breakpoint
+ ef5:	00          	breakpoint
+ ef6:	09          	not
+ ef7:	51          	storesp 4
+ ef8:	00          	breakpoint
+ ef9:	00          	breakpoint
+ efa:	07          	or
+ efb:	c5          	im -59
+ efc:	00          	breakpoint
+ efd:	00          	breakpoint
+ efe:	0a          	flip
+ eff:	00          	breakpoint
+ f00:	00          	breakpoint
+ f01:	00          	breakpoint
+ f02:	0a          	flip
+ f03:	17          	addsp 28
+ f04:	00          	breakpoint
+ f05:	00          	breakpoint
+ f06:	08          	load
+ f07:	5b          	storesp 44
+ f08:	00          	breakpoint
+ f09:	00          	breakpoint
+ f0a:	08          	load
+ f0b:	fe          	im -2
+ f0c:	00          	breakpoint
+ f0d:	00          	breakpoint
+ f0e:	07          	or
+ f0f:	68          	loadsp 96
+ f10:	00          	breakpoint
+ f11:	00          	breakpoint
+ f12:	0a          	flip
+ f13:	2b          	ashiftleft
 
-00000e64 <vstring>:
- e64:	01          	.byte 1
- e65:	08          	load
- e66:	00          	breakpoint
- e67:	00          	breakpoint
- e68:	00          	breakpoint
- e69:	00          	breakpoint
- e6a:	6f          	loadsp 124
- e6b:	80          	im 0
- e6c:	05          	add
- e6d:	10          	addsp 0
- e6e:	ff          	im -1
- e6f:	40          	storesp 64
- e70:	84          	im 4
- e71:	01          	.byte 1
- e72:	0f          	.byte 15
+00000f14 <vstring>:
+ f14:	01          	.byte 1
+ f15:	08          	load
+ f16:	04          	poppc
+ f17:	20          	.byte 32
+ f18:	00          	breakpoint
+ f19:	00          	breakpoint
+ f1a:	2f          	neq
+ f1b:	80          	im 0
+ f1c:	05          	add
+ f1d:	b8          	im 56
+ f1e:	d8          	im -40
+ f1f:	00          	breakpoint
+ f20:	a4          	im 36
+ f21:	02          	pushsp
+ f22:	0e          	.byte 14
 	...
 Disassembly of section .data:
 
-00000e74 <__data_start>:
- e74:	00          	breakpoint
- e75:	00          	breakpoint
+00000f24 <__data_start>:
+ f24:	00          	breakpoint
+ f25:	00          	breakpoint
 	...
 
-00000e78 <_cpu_config>:
- e78:	00          	breakpoint
- e79:	00          	breakpoint
+00000f28 <_cpu_config>:
+ f28:	00          	breakpoint
+ f29:	00          	breakpoint
 	...
 
-00000e7c <__dso_handle>:
- e7c:	00          	breakpoint
- e7d:	00          	breakpoint
+00000f2c <__dso_handle>:
+ f2c:	00          	breakpoint
+ f2d:	00          	breakpoint
 	...
 
-00000e80 <p.0>:
- e80:	00          	breakpoint
- e81:	00          	breakpoint
- e82:	0e          	.byte 14
- e83:	a4          	im 36
+00000f30 <p.0>:
+ f30:	00          	breakpoint
+ f31:	00          	breakpoint
+ f32:	0f          	.byte 15
+ f33:	54          	storesp 16
 Disassembly of section .bss:
 
-00000e84 <completed.1>:
- e84:	00          	breakpoint
- e85:	00          	breakpoint
+00000f34 <completed.1>:
+ f34:	00          	breakpoint
+ f35:	00          	breakpoint
 	...
 
-00000e88 <bdata>:
- e88:	00          	breakpoint
- e89:	00          	breakpoint
+00000f38 <bdata>:
+ f38:	00          	breakpoint
+ f39:	00          	breakpoint
 	...
 
-00000e8c <milisseconds>:
- e8c:	00          	breakpoint
- e8d:	00          	breakpoint
+00000f3c <milisseconds>:
+ f3c:	00          	breakpoint
+ f3d:	00          	breakpoint
 	...
 
-00000e90 <inprogrammode>:
- e90:	00          	breakpoint
- e91:	00          	breakpoint
+00000f40 <inprogrammode>:
+ f40:	00          	breakpoint
+ f41:	00          	breakpoint
 	...
 
-00000e94 <flash_id>:
- e94:	00          	breakpoint
- e95:	00          	breakpoint
+00000f44 <flash_id>:
+ f44:	00          	breakpoint
+ f45:	00          	breakpoint
 	...
 Disassembly of section .ctors:
 
-00000e98 <___ctors>:
- e98:	ff          	im -1
- e99:	ff          	im -1
- e9a:	ff          	im -1
- e9b:	ff          	im -1
+00000f48 <___ctors>:
+ f48:	ff          	im -1
+ f49:	ff          	im -1
+ f4a:	ff          	im -1
+ f4b:	ff          	im -1
 
-00000e9c <__CTOR_END__>:
- e9c:	00          	breakpoint
- e9d:	00          	breakpoint
+00000f4c <__CTOR_END__>:
+ f4c:	00          	breakpoint
+ f4d:	00          	breakpoint
 	...
 Disassembly of section .dtors:
 
-00000ea0 <___dtors>:
- ea0:	ff          	im -1
- ea1:	ff          	im -1
- ea2:	ff          	im -1
- ea3:	ff          	im -1
+00000f50 <___dtors>:
+ f50:	ff          	im -1
+ f51:	ff          	im -1
+ f52:	ff          	im -1
+ f53:	ff          	im -1
 
-00000ea4 <__DTOR_END__>:
- ea4:	00          	breakpoint
- ea5:	00          	breakpoint
+00000f54 <__DTOR_END__>:
+ f54:	00          	breakpoint
+ f55:	00          	breakpoint
 	...
 Disassembly of section .jcr:
 
-00000ea8 <___jcr_begin>:
- ea8:	00          	breakpoint
- ea9:	00          	breakpoint
+00000f58 <___jcr_begin>:
+ f58:	00          	breakpoint
+ f59:	00          	breakpoint
 	...
 Disassembly of section .debug_aranges:
 
@@ -3676,7 +3861,7 @@ Disassembly of section .debug_aranges:
   50:	00          	breakpoint
   51:	00          	breakpoint
   52:	0c          	store
-  53:	42          	storesp 72
+  53:	f3          	im -13
   54:	00          	breakpoint
   55:	00          	breakpoint
   56:	00          	breakpoint
@@ -3700,8 +3885,8 @@ Disassembly of section .debug_aranges:
   6f:	00          	breakpoint
   70:	00          	breakpoint
   71:	00          	breakpoint
-  72:	0c          	store
-  73:	db          	im -37
+  72:	0d          	popsp
+  73:	8c          	im 12
   74:	00          	breakpoint
   75:	00          	breakpoint
   76:	00          	breakpoint
@@ -3725,8 +3910,8 @@ Disassembly of section .debug_aranges:
   8f:	00          	breakpoint
   90:	00          	breakpoint
   91:	00          	breakpoint
-  92:	0d          	popsp
-  93:	6a          	loadsp 104
+  92:	0e          	.byte 14
+  93:	1b          	addsp 44
   94:	00          	breakpoint
   95:	00          	breakpoint
   96:	00          	breakpoint
@@ -4245,12 +4430,12 @@ Disassembly of section .debug_info:
  184:	aa          	im 42
  185:	00          	breakpoint
  186:	00          	breakpoint
- 187:	0c          	store
- 188:	db          	im -37
+ 187:	0d          	popsp
+ 188:	8c          	im 12
  189:	00          	breakpoint
  18a:	00          	breakpoint
  18b:	0c          	store
- 18c:	42          	storesp 72
+ 18c:	f3          	im -13
  18d:	00          	breakpoint
  18e:	00          	breakpoint
  18f:	00          	breakpoint
@@ -4316,11 +4501,11 @@ Disassembly of section .debug_info:
  1cb:	00          	breakpoint
  1cc:	00          	breakpoint
  1cd:	0c          	store
- 1ce:	42          	storesp 72
+ 1ce:	f3          	im -13
  1cf:	00          	breakpoint
  1d0:	00          	breakpoint
- 1d1:	0c          	store
- 1d2:	db          	im -37
+ 1d1:	0d          	popsp
+ 1d2:	8c          	im 12
  1d3:	02          	pushsp
  1d4:	90          	im 16
  1d5:	20          	.byte 32
@@ -4502,12 +4687,12 @@ Disassembly of section .debug_info:
  283:	fb          	im -5
  284:	00          	breakpoint
  285:	00          	breakpoint
- 286:	0d          	popsp
- 287:	6a          	loadsp 104
+ 286:	0e          	.byte 14
+ 287:	1b          	addsp 44
  288:	00          	breakpoint
  289:	00          	breakpoint
- 28a:	0c          	store
- 28b:	db          	im -37
+ 28a:	0d          	popsp
+ 28b:	8c          	im 12
  28c:	00          	breakpoint
  28d:	00          	breakpoint
  28e:	00          	breakpoint
@@ -4636,12 +4821,12 @@ Disassembly of section .debug_info:
  309:	4f          	storesp 124
  30a:	00          	breakpoint
  30b:	00          	breakpoint
- 30c:	0c          	store
- 30d:	db          	im -37
+ 30c:	0d          	popsp
+ 30d:	8c          	im 12
  30e:	00          	breakpoint
  30f:	00          	breakpoint
- 310:	0d          	popsp
- 311:	6a          	loadsp 104
+ 310:	0e          	.byte 14
+ 311:	1b          	addsp 44
  312:	02          	pushsp
  313:	90          	im 16
  314:	20          	.byte 32
@@ -4764,12 +4949,12 @@ Disassembly of section .debug_info:
  387:	c0          	im -64
  388:	00          	breakpoint
  389:	00          	breakpoint
- 38a:	0d          	popsp
- 38b:	ff          	im -1
+ 38a:	0e          	.byte 14
+ 38b:	b0          	im 48
  38c:	00          	breakpoint
  38d:	00          	breakpoint
- 38e:	0d          	popsp
- 38f:	6a          	loadsp 104
+ 38e:	0e          	.byte 14
+ 38f:	1b          	addsp 44
  390:	00          	breakpoint
  391:	00          	breakpoint
  392:	00          	breakpoint
@@ -4890,12 +5075,12 @@ Disassembly of section .debug_info:
  405:	33          	loadb
  406:	00          	breakpoint
  407:	00          	breakpoint
- 408:	0d          	popsp
- 409:	6a          	loadsp 104
+ 408:	0e          	.byte 14
+ 409:	1b          	addsp 44
  40a:	00          	breakpoint
  40b:	00          	breakpoint
- 40c:	0d          	popsp
- 40d:	ff          	im -1
+ 40c:	0e          	.byte 14
+ 40d:	b0          	im 48
  40e:	02          	pushsp
  40f:	90          	im 16
  410:	20          	.byte 32
@@ -6440,7 +6625,7 @@ Disassembly of section .debug_line:
  34e:	00          	breakpoint
  34f:	00          	breakpoint
  350:	0c          	store
- 351:	42          	storesp 72
+ 351:	f3          	im -13
  352:	04          	poppc
  353:	02          	pushsp
  354:	4c          	storesp 112
@@ -6450,7 +6635,7 @@ Disassembly of section .debug_line:
  358:	00          	breakpoint
  359:	00          	breakpoint
  35a:	0c          	store
- 35b:	46          	storesp 88
+ 35b:	f7          	im -9
  35c:	22          	loadh
  35d:	00          	breakpoint
  35e:	05          	add
@@ -6458,7 +6643,7 @@ Disassembly of section .debug_line:
  360:	00          	breakpoint
  361:	00          	breakpoint
  362:	0c          	store
- 363:	47          	storesp 92
+ 363:	f8          	im -8
  364:	15          	addsp 20
  365:	00          	breakpoint
  366:	05          	add
@@ -6466,7 +6651,7 @@ Disassembly of section .debug_line:
  368:	00          	breakpoint
  369:	00          	breakpoint
  36a:	0c          	store
- 36b:	48          	storesp 96
+ 36b:	f9          	im -7
  36c:	17          	addsp 28
  36d:	00          	breakpoint
  36e:	05          	add
@@ -6474,31 +6659,31 @@ Disassembly of section .debug_line:
  370:	00          	breakpoint
  371:	00          	breakpoint
  372:	0c          	store
- 373:	4d          	storesp 116
+ 373:	fe          	im -2
  374:	18          	addsp 32
  375:	00          	breakpoint
  376:	05          	add
  377:	02          	pushsp
  378:	00          	breakpoint
  379:	00          	breakpoint
- 37a:	0c          	store
- 37b:	5d          	storesp 52
+ 37a:	0d          	popsp
+ 37b:	0e          	.byte 14
  37c:	30          	neg
  37d:	00          	breakpoint
  37e:	05          	add
  37f:	02          	pushsp
  380:	00          	breakpoint
  381:	00          	breakpoint
- 382:	0c          	store
- 383:	7c          	loadsp 48
+ 382:	0d          	popsp
+ 383:	2d          	call
  384:	18          	addsp 32
  385:	00          	breakpoint
  386:	05          	add
  387:	02          	pushsp
  388:	00          	breakpoint
  389:	00          	breakpoint
- 38a:	0c          	store
- 38b:	83          	im 3
+ 38a:	0d          	popsp
+ 38b:	34          	storeb
  38c:	03          	.byte 3
  38d:	62          	loadsp 72
  38e:	01          	.byte 1
@@ -6507,80 +6692,80 @@ Disassembly of section .debug_line:
  391:	02          	pushsp
  392:	00          	breakpoint
  393:	00          	breakpoint
- 394:	0c          	store
- 395:	85          	im 5
+ 394:	0d          	popsp
+ 395:	36          	mod
  396:	1a          	addsp 40
  397:	00          	breakpoint
  398:	05          	add
  399:	02          	pushsp
  39a:	00          	breakpoint
  39b:	00          	breakpoint
- 39c:	0c          	store
- 39d:	91          	im 17
+ 39c:	0d          	popsp
+ 39d:	42          	storesp 72
  39e:	15          	addsp 20
  39f:	00          	breakpoint
  3a0:	05          	add
  3a1:	02          	pushsp
  3a2:	00          	breakpoint
  3a3:	00          	breakpoint
- 3a4:	0c          	store
- 3a5:	9d          	im 29
+ 3a4:	0d          	popsp
+ 3a5:	4e          	storesp 120
  3a6:	15          	addsp 20
  3a7:	00          	breakpoint
  3a8:	05          	add
  3a9:	02          	pushsp
  3aa:	00          	breakpoint
  3ab:	00          	breakpoint
- 3ac:	0c          	store
- 3ad:	a9          	im 41
+ 3ac:	0d          	popsp
+ 3ad:	5a          	storesp 40
  3ae:	15          	addsp 20
  3af:	00          	breakpoint
  3b0:	05          	add
  3b1:	02          	pushsp
  3b2:	00          	breakpoint
  3b3:	00          	breakpoint
- 3b4:	0c          	store
- 3b5:	b5          	im 53
+ 3b4:	0d          	popsp
+ 3b5:	66          	loadsp 88
  3b6:	15          	addsp 20
  3b7:	00          	breakpoint
  3b8:	05          	add
  3b9:	02          	pushsp
  3ba:	00          	breakpoint
  3bb:	00          	breakpoint
- 3bc:	0c          	store
- 3bd:	bd          	im 61
+ 3bc:	0d          	popsp
+ 3bd:	6e          	loadsp 120
  3be:	1b          	addsp 44
  3bf:	00          	breakpoint
  3c0:	05          	add
  3c1:	02          	pushsp
  3c2:	00          	breakpoint
  3c3:	00          	breakpoint
- 3c4:	0c          	store
- 3c5:	c2          	im -62
+ 3c4:	0d          	popsp
+ 3c5:	73          	loadsp 12
  3c6:	13          	addsp 12
  3c7:	00          	breakpoint
  3c8:	05          	add
  3c9:	02          	pushsp
  3ca:	00          	breakpoint
  3cb:	00          	breakpoint
- 3cc:	0c          	store
- 3cd:	ce          	im -50
+ 3cc:	0d          	popsp
+ 3cd:	7f          	loadsp 60
  3ce:	15          	addsp 20
  3cf:	00          	breakpoint
  3d0:	05          	add
  3d1:	02          	pushsp
  3d2:	00          	breakpoint
  3d3:	00          	breakpoint
- 3d4:	0c          	store
- 3d5:	d6          	im -42
+ 3d4:	0d          	popsp
+ 3d5:	87          	im 7
  3d6:	18          	addsp 32
  3d7:	00          	breakpoint
  3d8:	05          	add
  3d9:	02          	pushsp
  3da:	00          	breakpoint
  3db:	00          	breakpoint
- 3dc:	0c          	store
- 3dd:	db          	im -37
+ 3dc:	0d          	popsp
+ 3dd:	8c          	im 12
  3de:	00          	breakpoint
  3df:	01          	.byte 1
  3e0:	01          	.byte 1
@@ -6877,8 +7062,8 @@ Disassembly of section .debug_line:
  502:	02          	pushsp
  503:	00          	breakpoint
  504:	00          	breakpoint
- 505:	0c          	store
- 506:	db          	im -37
+ 505:	0d          	popsp
+ 506:	8c          	im 12
  507:	04          	poppc
  508:	04          	poppc
  509:	42          	storesp 72
@@ -6887,32 +7072,32 @@ Disassembly of section .debug_line:
  50c:	02          	pushsp
  50d:	00          	breakpoint
  50e:	00          	breakpoint
- 50f:	0c          	store
- 510:	e0          	im -32
+ 50f:	0d          	popsp
+ 510:	91          	im 17
  511:	1f          	addsp 60
  512:	00          	breakpoint
  513:	05          	add
  514:	02          	pushsp
  515:	00          	breakpoint
  516:	00          	breakpoint
- 517:	0c          	store
- 518:	e1          	im -31
+ 517:	0d          	popsp
+ 518:	92          	im 18
  519:	18          	addsp 32
  51a:	00          	breakpoint
  51b:	05          	add
  51c:	02          	pushsp
  51d:	00          	breakpoint
  51e:	00          	breakpoint
- 51f:	0c          	store
- 520:	eb          	im -21
+ 51f:	0d          	popsp
+ 520:	9c          	im 28
  521:	17          	addsp 28
  522:	00          	breakpoint
  523:	05          	add
  524:	02          	pushsp
  525:	00          	breakpoint
  526:	00          	breakpoint
- 527:	0c          	store
- 528:	f9          	im -7
+ 527:	0d          	popsp
+ 528:	aa          	im 42
  529:	3b          	pushpc
  52a:	00          	breakpoint
  52b:	05          	add
@@ -6920,7 +7105,7 @@ Disassembly of section .debug_line:
  52d:	00          	breakpoint
  52e:	00          	breakpoint
  52f:	0d          	popsp
- 530:	13          	addsp 12
+ 530:	c4          	im -60
  531:	19          	addsp 36
  532:	00          	breakpoint
  533:	05          	add
@@ -6928,7 +7113,7 @@ Disassembly of section .debug_line:
  535:	00          	breakpoint
  536:	00          	breakpoint
  537:	0d          	popsp
- 538:	1a          	addsp 40
+ 538:	cb          	im -53
  539:	03          	.byte 3
  53a:	57          	storesp 28
  53b:	01          	.byte 1
@@ -6938,7 +7123,7 @@ Disassembly of section .debug_line:
  53f:	00          	breakpoint
  540:	00          	breakpoint
  541:	0d          	popsp
- 542:	1b          	addsp 44
+ 542:	cc          	im -52
  543:	1a          	addsp 40
  544:	00          	breakpoint
  545:	05          	add
@@ -6946,7 +7131,7 @@ Disassembly of section .debug_line:
  547:	00          	breakpoint
  548:	00          	breakpoint
  549:	0d          	popsp
- 54a:	20          	.byte 32
+ 54a:	d1          	im -47
  54b:	15          	addsp 20
  54c:	00          	breakpoint
  54d:	05          	add
@@ -6954,7 +7139,7 @@ Disassembly of section .debug_line:
  54f:	00          	breakpoint
  550:	00          	breakpoint
  551:	0d          	popsp
- 552:	28          	swap
+ 552:	d9          	im -39
  553:	23          	storeh
  554:	00          	breakpoint
  555:	05          	add
@@ -6962,7 +7147,7 @@ Disassembly of section .debug_line:
  557:	00          	breakpoint
  558:	00          	breakpoint
  559:	0d          	popsp
- 55a:	2d          	call
+ 55a:	de          	im -34
  55b:	10          	addsp 0
  55c:	00          	breakpoint
  55d:	05          	add
@@ -6970,7 +7155,7 @@ Disassembly of section .debug_line:
  55f:	00          	breakpoint
  560:	00          	breakpoint
  561:	0d          	popsp
- 562:	34          	storeb
+ 562:	e5          	im -27
  563:	15          	addsp 20
  564:	00          	breakpoint
  565:	05          	add
@@ -6978,7 +7163,7 @@ Disassembly of section .debug_line:
  567:	00          	breakpoint
  568:	00          	breakpoint
  569:	0d          	popsp
- 56a:	3b          	pushpc
+ 56a:	ec          	im -20
  56b:	15          	addsp 20
  56c:	00          	breakpoint
  56d:	05          	add
@@ -6986,7 +7171,7 @@ Disassembly of section .debug_line:
  56f:	00          	breakpoint
  570:	00          	breakpoint
  571:	0d          	popsp
- 572:	42          	storesp 72
+ 572:	f3          	im -13
  573:	15          	addsp 20
  574:	00          	breakpoint
  575:	05          	add
@@ -6994,47 +7179,47 @@ Disassembly of section .debug_line:
  577:	00          	breakpoint
  578:	00          	breakpoint
  579:	0d          	popsp
- 57a:	49          	storesp 100
+ 57a:	fa          	im -6
  57b:	15          	addsp 20
  57c:	00          	breakpoint
  57d:	05          	add
  57e:	02          	pushsp
  57f:	00          	breakpoint
  580:	00          	breakpoint
- 581:	0d          	popsp
- 582:	51          	storesp 4
+ 581:	0e          	.byte 14
+ 582:	02          	pushsp
  583:	1a          	addsp 40
  584:	00          	breakpoint
  585:	05          	add
  586:	02          	pushsp
  587:	00          	breakpoint
  588:	00          	breakpoint
- 589:	0d          	popsp
- 58a:	56          	storesp 24
+ 589:	0e          	.byte 14
+ 58a:	07          	or
  58b:	13          	addsp 12
  58c:	00          	breakpoint
  58d:	05          	add
  58e:	02          	pushsp
  58f:	00          	breakpoint
  590:	00          	breakpoint
- 591:	0d          	popsp
- 592:	5d          	storesp 52
+ 591:	0e          	.byte 14
+ 592:	0e          	.byte 14
  593:	15          	addsp 20
  594:	00          	breakpoint
  595:	05          	add
  596:	02          	pushsp
  597:	00          	breakpoint
  598:	00          	breakpoint
- 599:	0d          	popsp
- 59a:	65          	loadsp 84
+ 599:	0e          	.byte 14
+ 59a:	16          	addsp 24
  59b:	17          	addsp 28
  59c:	00          	breakpoint
  59d:	05          	add
  59e:	02          	pushsp
  59f:	00          	breakpoint
  5a0:	00          	breakpoint
- 5a1:	0d          	popsp
- 5a2:	6a          	loadsp 104
+ 5a1:	0e          	.byte 14
+ 5a2:	1b          	addsp 44
  5a3:	00          	breakpoint
  5a4:	01          	.byte 1
  5a5:	01          	.byte 1
@@ -7331,8 +7516,8 @@ Disassembly of section .debug_line:
  6c7:	02          	pushsp
  6c8:	00          	breakpoint
  6c9:	00          	breakpoint
- 6ca:	0d          	popsp
- 6cb:	6a          	loadsp 104
+ 6ca:	0e          	.byte 14
+ 6cb:	1b          	addsp 44
  6cc:	04          	poppc
  6cd:	04          	poppc
  6ce:	53          	storesp 12
@@ -7341,96 +7526,96 @@ Disassembly of section .debug_line:
  6d1:	02          	pushsp
  6d2:	00          	breakpoint
  6d3:	00          	breakpoint
- 6d4:	0d          	popsp
- 6d5:	6f          	loadsp 124
+ 6d4:	0e          	.byte 14
+ 6d5:	20          	.byte 32
  6d6:	22          	loadh
  6d7:	00          	breakpoint
  6d8:	05          	add
  6d9:	02          	pushsp
  6da:	00          	breakpoint
  6db:	00          	breakpoint
- 6dc:	0d          	popsp
- 6dd:	7a          	loadsp 40
+ 6dc:	0e          	.byte 14
+ 6dd:	2b          	ashiftleft
  6de:	17          	addsp 28
  6df:	00          	breakpoint
  6e0:	05          	add
  6e1:	02          	pushsp
  6e2:	00          	breakpoint
  6e3:	00          	breakpoint
- 6e4:	0d          	popsp
- 6e5:	7b          	loadsp 44
+ 6e4:	0e          	.byte 14
+ 6e5:	2c          	ashiftright
  6e6:	15          	addsp 20
  6e7:	00          	breakpoint
  6e8:	05          	add
  6e9:	02          	pushsp
  6ea:	00          	breakpoint
  6eb:	00          	breakpoint
- 6ec:	0d          	popsp
- 6ed:	7c          	loadsp 48
+ 6ec:	0e          	.byte 14
+ 6ed:	2d          	call
  6ee:	1d          	addsp 52
  6ef:	00          	breakpoint
  6f0:	05          	add
  6f1:	02          	pushsp
  6f2:	00          	breakpoint
  6f3:	00          	breakpoint
- 6f4:	0d          	popsp
- 6f5:	88          	im 8
+ 6f4:	0e          	.byte 14
+ 6f5:	39          	poppcrel
  6f6:	18          	addsp 32
  6f7:	00          	breakpoint
  6f8:	05          	add
  6f9:	02          	pushsp
  6fa:	00          	breakpoint
  6fb:	00          	breakpoint
- 6fc:	0d          	popsp
- 6fd:	89          	im 9
+ 6fc:	0e          	.byte 14
+ 6fd:	3a          	config
  6fe:	15          	addsp 20
  6ff:	00          	breakpoint
  700:	05          	add
  701:	02          	pushsp
  702:	00          	breakpoint
  703:	00          	breakpoint
- 704:	0d          	popsp
- 705:	8c          	im 12
+ 704:	0e          	.byte 14
+ 705:	3d          	pushspadd
  706:	1a          	addsp 40
  707:	00          	breakpoint
  708:	05          	add
  709:	02          	pushsp
  70a:	00          	breakpoint
  70b:	00          	breakpoint
- 70c:	0d          	popsp
- 70d:	a4          	im 36
+ 70c:	0e          	.byte 14
+ 70d:	55          	storesp 20
  70e:	13          	addsp 12
  70f:	00          	breakpoint
  710:	05          	add
  711:	02          	pushsp
  712:	00          	breakpoint
  713:	00          	breakpoint
- 714:	0d          	popsp
- 715:	a6          	im 38
+ 714:	0e          	.byte 14
+ 715:	57          	storesp 28
  716:	15          	addsp 20
  717:	00          	breakpoint
  718:	05          	add
  719:	02          	pushsp
  71a:	00          	breakpoint
  71b:	00          	breakpoint
- 71c:	0d          	popsp
- 71d:	b8          	im 56
+ 71c:	0e          	.byte 14
+ 71d:	69          	loadsp 100
  71e:	16          	addsp 24
  71f:	00          	breakpoint
  720:	05          	add
  721:	02          	pushsp
  722:	00          	breakpoint
  723:	00          	breakpoint
- 724:	0d          	popsp
- 725:	c3          	im -61
+ 724:	0e          	.byte 14
+ 725:	74          	loadsp 16
  726:	16          	addsp 24
  727:	00          	breakpoint
  728:	05          	add
  729:	02          	pushsp
  72a:	00          	breakpoint
  72b:	00          	breakpoint
- 72c:	0d          	popsp
- 72d:	cb          	im -53
+ 72c:	0e          	.byte 14
+ 72d:	7c          	loadsp 48
  72e:	03          	.byte 3
  72f:	6d          	loadsp 116
  730:	01          	.byte 1
@@ -7439,56 +7624,56 @@ Disassembly of section .debug_line:
  733:	02          	pushsp
  734:	00          	breakpoint
  735:	00          	breakpoint
- 736:	0d          	popsp
- 737:	e1          	im -31
+ 736:	0e          	.byte 14
+ 737:	92          	im 18
  738:	17          	addsp 28
  739:	00          	breakpoint
  73a:	05          	add
  73b:	02          	pushsp
  73c:	00          	breakpoint
  73d:	00          	breakpoint
- 73e:	0d          	popsp
- 73f:	e3          	im -29
+ 73e:	0e          	.byte 14
+ 73f:	94          	im 20
  740:	15          	addsp 20
  741:	00          	breakpoint
  742:	05          	add
  743:	02          	pushsp
  744:	00          	breakpoint
  745:	00          	breakpoint
- 746:	0d          	popsp
- 747:	f0          	im -16
+ 746:	0e          	.byte 14
+ 747:	a1          	im 33
  748:	18          	addsp 32
  749:	00          	breakpoint
  74a:	05          	add
  74b:	02          	pushsp
  74c:	00          	breakpoint
  74d:	00          	breakpoint
- 74e:	0d          	popsp
- 74f:	f1          	im -15
+ 74e:	0e          	.byte 14
+ 74f:	a2          	im 34
  750:	15          	addsp 20
  751:	00          	breakpoint
  752:	05          	add
  753:	02          	pushsp
  754:	00          	breakpoint
  755:	00          	breakpoint
- 756:	0d          	popsp
- 757:	f7          	im -9
+ 756:	0e          	.byte 14
+ 757:	a8          	im 40
  758:	0c          	store
  759:	00          	breakpoint
  75a:	05          	add
  75b:	02          	pushsp
  75c:	00          	breakpoint
  75d:	00          	breakpoint
- 75e:	0d          	popsp
- 75f:	f8          	im -8
+ 75e:	0e          	.byte 14
+ 75f:	a9          	im 41
  760:	26          	ulessthan
  761:	00          	breakpoint
  762:	05          	add
  763:	02          	pushsp
  764:	00          	breakpoint
  765:	00          	breakpoint
- 766:	0d          	popsp
- 767:	ff          	im -1
+ 766:	0e          	.byte 14
+ 767:	b0          	im 48
  768:	00          	breakpoint
  769:	01          	.byte 1
  76a:	01          	.byte 1
@@ -7656,7 +7841,7 @@ Disassembly of section .debug_frame:
   a0:	00          	breakpoint
   a1:	00          	breakpoint
   a2:	0c          	store
-  a3:	42          	storesp 72
+  a3:	f3          	im -13
   a4:	00          	breakpoint
   a5:	00          	breakpoint
   a6:	00          	breakpoint
@@ -7708,8 +7893,8 @@ Disassembly of section .debug_frame:
   d3:	b8          	im 56
   d4:	00          	breakpoint
   d5:	00          	breakpoint
-  d6:	0c          	store
-  d7:	db          	im -37
+  d6:	0d          	popsp
+  d7:	8c          	im 12
   d8:	00          	breakpoint
   d9:	00          	breakpoint
   da:	00          	breakpoint
@@ -7761,8 +7946,8 @@ Disassembly of section .debug_frame:
  107:	ec          	im -20
  108:	00          	breakpoint
  109:	00          	breakpoint
- 10a:	0d          	popsp
- 10b:	6a          	loadsp 104
+ 10a:	0e          	.byte 14
+ 10b:	1b          	addsp 44
  10c:	00          	breakpoint
  10d:	00          	breakpoint
  10e:	00          	breakpoint

@@ -2767,7 +2767,7 @@ Speed Grade: -4
 
 =========================================================================
 ngdbuild -intstyle ise -dd _ngo -nt timestamp \
-	-uc s3e_eval_zpuino.ucf -p xc3s500e-fg320-4 s3e_eval_zpuino.ngc s3e_eval_zpuino.ngd
+-uc s3e_eval_zpuino.ucf -p xc3s500e-fg320-4 s3e_eval_zpuino.ngc s3e_eval_zpuino.ngd
 
 Command Line: /mnt/work/Xilinx/14.2/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild
 -intstyle ise -dd _ngo -nt timestamp -uc s3e_eval_zpuino.ucf -p xc3s500e-fg320-4
@@ -2800,15 +2800,15 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "s3e_eval_zpuino.ngd" ...
-Total REAL time to NGDBUILD completion:  6 sec
-Total CPU time to NGDBUILD completion:   5 sec
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "s3e_eval_zpuino.bld"...
 
 NGDBUILD done.
 map -intstyle ise -p xc3s500e-fg320-4 \
-	-cm speed -detail -ir off -ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on  \
-	-o s3e_eval_zpuino.ncd s3e_eval_zpuino.ngd s3e_eval_zpuino.pcf 
+-cm speed -detail -ir off -ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on  \
+-o s3e_eval_zpuino.ncd s3e_eval_zpuino.ngd s3e_eval_zpuino.pcf 
 Using target part "3s500efg320-4".
 Mapping design into LUTs...
 Running directed packing...
@@ -2894,27 +2894,27 @@ WARNING:Pack:266 - The function generator zpuino/core/w1_tos_4_mux0002191 failed
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 mins 39 secs 
-Total CPU  time at the beginning of Placer: 4 mins 22 secs 
+Total REAL time at the beginning of Placer: 12 secs 
+Total CPU  time at the beginning of Placer: 12 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:7f33203a) REAL time: 4 mins 41 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:7f33203a) REAL time: 15 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:7f33203a) REAL time: 4 mins 41 secs 
+Phase 2.7  Design Feasibility Check (Checksum:7f33203a) REAL time: 15 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:7f33203a) REAL time: 4 mins 41 secs 
+Phase 3.31  Local Placement Optimization (Checksum:7f33203a) REAL time: 15 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:c3c8d637) REAL time: 7 mins 5 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:c3c8d637) REAL time: 19 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:c3c8d637) REAL time: 7 mins 5 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:c3c8d637) REAL time: 19 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:c3c8d637) REAL time: 7 mins 5 secs 
+Phase 6.36  Local Placement Optimization (Checksum:c3c8d637) REAL time: 19 secs 
 
 Phase 7.8  Global Placement
 .......................
@@ -2925,19 +2925,19 @@ Phase 7.8  Global Placement
 ................
 ...................................................
 .........
-Phase 7.8  Global Placement (Checksum:b7b6f51d) REAL time: 17 mins 19 secs 
+Phase 7.8  Global Placement (Checksum:b7b6f51d) REAL time: 53 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b7b6f51d) REAL time: 17 mins 25 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b7b6f51d) REAL time: 53 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:c5d762ae) REAL time: 27 mins 31 secs 
+Phase 9.18  Placement Optimization (Checksum:c5d762ae) REAL time: 1 mins 18 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:c5d762ae) REAL time: 27 mins 31 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c5d762ae) REAL time: 1 mins 18 secs 
 
-Total REAL time to Placer completion: 27 mins 32 secs 
-Total CPU  time to Placer completion: 27 mins 4 secs 
+Total REAL time to Placer completion: 1 mins 18 secs 
+Total CPU  time to Placer completion: 1 mins 18 secs 
 Running physical synthesis...
 
 Physical synthesis completed.
@@ -2971,9 +2971,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.26
 
-Peak Memory Usage:  239 MB
-Total REAL time to MAP completion:  27 mins 37 secs 
-Total CPU time to MAP completion:   27 mins 10 secs 
+Peak Memory Usage:  236 MB
+Total REAL time to MAP completion:  1 mins 24 secs 
+Total CPU time to MAP completion:   1 mins 24 secs 
 
 Mapping completed.
 See MAP report file "s3e_eval_zpuino.mrp" for details.
@@ -3027,32 +3027,32 @@ Design Summary Report:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 3 mins 9 secs 
-Finished initial Timing Analysis.  REAL time: 3 mins 9 secs 
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
 
 Starting Router
 
 
-Phase  1  : 17920 unrouted;      REAL time: 4 mins 10 secs 
+Phase  1  : 17920 unrouted;      REAL time: 16 secs 
 
-Phase  2  : 15558 unrouted;      REAL time: 4 mins 41 secs 
+Phase  2  : 15558 unrouted;      REAL time: 17 secs 
 
-Phase  3  : 5177 unrouted;      REAL time: 7 mins 3 secs 
+Phase  3  : 5177 unrouted;      REAL time: 20 secs 
 
-Phase  4  : 5329 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 mins 54 secs 
+Phase  4  : 5329 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 18 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
 
 Updating file: s3e_eval_zpuino_routed.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 44 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 33 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 mins 7 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 mins 11 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 36 secs 
 
-Total REAL time to Router completion: 11 mins 12 secs 
-Total CPU time to Router completion: 11 mins 12 secs 
+Total REAL time to Router completion: 36 secs 
+Total CPU time to Router completion: 35 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -3127,8 +3127,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 12 mins 30 secs 
-Total CPU time to PAR completion: 12 mins 28 secs 
+Total REAL time to PAR completion: 38 secs 
+Total CPU time to PAR completion: 38 secs 
 
 Peak Memory Usage:  180 MB
 
@@ -3153,7 +3153,7 @@ Loading device for application Rf_Device from file '3s500e.nph' in environment
    "s3e_eval_zpuino" is an NCD, version 3.2, device xc3s500e, package fg320,
 speed -4
 
-Fri Aug 24 21:45:31 2012
+Sat Aug 25 13:38:55 2012
 
 Running DRC.
 INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
@@ -3174,3 +3174,11 @@ Using user-specified prom size of 1024K
 Writing file "s3e_eval_zpuino_routed.bin".
 Writing file "s3e_eval_zpuino_routed.prm".
 Writing file "s3e_eval_zpuino_routed.cfi".
+
+INFO:WebTalk:4 -
+/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/usage_statistics_w
+ebtalk.html WebTalk report has been successfully sent to Xilinx.  For additional
+details about this file, please refer to the WebTalk log file at
+/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/webtalk.log
+
+WebTalk is complete.

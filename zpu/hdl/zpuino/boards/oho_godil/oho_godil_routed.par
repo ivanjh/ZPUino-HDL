@@ -1,7 +1,7 @@
 Release 14.2 par P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-ip-10-170-71-33::  Fri Aug 24 19:41:20 2012
+192-168-1-112::  Sat Aug 25 13:31:59 2012
 
 par -w -intstyle ise -ol high -t 1 oho_godil.ncd oho_godil_routed.ncd
 oho_godil.pcf 
@@ -53,32 +53,32 @@ Design Summary Report:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 mins 9 secs 
-Finished initial Timing Analysis.  REAL time: 4 mins 10 secs 
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
 
 Starting Router
 
 
-Phase  1  : 20261 unrouted;      REAL time: 4 mins 16 secs 
+Phase  1  : 20261 unrouted;      REAL time: 16 secs 
 
-Phase  2  : 17752 unrouted;      REAL time: 4 mins 16 secs 
+Phase  2  : 17752 unrouted;      REAL time: 17 secs 
 
-Phase  3  : 6563 unrouted;      REAL time: 6 mins 29 secs 
+Phase  3  : 6563 unrouted;      REAL time: 20 secs 
 
-Phase  4  : 6696 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 mins 7 secs 
+Phase  4  : 6696 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 29 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
 Updating file: oho_godil_routed.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 mins 27 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 mins 49 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 38 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 13 mins 5 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
 
-Total REAL time to Router completion: 13 mins 7 secs 
-Total CPU time to Router completion: 13 mins 5 secs 
+Total REAL time to Router completion: 40 secs 
+Total CPU time to Router completion: 39 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -155,10 +155,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 13 mins 59 secs 
-Total CPU time to PAR completion: 13 mins 57 secs 
+Total REAL time to PAR completion: 42 secs 
+Total CPU time to PAR completion: 41 secs 
 
-Peak Memory Usage:  181 MB
+Peak Memory Usage:  182 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

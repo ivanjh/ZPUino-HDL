@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.17 secs
  
 --> 
 Reading design: nexys3.prj
@@ -387,7 +387,7 @@ WARNING:HDLCompiler:634 - "/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys3/
 --> 
 
 
-Total memory usage is 140056 kilobytes
+Total memory usage is 136980 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :   15 (   0 filtered)

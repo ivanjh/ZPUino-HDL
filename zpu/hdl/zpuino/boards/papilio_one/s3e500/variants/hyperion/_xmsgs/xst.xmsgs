@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="1202" delta="new" >&quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/zpu_config.vhd</arg>&quot; Line <arg fmt="%d" index="2">65</arg>. Redeclaration of symbol <arg fmt="%s" index="3">Undefined</arg>.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3481" delta="new" >Library <arg fmt="%s" index="1">work</arg> has no units. Did not save reference file &quot;<arg fmt="%s" index="2">xst/work/hdllib.ref</arg>&quot; for it.
+<msg type="error" file="HDLParsers" num="3264" delta="new" >Can&apos;t read file &quot;<arg fmt="%s" index="1">/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/hyperion/../../../../../wb_char_ram_8x8_sp.vhd</arg>&quot;: <arg fmt="%s" index="2">No such file or directory</arg>
 </msg>
 
 </messages>

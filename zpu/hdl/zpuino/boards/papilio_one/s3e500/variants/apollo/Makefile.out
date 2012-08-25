@@ -4,12 +4,12 @@ ERROR:Xst:438 - Can not open file : papilio_one.prj
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> 
 
 
-Total memory usage is 151076 kilobytes
+Total memory usage is 147992 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -10,7 +10,7 @@ Target Device  : xc3s250e
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Aug 24 16:15:38 2012
+Mapped Date    : Sat Aug 25 13:50:38 2012
 
 Design Summary
 --------------
@@ -41,9 +41,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.27
 
-Peak Memory Usage:  231 MB
-Total REAL time to MAP completion:  16 mins 40 secs 
-Total CPU time to MAP completion:   16 mins 32 secs 
+Peak Memory Usage:  228 MB
+Total REAL time to MAP completion:  1 mins 23 secs 
+Total CPU time to MAP completion:   1 mins 23 secs 
 
 Table of Contents
 -----------------
