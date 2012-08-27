@@ -44,6 +44,7 @@ package zpu_config is
 	constant wordPower			: integer := 5;
 	-- during simulation, set this to '0' to get matching trace.txt 
 	constant	DontCareValue		: std_logic := 'X';
+  constant  Undefined: std_logic := 'X';
 	-- Clock frequency in MHz.
 	constant	ZPU_Frequency		: std_logic_vector(7 downto 0) := x"32";
 	-- This is the msb address bit. bytes=2^(maxAddrBitIncIO+1)
@@ -61,6 +62,5 @@ package zpu_config is
     conv_std_logic_vector((2**(maxAddrBitBRAM+1))-8, maxAddrBitIncIO+1);
 
   constant enable_fmul16: boolean := false;
-  constant Undefined: std_logic := '0';
 
 end zpu_config;

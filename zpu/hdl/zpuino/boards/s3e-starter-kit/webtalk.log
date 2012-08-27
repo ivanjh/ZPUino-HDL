@@ -3,7 +3,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=089f7e6aad46424bb816dfd443ad1a73
+ProjectID=d126baf64de4461f9bb6095417d86937
 ProjectIteration=2
 
 WebTalk Summary
@@ -13,4 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:4 - /mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2012-08-25T13:39:26.  For additional details about this file, please refer to the WebTalk help file at /mnt/work/Xilinx/14.2/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - /mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/s3e-starter-kit/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /mnt/work/Xilinx/14.2/ISE_DS/ISE/data/reports/webtalk_introduction.html

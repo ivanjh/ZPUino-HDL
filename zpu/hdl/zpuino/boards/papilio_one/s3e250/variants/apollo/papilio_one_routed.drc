@@ -1,7 +1,7 @@
 Release 14.2 Drc P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Sat Aug 25 13:46:08 2012
+Wed Aug 29 16:35:30 2012
 
 drc -z papilio_one_routed.ncd
 

@@ -3076,7 +3076,7 @@ Speed Grade: -4
 
 =========================================================================
 ngdbuild -intstyle ise -aul -dd _ngo -nt timestamp \
--uc nexys2_zpuino.ucf -p xc3s1200e-fg320-4 nexys2_zpuino.ngc nexys2_zpuino.ngd
+	-uc nexys2_zpuino.ucf -p xc3s1200e-fg320-4 nexys2_zpuino.ngc nexys2_zpuino.ngd
 
 Command Line: /mnt/work/Xilinx/14.2/ISE_DS/ISE/bin/lin/unwrapped/ngdbuild
 -intstyle ise -aul -dd _ngo -nt timestamp -uc nexys2_zpuino.ucf -p
@@ -3108,15 +3108,15 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "nexys2_zpuino.ngd" ...
-Total REAL time to NGDBUILD completion:  8 sec
-Total CPU time to NGDBUILD completion:   8 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
 
 Writing NGDBUILD log file "nexys2_zpuino.bld"...
 
 NGDBUILD done.
 map -intstyle ise -p xc3s1200e-fg320-4 \
--cm speed -detail -ir off -ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on  \
--o nexys2_zpuino.ncd nexys2_zpuino.ngd nexys2_zpuino.pcf 
+	-cm speed -detail -ir off -ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on  \
+	-o nexys2_zpuino.ncd nexys2_zpuino.ngd nexys2_zpuino.pcf 
 Using target part "3s1200efg320-4".
 Mapping design into LUTs...
 WARNING:MapLib:23 - Short on signal VGA_HS detected.
@@ -3171,27 +3171,27 @@ WARNING:Pack:501 - The I/O component LED<7> has conflicting DRIVE property
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 14 secs 
-Total CPU  time at the beginning of Placer: 12 secs 
+Total REAL time at the beginning of Placer: 7 mins 15 secs 
+Total CPU  time at the beginning of Placer: 7 mins 7 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:d1b54788) REAL time: 18 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:d1b54788) REAL time: 18 secs 
+Phase 2.7  Design Feasibility Check (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:d1b54788) REAL time: 18 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:af6fb150) REAL time: 19 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:af6fb150) REAL time: 19 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:af6fb150) REAL time: 19 secs 
+Phase 6.36  Local Placement Optimization (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 7.8  Global Placement
 .........................
@@ -3201,19 +3201,19 @@ Phase 7.8  Global Placement
 ................
 ................
 .................................................................
-Phase 7.8  Global Placement (Checksum:1162e1aa) REAL time: 47 secs 
+Phase 7.8  Global Placement (Checksum:1162e1aa) REAL time: 17 mins 1 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:1162e1aa) REAL time: 47 secs 
+Phase 8.5  Local Placement Optimization (Checksum:1162e1aa) REAL time: 17 mins 1 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:edb86ed1) REAL time: 1 mins 13 secs 
+Phase 9.18  Placement Optimization (Checksum:edb86ed1) REAL time: 26 mins 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:edb86ed1) REAL time: 1 mins 14 secs 
+Phase 10.5  Local Placement Optimization (Checksum:edb86ed1) REAL time: 26 mins 2 secs 
 
-Total REAL time to Placer completion: 1 mins 14 secs 
-Total CPU  time to Placer completion: 1 mins 11 secs 
+Total REAL time to Placer completion: 26 mins 2 secs 
+Total CPU  time to Placer completion: 25 mins 12 secs 
 Running physical synthesis...
 
 Physical synthesis completed.
@@ -3247,9 +3247,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.36
 
-Peak Memory Usage:  248 MB
-Total REAL time to MAP completion:  1 mins 21 secs 
-Total CPU time to MAP completion:   1 mins 18 secs 
+Peak Memory Usage:  250 MB
+Total REAL time to MAP completion:  26 mins 46 secs 
+Total CPU time to MAP completion:   25 mins 56 secs 
 
 Mapping completed.
 See MAP report file "nexys2_zpuino.mrp" for details.
@@ -3303,32 +3303,32 @@ Design Summary Report:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 9 secs 
-Finished initial Timing Analysis.  REAL time: 9 secs 
+Starting initial Timing Analysis.  REAL time: 5 mins 25 secs 
+Finished initial Timing Analysis.  REAL time: 5 mins 25 secs 
 
 Starting Router
 
 
-Phase  1  : 17612 unrouted;      REAL time: 21 secs 
+Phase  1  : 17612 unrouted;      REAL time: 5 mins 59 secs 
 
-Phase  2  : 15289 unrouted;      REAL time: 22 secs 
+Phase  2  : 15289 unrouted;      REAL time: 6 mins 56 secs 
 
-Phase  3  : 5339 unrouted;      REAL time: 26 secs 
+Phase  3  : 5339 unrouted;      REAL time: 9 mins 33 secs 
 
-Phase  4  : 5395 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  4  : 5395 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 mins 58 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 40 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 mins 28 secs 
 
 Updating file: nexys2_zpuino_routed.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 mins 31 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 43 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 mins 31 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 45 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 mins 32 secs 
 
-Total REAL time to Router completion: 45 secs 
-Total CPU time to Router completion: 45 secs 
+Total REAL time to Router completion: 14 mins 32 secs 
+Total CPU time to Router completion: 13 mins 39 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -3398,10 +3398,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 47 secs 
-Total CPU time to PAR completion: 47 secs 
+Total REAL time to PAR completion: 15 mins 26 secs 
+Total CPU time to PAR completion: 14 mins 28 secs 
 
-Peak Memory Usage:  194 MB
+Peak Memory Usage:  193 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
@@ -3424,7 +3424,7 @@ Loading device for application Rf_Device from file '3s1200e.nph' in environment
    "nexys2_zpuino" is an NCD, version 3.2, device xc3s1200e, package fg320,
 speed -4
 
-Sat Aug 25 13:26:02 2012
+Wed Aug 29 23:18:12 2012
 
 Running DRC.
 INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
@@ -3442,11 +3442,3 @@ Using user-specified prom size of 1024K
 Writing file "nexys2_zpuino_routed.bin".
 Writing file "nexys2_zpuino_routed.prm".
 Writing file "nexys2_zpuino_routed.cfi".
-
-INFO:WebTalk:4 -
-/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys2/s3e1200/usage_statistics_we
-btalk.html WebTalk report has been successfully sent to Xilinx.  For additional
-details about this file, please refer to the WebTalk log file at
-/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/nexys2/s3e1200/webtalk.log
-
-WebTalk is complete.

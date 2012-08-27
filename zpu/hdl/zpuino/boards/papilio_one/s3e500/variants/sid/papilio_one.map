@@ -10,7 +10,7 @@ Target Device  : xc3s500e
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Aug 25 13:58:05 2012
+Mapped Date    : Wed Aug 29 08:31:46 2012
 
 Mapping design into LUTs...
 Running directed packing...
@@ -35,27 +35,27 @@ WARNING:Pack:266 - The function generator zpuino/core/w1_tos_7_mux0002183 failed
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 16 secs 
-Total CPU  time at the beginning of Placer: 16 secs 
+Total REAL time at the beginning of Placer: 1 mins 34 secs 
+Total CPU  time at the beginning of Placer: 1 mins 33 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:df527846) REAL time: 19 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:df527846) REAL time: 3 mins 30 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:df527846) REAL time: 19 secs 
+Phase 2.7  Design Feasibility Check (Checksum:df527846) REAL time: 3 mins 32 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:df527846) REAL time: 19 secs 
+Phase 3.31  Local Placement Optimization (Checksum:df527846) REAL time: 3 mins 32 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:fb24f177) REAL time: 20 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:fb24f177) REAL time: 4 mins 15 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:fb24f177) REAL time: 20 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:fb24f177) REAL time: 4 mins 15 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:fb24f177) REAL time: 20 secs 
+Phase 6.36  Local Placement Optimization (Checksum:fb24f177) REAL time: 4 mins 15 secs 
 
 Phase 7.8  Global Placement
 ........................
@@ -66,19 +66,19 @@ Phase 7.8  Global Placement
 ................
 ...............................................................................
 ...........................
-Phase 7.8  Global Placement (Checksum:f68a2656) REAL time: 1 mins 10 secs 
+Phase 7.8  Global Placement (Checksum:f68a2656) REAL time: 16 mins 22 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:f68a2656) REAL time: 1 mins 10 secs 
+Phase 8.5  Local Placement Optimization (Checksum:f68a2656) REAL time: 16 mins 31 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:91c0f8b6) REAL time: 1 mins 56 secs 
+Phase 9.18  Placement Optimization (Checksum:91c0f8b6) REAL time: 29 mins 36 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:91c0f8b6) REAL time: 1 mins 56 secs 
+Phase 10.5  Local Placement Optimization (Checksum:91c0f8b6) REAL time: 29 mins 36 secs 
 
-Total REAL time to Placer completion: 1 mins 57 secs 
-Total CPU  time to Placer completion: 1 mins 57 secs 
+Total REAL time to Placer completion: 29 mins 36 secs 
+Total CPU  time to Placer completion: 29 mins 14 secs 
 Running physical synthesis...
 ..
 Physical synthesis completed.
@@ -117,9 +117,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.40
 
-Peak Memory Usage:  252 MB
-Total REAL time to MAP completion:  2 mins 7 secs 
-Total CPU time to MAP completion:   2 mins 7 secs 
+Peak Memory Usage:  255 MB
+Total REAL time to MAP completion:  30 mins 11 secs 
+Total CPU time to MAP completion:   29 mins 45 secs 
 
 Mapping completed.
 See MAP report file "papilio_one.mrp" for details.

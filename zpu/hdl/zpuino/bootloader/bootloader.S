@@ -3,9 +3,9 @@
 	.section	.bss.bdata,"aw",@nobits
 	.balign 4;
 	.type	bdata, @object
-	.size	bdata, 4
+	.size	bdata, 12
 bdata:
-	.zero	4
+	.zero	12
 	.section	.bss.milisseconds,"aw",@nobits
 	.balign 4;
 	.type	milisseconds, @object
@@ -45,20 +45,20 @@ flash_id:
 	.size	vstring, 16
 vstring:
 	.byte	1
-	.byte	8
-	.byte	4
-	.byte	32
+	.byte	9
 	.byte	0
 	.byte	0
-	.byte	47
+	.byte	0
+	.byte	0
+	.byte	111
 	.byte	-128
 	.byte	5
-	.byte	-72
-	.byte	-40
-	.byte	0
-	.byte	-92
-	.byte	2
-	.byte	14
+	.byte	16
+	.byte	-1
+	.byte	64
+	.byte	-124
+	.byte	1
+	.byte	15
 	.byte	0
 	.section	.text._Z5flushv,"ax",@progbits
 	.globl	_Z5flushv
@@ -417,7 +417,7 @@ _Z6inbytev:
 	.globl	_Z11enableTimerv
 	.type	_Z11enableTimerv, @function
 _Z11enableTimerv:
-	im 47999
+	im 42499
 	nop
 	im 159383560
 	store
@@ -442,11 +442,11 @@ _Z11spi_disablePVj:
 	load
 	storesp 4
 	storesp 4
-	im 150994948
+	im 150994944
 	loadsp 0
 	load
 	loadsp 0
-	im 65536
+	im 2
 	or
 	loadsp 8
 	store
@@ -463,11 +463,11 @@ _Z10spi_enablev:
 	im -1
 	pushspadd
 	popsp
-	im 150994948
+	im 150994944
 	loadsp 0
 	load
 	loadsp 0
-	im -65537
+	im -3
 	and
 	loadsp 8
 	store
@@ -497,34 +497,101 @@ start:
 	.globl	_Z15start_read_sizePVj
 	.type	_Z15start_read_sizePVj, @function
 _Z15start_read_sizePVj:
-	im -1
+	im -2
 	pushspadd
 	popsp
-	loadsp 12
-	storesp 4
+	loadsp 16
+	storesp 8
 	im 11
-	loadsp 4
+	loadsp 8
 	store
 	im 16
-	addsp 4
-	storesp 8
-	im 270336
-	loadsp 8
-	store
+	addsp 8
+	storesp 12
 	im 0
-	loadsp 8
-	store
 	loadsp 0
+	loadsp 16
+	store
+	loadsp 12
+	store
+	loadsp 4
 	load
 	im 65535
 	and
 	im _memreg+0
 	store
-	im 3
+	im 4
 	pushspadd
 	popsp
 	poppc
 	.size	_Z15start_read_sizePVj, .-_Z15start_read_sizePVj
+	.section	.text.copy_sketch,"ax",@progbits
+	.globl	copy_sketch
+	.type	copy_sketch, @function
+copy_sketch:
+	im -6
+	pushspadd
+	popsp
+	loadsp 32
+	loadsp 40
+	loadsp 52
+	im -1
+	addsp 56
+	storesp 28
+	storesp 28
+	storesp 32
+	storesp 12
+	loadsp 12
+	im -1
+	eq
+	impcrel .L87
+	neqbranch
+	im 0
+	storesp 24
+.L85:
+	im 4
+	storesp 8
+.L82:
+	loadsp 20
+	loadsp 12
+	store
+	loadsp 8
+	load
+	im 8
+	addsp 32
+	store
+	im -1
+	addsp 8
+	storesp 8
+	loadsp 4
+	impcrel .L82
+	neqbranch
+	loadsp 16
+	im 4
+	addsp 24
+	loadsp 16
+	load
+	loadsp 8
+	store
+	im -1
+	addsp 24
+	storesp 24
+	storesp 24
+	storesp 8
+	loadsp 12
+	im -1
+	eq
+	not
+	im 1
+	and
+	impcrel .L85
+	neqbranch
+.L87:
+	im 8
+	pushspadd
+	popsp
+	poppc
+	.size	copy_sketch, .-copy_sketch
 	.section	.text.spi_copy_impl,"ax",@progbits
 	.globl	spi_copy_impl
 	.type	spi_copy_impl, @function
@@ -532,139 +599,112 @@ spi_copy_impl:
 	im -8
 	pushspadd
 	popsp
-	im 4096
-	storesp 24
 	im 134217732
-	storesp 16
-	im 192937984
 	storesp 28
+	im 192937984
+	storesp 36
 	im _Z10spi_enablev
 	call
-	loadsp 12
+	loadsp 24
 	storesp 4
 	im _Z15start_read_sizePVj
 	call
+	im bdata
+	loadsp 0
 	im _memreg+0
 	load
 	addsp 0
 	addsp 0
-	im 270340
+	im 4
 	add
-	im bdata
+	loadsp 4
+	loadsp 0
+	im 4
+	add
+	storesp 12
+	store
+	storesp 24
+	storesp 24
+	im -1342107475
+	loadsp 20
+	store
+	im vstring
+	nop
+	im 8
+	addsp 28
 	store
 	im 0
 	loadsp 0
-	loadsp 20
+	loadsp 32
 	store
-	loadsp 16
+	loadsp 28
 	store
-	loadsp 12
+	loadsp 24
 	load
 	im 65535
 	and
-	storesp 36
+	storesp 24
+	im 28544
+	nop
 	im _memreg+0
 	load
-	im 12160
-	ulessthan
-	impcrel .L80
+	ulessthanorequal
+	impcrel .L98
 	neqbranch
+.L99:
+	impcrel .L99
+	poppcrel
+.L98:
 	im 65535
-	loadsp 28
+	loadsp 36
 	store
+	im 4096
+	storesp 16
 	im _memreg+0
 	load
-	im -1
-	add
-	storesp 20
-	loadsp 16
-	im -1
-	eq
-	impcrel .L104
-	neqbranch
-	im 0
-	storesp 32
-.L94:
-	im 4
 	storesp 12
-.L91:
-	loadsp 28
-	loadsp 16
-	store
-	loadsp 12
-	load
-	im 8
-	addsp 32
-	store
-	im -1
-	addsp 12
-	storesp 12
-	loadsp 8
-	impcrel .L91
-	neqbranch
-	loadsp 20
-	im 4
-	addsp 28
-	loadsp 20
-	load
-	loadsp 8
-	store
-	im -1
-	addsp 28
-	storesp 28
-	storesp 28
-	storesp 12
-	loadsp 16
-	im -1
-	eq
-	not
-	im 1
-	and
-	impcrel .L94
-	neqbranch
-.L104:
-	loadsp 12
+	loadsp 32
+	storesp 8
+	loadsp 24
+	storesp 4
+	im copy_sketch
+	call
+	loadsp 24
 	storesp 4
 	im _Z11spi_disablePVj
 	call
-	loadsp 24
+	loadsp 32
 	load
-	storesp 8
-	loadsp 4
-	loadsp 36
+	storesp 20
+	loadsp 16
+	loadsp 24
 	eq
-	not
-	im 1
-	and
-	impcrel .L108
+	impcrel .L101
 	neqbranch
+	im 67
+	storesp 4
+	im _Z7outbytei
+	call
+.L102:
+	impcrel .L102
+	poppcrel
+.L101:
 	im 4100
 	load
-	storesp 8
-	loadsp 4
-	im -1543369216
+	storesp 20
+	loadsp 16
+	im -2080305408
 	eq
-	impcrel .L98
+	impcrel .L104
 	neqbranch
 	im 66
 	storesp 4
 	im _Z7outbytei
 	call
-.L99:
-	impcrel .L99
+.L105:
+	impcrel .L105
 	poppcrel
-.L80:
-	impcrel .L80
-	poppcrel
-.L108:
-	im 67
-	storesp 4
-	im _Z7outbytei
-	call
-.L96:
-	impcrel .L96
-	poppcrel
-.L98:
+.L104:
 	im 134217728
 	loadsp 0
 	load
@@ -673,14 +713,14 @@ spi_copy_impl:
 	and
 	loadsp 8
 	store
-	storesp 12
-	storesp 12
+	storesp 24
+	storesp 24
 	im _Z5flushv
 	call
 	im start
 	call
-.L101:
-	impcrel .L101
+.L107:
+	impcrel .L107
 	poppcrel
 	.size	spi_copy_impl, .-spi_copy_impl
 	.section	.text._zpu_interrupt,"ax",@progbits
@@ -822,9 +862,9 @@ _Z11cmd_progmemPh:
 	loadsp 8
 	im -1
 	eq
-	impcrel .L128
+	impcrel .L129
 	neqbranch
-.L131:
+.L132:
 	loadsp 12
 	loadsp 0
 	im 1
@@ -848,9 +888,9 @@ _Z11cmd_progmemPh:
 	not
 	im 1
 	and
-	impcrel .L131
+	impcrel .L132
 	neqbranch
-.L128:
+.L129:
 	im 9
 	storesp 4
 	im _Z11simpleReplyj
@@ -887,14 +927,14 @@ _Z20cmd_raw_send_receivePh:
 	loadsp 4
 	im 0
 	eq
-	impcrel .L152
+	impcrel .L153
 	neqbranch
 	im 5
 	addsp 28
 	loadsp 8
 	storesp 20
 	storesp 12
-.L138:
+.L139:
 	loadsp 8
 	loadsp 0
 	im 1
@@ -907,9 +947,9 @@ _Z20cmd_raw_send_receivePh:
 	addsp 16
 	storesp 16
 	loadsp 12
-	impcrel .L138
+	impcrel .L139
 	neqbranch
-.L152:
+.L153:
 	im 3
 	addsp 28
 	loadb
@@ -927,11 +967,11 @@ _Z20cmd_raw_send_receivePh:
 	loadsp 12
 	loadsp 20
 	ulessthanorequal
-	impcrel .L154
+	impcrel .L155
 	neqbranch
 	loadsp 12
 	storesp 32
-.L146:
+.L147:
 	loadsp 28
 	loadsp 24
 	store
@@ -950,9 +990,9 @@ _Z20cmd_raw_send_receivePh:
 	loadsp 16
 	loadsp 16
 	ulessthan
-	impcrel .L146
+	impcrel .L147
 	neqbranch
-.L154:
+.L155:
 	loadsp 20
 	storesp 4
 	im _Z11spi_disablePVj
@@ -978,9 +1018,9 @@ _Z20cmd_raw_send_receivePh:
 	loadsp 12
 	loadsp 20
 	ulessthanorequal
-	impcrel .L156
+	impcrel .L157
 	neqbranch
-.L159:
+.L160:
 	loadsp 12
 	addsp 28
 	loadsp 0
@@ -995,9 +1035,9 @@ _Z20cmd_raw_send_receivePh:
 	loadsp 16
 	loadsp 16
 	ulessthan
-	impcrel .L159
+	impcrel .L160
 	neqbranch
-.L156:
+.L157:
 	im _Z10finishSendv
 	call
 	im 9
@@ -1008,152 +1048,7 @@ _Z20cmd_raw_send_receivePh:
 	.section	.text._Z19cmd_sst_aai_programPh,"ax",@progbits
 	.type	_Z19cmd_sst_aai_programPh, @function
 _Z19cmd_sst_aai_programPh:
-	im -7
-	pushspadd
-	popsp
-	loadsp 36
-	storesp 24
-	im 134217732
-	storesp 20
-	im _Z10spi_enablev
-	call
-	im 6
-	loadsp 20
-	store
-	loadsp 16
-	storesp 4
-	im _Z11spi_disablePVj
-	call
-	im _Z10spi_enablev
-	call
-	im 173
-	loadsp 0
-	loadsp 24
-	store
-	im 1
-	addsp 28
-	loadb
-	im 2
-	addsp 32
-	loadb
-	loadsp 4
-	im 256
-	mult
-	add
-	im 3
-	addsp 36
-	loadb
-	loadsp 32
-	store
-	im 4
-	addsp 36
-	loadb
-	loadsp 32
-	store
-	im 5
-	addsp 36
-	loadb
-	loadsp 32
-	store
-	storesp 36
-	storesp 12
-	storesp 12
-	im 0
-	storesp 16
-	loadsp 12
-	loadsp 28
-	ulessthanorequal
-	impcrel .L188
-	neqbranch
-	loadsp 8
-	storesp 32
-.L184:
-	loadsp 12
-	impcrel .L190
-	neqbranch
-	loadsp 12
-	addsp 24
-	im 6
-	addsp 4
-	loadb
-	loadsp 24
-	store
-	im 7
-	addsp 4
-	loadb
-	loadsp 24
-	store
-	storesp 8
-	loadsp 16
-	storesp 4
-	im _Z11spi_disablePVj
-	call
-.L181:
-	im _Z15spi_read_statusv
-	call
-	im _memreg+0
-	load
-	im 1
-	and
-	storesp 8
-	loadsp 4
-	impcrel .L181
-	neqbranch
-	im 2
-	addsp 16
-	storesp 16
-	loadsp 24
-	loadsp 16
-	ulessthan
-	impcrel .L184
-	neqbranch
-.L188:
-	im _Z10spi_enablev
-	call
-	im 4
-	loadsp 20
-	store
-	loadsp 16
-	storesp 4
-	im _Z11spi_disablePVj
-	call
-	im _Z11prepareSendv
-	call
-	im 135
-	storesp 4
-	im _Z8sendBytej
-	call
-	im _Z10finishSendv
-	call
-	im 9
-	pushspadd
-	popsp
 	poppc
-.L190:
-	im _Z10spi_enablev
-	call
-	loadsp 28
-	loadsp 20
-	store
-	loadsp 12
-	addsp 24
-	im 6
-	addsp 4
-	loadb
-	loadsp 24
-	store
-	im 7
-	addsp 4
-	loadb
-	loadsp 24
-	store
-	storesp 8
-	loadsp 16
-	storesp 4
-	im _Z11spi_disablePVj
-	call
-	impcrel .L181
-	poppcrel
 	.size	_Z19cmd_sst_aai_programPh, .-_Z19cmd_sst_aai_programPh
 	.section	.text._Z16cmd_set_baudratePh,"ax",@progbits
 	.type	_Z16cmd_set_baudratePh, @function
@@ -1205,7 +1100,7 @@ _Z16cmd_set_baudratePh:
 	call
 	im 142606340
 	storesp 12
-.L192:
+.L163:
 	loadsp 8
 	load
 	loadsp 0
@@ -1218,7 +1113,7 @@ _Z16cmd_set_baudratePh:
 	storesp 4
 	storesp 8
 	loadsp 4
-	impcrel .L192
+	impcrel .L163
 	neqbranch
 	loadsp 12
 	im 65536
@@ -1236,7 +1131,7 @@ _Z13cmd_waitreadyPh:
 	im -2
 	pushspadd
 	popsp
-.L203:
+.L174:
 	im _Z15spi_read_statusv
 	call
 	im _memreg+0
@@ -1248,7 +1143,7 @@ _Z13cmd_waitreadyPh:
 	storesp 12
 	storesp 12
 	loadsp 4
-	impcrel .L203
+	impcrel .L174
 	neqbranch
 	im _Z11prepareSendv
 	call
@@ -1287,7 +1182,7 @@ _Z11cmd_versionPh:
 	storesp 12
 	im 15
 	storesp 8
-.L210:
+.L181:
 	loadsp 8
 	loadsp 0
 	im 1
@@ -1306,7 +1201,7 @@ _Z11cmd_versionPh:
 	not
 	im 1
 	and
-	impcrel .L210
+	impcrel .L181
 	neqbranch
 	im _Z10finishSendv
 	call
@@ -1429,30 +1324,46 @@ _Z12cmd_leavepgmPh:
 	.globl	_Z9cmd_startPh
 	.type	_Z9cmd_startPh, @function
 _Z9cmd_startPh:
-	im -1
+	im -3
 	pushspadd
 	popsp
 	im 134217732
-	storesp 8
+	storesp 16
 	im 10
 	storesp 4
 	im _Z11simpleReplyj
 	call
 	im _Z10spi_enablev
 	call
-	loadsp 4
-	storesp 4
+	im bdata
+	loadsp 16
+	storesp 8
+	storesp 12
 	im _Z15start_read_sizePVj
 	call
+	loadsp 8
 	im _memreg+0
 	load
 	addsp 0
 	addsp 0
-	im 270340
+	im 4
 	add
-	im bdata
-	store
 	loadsp 4
+	loadsp 0
+	im 4
+	add
+	storesp 12
+	store
+	storesp 8
+	im -1342107475
+	loadsp 8
+	store
+	im vstring
+	nop
+	im 8
+	addsp 16
+	store
+	loadsp 12
 	storesp 4
 	im _Z11spi_disablePVj
 	call
@@ -1460,11 +1371,61 @@ _Z9cmd_startPh:
 	call
 	im start
 	call
-	im 3
+	im 5
 	pushspadd
 	popsp
 	poppc
 	.size	_Z9cmd_startPh, .-_Z9cmd_startPh
+	.section	.text.loadsketch,"ax",@progbits
+	.globl	loadsketch
+	.type	loadsketch, @function
+loadsketch:
+	im -4
+	pushspadd
+	popsp
+	im 134217732
+	loadsp 0
+	storesp 8
+	storesp 20
+	im _Z11spi_disablePVj
+	call
+	im _Z10spi_enablev
+	call
+	im 11
+	loadsp 20
+	store
+	loadsp 24
+	im 134217748
+	store
+	im 0
+	loadsp 20
+	store
+	im 4096
+	storesp 16
+	loadsp 28
+	storesp 12
+	im 192937984
+	storesp 8
+	loadsp 16
+	storesp 4
+	im copy_sketch
+	call
+	loadsp 16
+	storesp 4
+	im _Z11spi_disablePVj
+	call
+	im _Z5flushv
+	call
+	im start
+	call
+	loadsp 16
+	im _memreg+0
+	store
+	im 6
+	pushspadd
+	popsp
+	poppc
+	.size	loadsketch, .-loadsketch
 	.section	.text.main,"ax",@progbits
 	.globl	main
 	.type	main, @function
@@ -1487,13 +1448,13 @@ main:
 	im ivector
 	store
 	storesp 28
-	im 65587
+	im 65581
 	nop
 	im 142606340
 	store
-	im 150994980
+	im 150994976
 	storesp 12
-	im -65537
+	im -3
 	loadsp 12
 	load
 	loadsp 0
@@ -1503,12 +1464,22 @@ main:
 	store
 	storesp 12
 	storesp 16
-	im 150994964
+	im 150994960
 	loadsp 0
 	load
 	loadsp 0
 	loadsp 24
 	and
+	loadsp 8
+	store
+	storesp 12
+	storesp 12
+	im 150994944
+	loadsp 0
+	load
+	loadsp 0
+	im 2
+	or
 	loadsp 8
 	store
 	storesp 12
@@ -1536,6 +1507,11 @@ main:
 	im 12
 	addsp 8
 	store
+	im loadsketch
+	nop
+	im 16
+	addsp 8
+	store
 	storesp 12
 	im 8
 	nop
@@ -1551,7 +1527,7 @@ main:
 	nop
 	im 192937988
 	store
-	im 242
+	im 244
 	nop
 	im 134217728
 	store
@@ -1567,15 +1543,6 @@ main:
 	storesp 4
 	im _Z11spi_disablePVj
 	call
-	im _Z10spi_enablev
-	call
-	im 4
-	loadsp 8
-	store
-	loadsp 4
-	storesp 4
-	im _Z11spi_disablePVj
-	call
 	loadsp 24
 	loadsp 28
 	im 15
@@ -1585,7 +1552,7 @@ main:
 	storesp 40
 	im 192937984
 	storesp 44
-.L270:
+.L253:
 	im _Z6inbytev
 	call
 	im _memreg+0
@@ -1594,30 +1561,30 @@ main:
 	loadsp 32
 	im 0
 	eq
-	impcrel .L245
+	impcrel .L228
 	neqbranch
-.L274:
+.L257:
 	im _memreg+0
 	load
 	im 126
 	eq
-	impcrel .L272
+	impcrel .L255
 	neqbranch
 	im _memreg+0
 	load
 	im 125
 	eq
-	impcrel .L273
+	impcrel .L256
 	neqbranch
 	loadsp 24
 	im 287
 	ulessthan
-	impcrel .L259
+	impcrel .L242
 	neqbranch
 	loadsp 36
 	im 0
 	eq
-	impcrel .L260
+	impcrel .L243
 	neqbranch
 	im 0
 	nop
@@ -1627,7 +1594,7 @@ main:
 	xor
 	storesp 16
 	storesp 40
-.L260:
+.L243:
 	im 85
 	pushspadd
 	loadsp 28
@@ -1647,9 +1614,9 @@ main:
 	load
 	storesp 12
 	loadsp 32
-	impcrel .L274
+	impcrel .L257
 	neqbranch
-.L245:
+.L228:
 	im _memreg+0
 	load
 	im 126
@@ -1657,7 +1624,7 @@ main:
 	not
 	im 1
 	and
-	impcrel .L270
+	impcrel .L253
 	neqbranch
 	loadsp 32
 	storesp 28
@@ -1668,18 +1635,18 @@ main:
 	loadsp 28
 	storesp 44
 	storesp 36
-	impcrel .L270
+	impcrel .L253
 	poppcrel
-.L259:
+.L242:
 	im 0
 	storesp 36
-	impcrel .L270
+	impcrel .L253
 	poppcrel
-.L272:
+.L255:
 	loadsp 24
 	im 0
 	eq
-	impcrel .L270
+	impcrel .L253
 	neqbranch
 	im 0
 	loadsp 48
@@ -1690,7 +1657,7 @@ main:
 	im 2
 	loadsp 28
 	ulessthanorequal
-	impcrel .L270
+	impcrel .L253
 	neqbranch
 	im 65535
 	loadsp 44
@@ -1703,13 +1670,13 @@ main:
 	loadsp 32
 	loadsp 8
 	ulessthanorequal
-	impcrel .L266
+	impcrel .L249
 	neqbranch
 	im 192937992
 	loadsp 8
 	storesp 20
 	storesp 32
-.L253:
+.L236:
 	loadsp 8
 	addsp 20
 	loadsp 0
@@ -1723,9 +1690,9 @@ main:
 	loadsp 12
 	loadsp 12
 	ulessthan
-	impcrel .L253
+	impcrel .L236
 	neqbranch
-.L266:
+.L249:
 	im -1
 	addsp 24
 	loadsp 20
@@ -1757,7 +1724,7 @@ main:
 	not
 	im 1
 	and
-	impcrel .L270
+	impcrel .L253
 	neqbranch
 	loadsp 16
 	loadb
@@ -1765,7 +1732,7 @@ main:
 	loadsp 8
 	im 10
 	ulessthan
-	impcrel .L270
+	impcrel .L253
 	neqbranch
 	loadsp 8
 	addsp 0
@@ -1780,12 +1747,12 @@ main:
 	storesp 8
 	loadsp 4
 	call
-	impcrel .L270
+	impcrel .L253
 	poppcrel
-.L273:
+.L256:
 	im 1
 	storesp 40
-	impcrel .L270
+	impcrel .L253
 	poppcrel
 	.size	main, .-main
 	.ident	"GCC: (GNU) 3.4.2"

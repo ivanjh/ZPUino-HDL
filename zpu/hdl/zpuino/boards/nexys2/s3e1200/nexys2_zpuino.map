@@ -10,7 +10,7 @@ Target Device  : xc3s1200e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Sat Aug 25 13:23:39 2012
+Mapped Date    : Wed Aug 29 22:29:09 2012
 
 Mapping design into LUTs...
 WARNING:MapLib:23 - Short on signal VGA_HS detected.
@@ -65,27 +65,27 @@ WARNING:Pack:501 - The I/O component LED<7> has conflicting DRIVE property
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 14 secs 
-Total CPU  time at the beginning of Placer: 12 secs 
+Total REAL time at the beginning of Placer: 7 mins 15 secs 
+Total CPU  time at the beginning of Placer: 7 mins 7 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:d1b54788) REAL time: 18 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:d1b54788) REAL time: 18 secs 
+Phase 2.7  Design Feasibility Check (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:d1b54788) REAL time: 18 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d1b54788) REAL time: 8 mins 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:af6fb150) REAL time: 19 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:af6fb150) REAL time: 19 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:af6fb150) REAL time: 19 secs 
+Phase 6.36  Local Placement Optimization (Checksum:af6fb150) REAL time: 8 mins 1 secs 
 
 Phase 7.8  Global Placement
 .........................
@@ -95,19 +95,19 @@ Phase 7.8  Global Placement
 ................
 ................
 .................................................................
-Phase 7.8  Global Placement (Checksum:1162e1aa) REAL time: 47 secs 
+Phase 7.8  Global Placement (Checksum:1162e1aa) REAL time: 17 mins 1 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:1162e1aa) REAL time: 47 secs 
+Phase 8.5  Local Placement Optimization (Checksum:1162e1aa) REAL time: 17 mins 1 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:edb86ed1) REAL time: 1 mins 13 secs 
+Phase 9.18  Placement Optimization (Checksum:edb86ed1) REAL time: 26 mins 2 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:edb86ed1) REAL time: 1 mins 14 secs 
+Phase 10.5  Local Placement Optimization (Checksum:edb86ed1) REAL time: 26 mins 2 secs 
 
-Total REAL time to Placer completion: 1 mins 14 secs 
-Total CPU  time to Placer completion: 1 mins 11 secs 
+Total REAL time to Placer completion: 26 mins 2 secs 
+Total CPU  time to Placer completion: 25 mins 12 secs 
 Running physical synthesis...
 
 Physical synthesis completed.
@@ -144,9 +144,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.36
 
-Peak Memory Usage:  248 MB
-Total REAL time to MAP completion:  1 mins 21 secs 
-Total CPU time to MAP completion:   1 mins 18 secs 
+Peak Memory Usage:  250 MB
+Total REAL time to MAP completion:  26 mins 46 secs 
+Total CPU time to MAP completion:   25 mins 56 secs 
 
 Mapping completed.
 See MAP report file "nexys2_zpuino.mrp" for details.
