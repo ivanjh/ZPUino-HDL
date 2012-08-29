@@ -3176,8 +3176,8 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "papilio_one.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  34 sec
-Total CPU time to NGDBUILD completion:  1 min  33 sec
+Total REAL time to NGDBUILD completion: 1 min  49 sec
+Total CPU time to NGDBUILD completion:  1 min  50 sec
 
 Writing NGDBUILD log file "papilio_one.bld"...
 
@@ -3213,27 +3213,27 @@ WARNING:Pack:266 - The function generator zpuino/core/w1_tos_7_mux0002182 failed
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 mins 43 secs 
-Total CPU  time at the beginning of Placer: 5 mins 41 secs 
+Total REAL time at the beginning of Placer: 5 mins 24 secs 
+Total CPU  time at the beginning of Placer: 5 mins 23 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:2ad209ad) REAL time: 7 mins 58 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:2ad209ad) REAL time: 7 mins 17 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:2ad209ad) REAL time: 8 mins 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:2ad209ad) REAL time: 7 mins 18 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:2ad209ad) REAL time: 8 mins 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:2ad209ad) REAL time: 7 mins 20 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:f049b44e) REAL time: 8 mins 21 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:f049b44e) REAL time: 7 mins 56 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:f049b44e) REAL time: 8 mins 21 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:f049b44e) REAL time: 7 mins 56 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:f049b44e) REAL time: 8 mins 21 secs 
+Phase 6.36  Local Placement Optimization (Checksum:f049b44e) REAL time: 7 mins 56 secs 
 
 Phase 7.8  Global Placement
 ......................
@@ -3244,19 +3244,19 @@ Phase 7.8  Global Placement
 ................
 ........................................................................
 ................
-Phase 7.8  Global Placement (Checksum:b17b3f71) REAL time: 19 mins 2 secs 
+Phase 7.8  Global Placement (Checksum:b17b3f71) REAL time: 19 mins 33 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b17b3f71) REAL time: 19 mins 7 secs 
+Phase 8.5  Local Placement Optimization (Checksum:b17b3f71) REAL time: 19 mins 41 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:4307c47c) REAL time: 32 mins 45 secs 
+Phase 9.18  Placement Optimization (Checksum:4307c47c) REAL time: 35 mins 52 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:4307c47c) REAL time: 32 mins 45 secs 
+Phase 10.5  Local Placement Optimization (Checksum:4307c47c) REAL time: 35 mins 52 secs 
 
-Total REAL time to Placer completion: 32 mins 46 secs 
-Total CPU  time to Placer completion: 32 mins 33 secs 
+Total REAL time to Placer completion: 35 mins 52 secs 
+Total CPU  time to Placer completion: 35 mins 37 secs 
 Running physical synthesis...
 .......
 Physical synthesis completed.
@@ -3293,8 +3293,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                3.24
 
 Peak Memory Usage:  247 MB
-Total REAL time to MAP completion:  36 mins 
-Total CPU time to MAP completion:   35 mins 46 secs 
+Total REAL time to MAP completion:  37 mins 34 secs 
+Total CPU time to MAP completion:   37 mins 19 secs 
 
 Mapping completed.
 See MAP report file "papilio_one.mrp" for details.
@@ -3348,34 +3348,34 @@ Design Summary Report:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 2 mins 25 secs 
-Finished initial Timing Analysis.  REAL time: 2 mins 25 secs 
+Starting initial Timing Analysis.  REAL time: 4 mins 40 secs 
+Finished initial Timing Analysis.  REAL time: 4 mins 40 secs 
 
 Starting Router
 
 
-Phase  1  : 22840 unrouted;      REAL time: 2 mins 31 secs 
+Phase  1  : 22840 unrouted;      REAL time: 4 mins 46 secs 
 
-Phase  2  : 19990 unrouted;      REAL time: 2 mins 47 secs 
+Phase  2  : 19990 unrouted;      REAL time: 4 mins 48 secs 
 
-Phase  3  : 7209 unrouted;      REAL time: 5 mins 56 secs 
+Phase  3  : 7209 unrouted;      REAL time: 6 mins 43 secs 
 
-Phase  4  : 7346 unrouted; (Setup:213, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 15 secs 
+Phase  4  : 7346 unrouted; (Setup:213, Hold:0, Component Switching Limit:0)     REAL time: 10 mins 1 secs 
 
-Phase  5  : 0 unrouted; (Setup:246, Hold:0, Component Switching Limit:0)     REAL time: 10 mins 26 secs 
+Phase  5  : 0 unrouted; (Setup:246, Hold:0, Component Switching Limit:0)     REAL time: 13 mins 44 secs 
 
 Updating file: papilio_one_routed.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:246, Hold:0, Component Switching Limit:0)     REAL time: 11 mins 3 secs 
+Phase  6  : 0 unrouted; (Setup:246, Hold:0, Component Switching Limit:0)     REAL time: 13 mins 47 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 mins 43 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 21 mins 57 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 mins 44 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 mins 25 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 mins 46 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 mins 38 secs 
 
-Total REAL time to Router completion: 18 mins 46 secs 
-Total CPU time to Router completion: 18 mins 7 secs 
+Total REAL time to Router completion: 22 mins 38 secs 
+Total CPU time to Router completion: 22 mins 33 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -3445,8 +3445,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 18 mins 47 secs 
-Total CPU time to PAR completion: 18 mins 9 secs 
+Total REAL time to PAR completion: 22 mins 40 secs 
+Total CPU time to PAR completion: 22 mins 34 secs 
 
 Peak Memory Usage:  207 MB
 
@@ -3471,7 +3471,7 @@ Loading device for application Rf_Device from file '3s500e.nph' in environment
    "papilio_one_top" is an NCD, version 3.2, device xc3s500e, package vq100,
 speed -4
 
-Wed Aug 29 11:54:00 2012
+Thu Aug 30 12:53:23 2012
 
 Running DRC.
 INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance

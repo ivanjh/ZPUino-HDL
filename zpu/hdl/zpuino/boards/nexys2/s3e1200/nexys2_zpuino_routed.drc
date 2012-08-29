@@ -1,7 +1,7 @@
 Release 14.2 Drc P.28xd (lin)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed Aug 29 23:18:12 2012
+Fri Aug 31 02:27:56 2012
 
 drc -z nexys2_zpuino_routed.ncd
 

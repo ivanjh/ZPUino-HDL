@@ -1,0 +1,1914 @@
+Release 14.2 Map P.28xd (lin)
+Xilinx Mapping Report File for Design 'papilio_one_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s250e-vq100-4 -cm speed -detail -ir off
+-ignore_keep_hierarchy -pr b -timing -ol high -logic_opt on -o papilio_one.ncd
+papilio_one.ngd papilio_one.pcf 
+Target Device  : xc3s250e
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Aug 30 16:30:36 2012
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    5
+Logic Utilization:
+  Number of Slice Flip Flops:         2,326 out of   4,896   47%
+  Number of 4 input LUTs:             3,311 out of   4,896   67%
+Logic Distribution:
+  Number of occupied Slices:          2,226 out of   2,448   90%
+    Number of Slices containing only related logic:   2,226 out of   2,226 100%
+    Number of Slices containing unrelated logic:          0 out of   2,226   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       3,541 out of   4,896   72%
+    Number used as logic:             3,243
+    Number used as a route-thru:        230
+    Number used for Dual Port RAMs:      22
+      (Two LUTs used per Dual Port RAM)
+    Number used as Shift registers:      46
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 55 out of      66   83%
+    IOB Flip Flops:                      10
+  Number of RAMB16s:                     12 out of      12  100%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       4   25%
+  Number of MULT18X18SIOs:                3 out of      12   25%
+
+Average Fanout of Non-Clock Nets:                3.17
+
+Peak Memory Usage:  231 MB
+Total REAL time to MAP completion:  26 mins 22 secs 
+Total CPU time to MAP completion:   26 mins 4 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:501 - The I/O component SPI_SCK has conflicting DRIVE property
+   values.  The symbol SPI_SCK has property value 8.  The symbol ospiclk/obufi
+   has property value usenglish/Pack.  The system will use the property value
+   attached to symbol SPI_SCK.
+WARNING:Pack:501 - The I/O component TXD has conflicting DRIVE property values. 
+   The symbol TXD has property value 8.  The symbol obuftx/obufi has property
+   value usenglish/Pack.  The system will use the property value attached to
+   symbol TXD.
+WARNING:Pack:501 - The I/O component SPI_CS has conflicting DRIVE property
+   values.  The symbol SPI_CS has property value 8.  The symbol ospics/obufi has
+   property value usenglish/Pack.  The system will use the property value
+   attached to symbol SPI_CS.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<zpuino/memory/extra/Mram_RAM2.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<zpuino/memory/extra/Mram_RAM2.A>:<RAMB16_RAMB16A>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network vgat/myfifo/U1/Mram_ram_mem3/SPO has no load.
+INFO:LIT:243 - Logical network vgat/myfifo/U1/Mram_ram_mem2/SPO has no load.
+INFO:LIT:243 - Logical network vgat/myfifo/U1/Mram_ram_mem1/SPO has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CLK are pushed forward
+   through input buffer.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   -40.000 to 100.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.320 Volts)
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp clkgen_inst/DCM_inst,
+   consult the device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  16 block(s) optimized away
+ 610 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LOCALBUF 		gpio_inst/gpio_q_32_not00014/LUT4_D_BUF
+LOCALBUF 		gpio_inst/gpio_q_0_not00015/LUT4_D_BUF
+LOCALBUF 		vgat/r_state_cmp_eq0001_SW0/LUT4_D_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux0000351/LUT4_D_BUF
+LOCALBUF 		crc16_inst/data_q_and000011/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_1_cmp_eq00001/LUT2_D_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux0000121/LUT4_L_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux000023/LUT4_D_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<5>9/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<4>9/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<3>9/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<2>9/LUT4_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<7>19/LUT4_L_BUF
+LOCALBUF 		gpio_inst/input_mapper_q_16_and000041/LUT3_D_BUF
+LOCALBUF 		gpio_inst/input_mapper_q_0_and000041/LUT3_D_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_cmp_not000111/LUT4_D_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<7>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<8>4/LUT4_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_line<17>337/LUT3_D_BUF
+LOCALBUF 		zpuino/io/io_device_ack17/LUT4_L_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<5>28/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<9>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr_or00001/LUT3_D_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<10>41/LUT4_L_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<7>39/LUT4_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_line<17>1111/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/do_interrupt_mux0001111/LUT2_D_BUF
+LOCALBUF 		zpuino/io/slot_cyc_i_7_mux00001/LUT3_D_BUF
+LOCALBUF 		zpuino/io/slot_cyc_i_10_mux000011/LUT3_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_detected_q_0_not000111/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_1_cmp_eq00031/LUT2_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux000251/LUT3_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_5_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/core/decode_jump_SW0/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_91/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_81/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_71/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_61/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_51/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_41/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_31/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_21/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_131/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_121/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_111/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_101/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/Mcount_tmrr.cnt_eqn_11/LUT3_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mmux_wb_dat_o<0>211/LUT2_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<4>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<3>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<17>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<16>21/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<15>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<14>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<13>21/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<10>31/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux0002311/LUT2_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux00024135/LUT4_L_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd3-In32/LUT3_L_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd2-In15/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/tmrr_intr_not0001_SW0/LUT4_L_BUF
+LOCALBUF 		uart_inst/fifo_rd_and000011/LUT4_D_BUF
+LOCALBUF 		zpuino/core/shl/idx_mux0001<0>31/LUT4_D_BUF
+LOCALBUF 		zpuino/core/decr_decodedOpcode_mux0000<1>11/LUT4_D_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<7>21/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<6>21/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<5>31/LUT4_L_BUF
+LOCALBUF 		zpuino/io/slot_cyc_i_11_mux000011/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_1_mux000214/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_1_mux000252/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_2_mux00024/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_2_mux000223/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_2_mux000252/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_2_mux000297/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE93/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_3_mux00024/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_3_mux000223/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_3_mux000252/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_3_mux000297/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_stackOperation_mux0000<3>42/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_5_mux000289/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux0002106/LUT2_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_7_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_7_mux000226/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_7_mux000291/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_8_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_8_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_10_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_10_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_stackOperation_mux0000<2>1511/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_11_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_11_mux000273/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_12_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_12_mux000273/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_13_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_13_mux000273/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_14_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_15_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_16_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_17_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_18_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_19_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_20_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_21_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_22_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<28>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_23_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<27>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_24_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<26>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_25_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/memarb/m0_wb_ack_o1/LUT2_D_BUF
+LOCALBUF 		zpuino/core/nos<25>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/sampledStackOperation_or000321/LUT3_D_BUF
+LOCALBUF 		zpuino/core/decr_stackOperation_mux0000<2>110/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_26_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<24>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_27_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<23>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_28_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<22>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_29_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<21>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_30_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<20>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_31_mux000228/LUT4_L_BUF
+LOCALBUF 		zpuino/core/nos<19>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<18>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<17>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<16>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<15>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<14>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<13>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<12>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<11>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<10>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<9>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<8>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<7>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<6>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<5>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<4>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<3>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/sampledStackOperation_or000351/LUT2_D_BUF
+LOCALBUF 		zpuino/core/decr_stackOperation_mux0000<1>22/LUT4_D_BUF
+LOCALBUF 		zpuino/core/nos<2>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/nos<1>1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux00024/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux000238/LUT4_D_BUF
+LOCALBUF 		zpuino/core/exu_busy10_SW0/LUT2_D_BUF
+LOCALBUF 		zpuino/core/exu_busy40/LUT4_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/tmrr_intr_not000132/LUT4_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/tmrr_cnt_and00001/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux000252_SW0/LUT3_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_detected_q_0_not000121/LUT4_D_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<6>111/LUT4_D_BUF
+LOCALBUF 		vgat/myfifo/qqqfull1_SW0/LUT4_D_BUF
+LOCALBUF 		vgat/myfifo/qqqfull1_SW2/LUT3_D_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_cnt_and00001/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_5_mux000252_SW0/LUT3_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux000249_SW0/LUT3_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_7_mux000249_SW0/LUT3_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<5>32/LUT4_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<4>32/LUT4_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<3>32/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<2>141_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<3>141_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/iomemmux/m_wb_ack_o1/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_4_mux0002132/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<9>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<8>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<7>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<6>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<5>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<4>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<3>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<30>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<2>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<29>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<28>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<27>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<26>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<25>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<24>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<23>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<22>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<21>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<20>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<1>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<19>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<18>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<17>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<16>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<15>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<14>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<13>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<12>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<11>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<10>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<0>_SW0_SW0/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_intr_not0001211_SW1/LUT4_L_BUF
+LOCALBUF 		zpuino/core/sampledDecodedOpcode<13>_SW1/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux0002109/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/iempty578/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux000241103/LUT4_D_BUF
+LOCALBUF 		zpuino/core/stack_a_write<0>1_SW2/LUT3_D_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_cnt_not00010_SW0/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_61/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_51/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_41/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_31/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_24/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_11/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_71/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_81/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_91/LUT4_L_BUF
+LOCALBUF 		gpio_inst/input_mapper_q_0_and0000626/LUT4_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_101/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_111/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_131/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_141/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_151/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_161/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_intr_not000111/LUT4_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_171/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_181/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_231/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_221/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_211/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_201/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<10>61/LUT4_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/Mcount_tmrr.cnt_eqn_191/LUT4_L_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<2>43_SW0/LUT3_L_BUF
+LOCALBUF 		vgat/myfifo/c_add_WR<0>_SW0_SW2/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/qqqfull1_1/LUT4_L_BUF
+LOCALBUF 		zpuino/memarb/s0_wb_adr_o<14>_1/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux000262_1/LUT2_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/tmrr_intr_not000132_1/LUT4_L_BUF
+LOCALBUF 		zpuino/memarb/s0_wb_adr_o<14>_2/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux000262_2/LUT2_D_BUF
+LOCALBUF 		timers_inst/timer1_inst/tmrr_cnt_and00001_1/LUT4_D_BUF
+LOCALBUF 		vgat/r_state_cmp_eq0001_1/LUT4_D_BUF
+LOCALBUF 		zpuino/core/decr_tosSource_mux0000<1>110_1/LUT4_D_BUF
+LOCALBUF 		vgat/myfifo/U2/Mxor_G<1>_Result1/LUT3_D_BUF
+LOCALBUF 		vgat/myfifo/Result<3>111/LUT4_D_BUF
+LOCALBUF 		vgat/myfifo/Result<4>121/LUT4_D_BUF
+LOCALBUF 		vgat/Result<6>1/LUT4_L_BUF
+LOCALBUF 		slot1/zspi/ignore_sample_q_not000121/LUT4_D_BUF
+LOCALBUF 		slot0/zspi/ignore_sample_q_not000121/LUT4_D_BUF
+LOCALBUF 		zpuino/core/exr_wb_we_mux000014/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_write<0>31/LUT2_D_BUF
+LOCALBUF 		vgat/palletebase_10_not0001_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/membase_10_not0001_SW0/LUT4_L_BUF
+LOCALBUF 		slot0/spi_transfersize_q_not000121/LUT3_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_line<9>11/LUT4_D_BUF
+LOCALBUF 		uart_inst/tx_timer/cnt_cmp_eq000012/LUT4_L_BUF
+LOCALBUF 		uart_inst/rx_timer/cnt_cmp_eq000012/LUT4_L_BUF
+LOCALBUF 		uart_inst/rx_inst/baudgen/cnt_cmp_eq000076/LUT4_D_BUF
+LOCALBUF 		zpuino/core/exr.state_FSM_FFd14-In27/LUT3_L_BUF
+LOCALBUF 		zpuino/core/exr.state_FSM_FFd14-In100/LUT4_L_BUF
+LOCALBUF 		zpuino/core/stack_a_enable_SW1/LUT4_L_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux000014/LUT4_D_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux000019/LUT4_D_BUF
+LOCALBUF 		slot9/brightcount_cmp_eq000112/LUT4_L_BUF
+LOCALBUF 		zpuino/io/slot_cyc_i_6_mux00001/LUT3_D_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<3>23/LUT4_L_BUF
+LOCALBUF 		vgat/r_palleteptr_mux0000<9>_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/r_palleteptr_mux0000<8>_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/r_palleteptr_mux0000<0>/LUT3_D_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux000054/LUT3_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<6>19/LUT4_L_BUF
+LOCALBUF 		vgat/r_memptr_mux0000<14>12/LUT3_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_8_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_6_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_3_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_16_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_15_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_14_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_13_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_12_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/masked_ivecs_10_and00001/LUT2_D_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<8>5/LUT4_L_BUF
+LOCALBUF 		zpuino/io/slot_cyc_i_5_mux00001/LUT3_D_BUF
+LOCALBUF 		zpuino/core/stack_a_write<31>13/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux000221/LUT2_D_BUF
+LOCALBUF 		zpuino/core/Madd_prefr.spnext_addsub0001_cy<4>11/LUT4_D_BUF
+LOCALBUF 		zpuino/io/intr_inst/do_interrupt_mux000125/LUT2_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/do_interrupt_mux000167/LUT4_D_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>9_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>8_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>7_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>6_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>5_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>4_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>3_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>2_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>1_SW0/LUT3_L_BUF
+LOCALBUF 		gpio_inst/wb_adr_i<5>_SW0/LUT3_L_BUF
+LOCALBUF 		slot9/wb_dat_o_0_mux0001_SW0/LUT3_L_BUF
+LOCALBUF 		zpuino/io/io_read_selected<12>/LUT4_L_BUF
+LOCALBUF 		zpuino/io/io_read_selected<11>/LUT4_L_BUF
+LOCALBUF 		zpuino/io/io_read_selected<10>/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<9>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<7>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<6>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<5>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<4>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<3>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<2>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<1>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<10>15/LUT4_L_BUF
+LOCALBUF 		timers_inst/wb_dat_o<0>15/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<9>21/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<8>21/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_1_mux0002100/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<13>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<12>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<11>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/decr_fetchpc_mux0000<10>4/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_4_mux00024/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_4_mux0002110/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_5_mux00024/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_8_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_9_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_13_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_14_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_15_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_15_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_16_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_16_mux000268/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_17_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_17_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_18_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_18_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_19_mux000268/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_20_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_20_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_21_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_21_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_22_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_22_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_23_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_23_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_24_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_25_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_26_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_27_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_28_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_29_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_30_mux000265/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_31_mux000277/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_31_mux0002139_SW0/LUT2_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_0_mux0002215_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/r_hoff_mux0000<4>11_SW7/LUT4_D_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd1-In1_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd1-In1_SW1/LUT4_L_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd1-In1_SW2/LUT3_L_BUF
+LOCALBUF 		vgat/r.state_FSM_FFd1-In1_SW3/LUT2_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW2/LUT3_D_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW3/LUT4_D_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW5/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW7/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW9/LUT4_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW11/LUT3_L_BUF
+LOCALBUF 		vgat/myfifo/add_WR_CE120_SW13/LUT4_D_BUF
+LOCALBUF 		zpuino/core/decr.fetchpc_1_rstpot/LUT4_D_BUF
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<1>_rt
+LOCALBUF 		zpuino/core/stack_b_enable40_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/wroteback_q_mux000066/LUT4_L_BUF
+LOCALBUF 		zpuino/core/prefr_spnext_mux0000<9>12/LUT4_L_BUF
+LOCALBUF 		zpuino/io/intr_inst/intr_level_q_16_not000111/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux0002121/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux0002111/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_6_mux0002101/LUT3_D_BUF
+LOCALBUF 		zpuino/core/stack_a_addr<10>51/LUT3_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_27_mux00027_SW0/LUT3_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_24_mux00027_SW0/LUT4_D_BUF
+LOCALBUF 		zpuino/core/w1_tos_25_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_26_mux00027/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_31_mux00027/LUT4_L_BUF
+LOCALBUF 		timers_inst/timer0_inst/tmrr_cmp_not0001_SW1/LUT3_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_10_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_11_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_12_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_19_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_24_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_27_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_28_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_29_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		zpuino/core/w1_tos_30_mux000217_SW0/LUT4_L_BUF
+LOCALBUF 		vgat/w_chars_10_mux000121_SW0/LUT4_D_BUF
+LOCALBUF 		zpuino/io/io_device_ack4_SW1/LUT3_L_BUF
+LUT1 		slot9/Mcount_counter_cy<0>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<8>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<7>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<6>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<5>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<4>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<3>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<2>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_cy<1>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<8>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<7>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<6>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<5>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<4>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<3>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<2>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_cy<1>_rt
+LUT1 		uart_inst/rx_inst/baudgen/Msub_cnt_addsub0000_cy<0>_rt
+LUT1 		uart_inst/fifo_instance/Msub_full_v_addsub0000_cy<0>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<1>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<2>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<3>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<4>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<5>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<6>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<7>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<8>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_cy<9>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<1>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<2>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<3>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<4>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<5>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<6>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<7>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<8>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_cy<9>_rt
+LUT1 		uart_inst/rx_timer/Msub_cnt_addsub0000_cy<0>_rt
+LUT1 		uart_inst/tx_timer/Msub_cnt_addsub0000_cy<0>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<1>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<2>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<3>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<4>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<5>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<6>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<7>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<8>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<9>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<10>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<11>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<12>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<13>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<14>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<15>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<16>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<17>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<18>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<19>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<20>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<21>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<22>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<23>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<24>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<25>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<26>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<27>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<28>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<29>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_cy<30>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<8>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<7>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<6>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<5>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<4>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<3>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<2>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_cy<1>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<8>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<7>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<6>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<5>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<4>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<3>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<2>_rt
+LUT1 		vgat/Mcount_vcount_q_cy<1>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<8>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<7>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<6>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<5>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<4>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<3>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<2>_rt
+LUT1 		vgat/Mcount_hcount_q_cy<1>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<13>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<12>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<11>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<10>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<9>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<8>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<7>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<6>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<5>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<4>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<3>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<2>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_cy<1>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<13>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<12>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<11>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<10>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<9>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<8>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<7>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<6>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<5>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<4>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_cy<3>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<7>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_addsub0000_cy<7>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<6>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_addsub0000_cy<6>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<5>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_addsub0000_cy<5>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<4>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<3>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<2>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_cy<1>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<13>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<12>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<11>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<10>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<9>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<8>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<7>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<6>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<5>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<4>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<3>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_cy<2>_rt
+LUT1 		zpuino/core/Madd_stack_a_addr_addsub0000_cy<7>_rt
+LUT1 		zpuino/core/Madd_stack_a_addr_addsub0000_cy<6>_rt
+LUT1 		zpuino/core/Madd_stack_a_addr_addsub0000_cy<5>_rt
+LUT1 		zpuino/core/Msub_prefr.spnext_addsub0000_cy<0>_rt
+LUT1 		slot1/zspiclk/pr/Mcount_counter_xor<9>_rt
+LUT1 		slot0/zspiclk/pr/Mcount_counter_xor<9>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_rdaddr_xor<10>_rt
+LUT1 		uart_inst/fifo_instance/Mcount_wraddr_xor<10>_rt
+LUT1 		timers_inst/timer0_inst/Mcount_TSC_q_xor<31>_rt
+LUT1 		timers_inst/timer0_inst/pr.tmr0prescale_inst/Mcount_counter_xor<9>_rt
+LUT1 		vgat/Mcount_vcount_q_xor<9>_rt
+LUT1 		vgat/Mcount_hcount_q_xor<9>_rt
+LUT1 		vgat/Madd_r.palleteptr_addsub0000_xor<14>_rt
+LUT1 		vgat/Madd_r.memptr_addsub0000_xor<14>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_add0000_xor<8>_rt
+LUT1 		zpuino/core/Madd_stack_b_addr_addsub0000_xor<8>_rt
+LUT1 		zpuino/core/Madd_pcnext_add0000_xor<14>_rt
+LUT1 		zpuino/core/Madd_stack_a_addr_addsub0000_xor<8>_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_62_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_60_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_58_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_56_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_54_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_52_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_50_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_48_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_46_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_44_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_42_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_40_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_38_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_36_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_34_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_32_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_30_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_28_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_26_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_24_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_22_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_20_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_18_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_16_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_14_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_12_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_10_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_8_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_6_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_4_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_2_rt
+LUT1 		zpuino/io/Mmux__varindex0000_5_f5_0_rt
+INV 		clkgen_inst/rst1_q_or00001_INV_0
+INV 		vgat/myfifo/iadd_RD_GC<0>1_INV_0
+INV 		vgat/myfifo/Mcount_add_RD_xor<0>11_INV_0
+INV 		vgat/rstq1_inv1_INV_0
+INV 		vgat/myfifo/isrst_w_inv1_INV_0
+INV 		zpuino/io/io_stb_mux00001_INV_0
+INV 		uart_inst/tx_core/idle_mux00001_INV_0
+INV 		uart_inst/rx_inst/rxmvfilter/Mcount_count_q_xor<0>11_INV_0
+INV 		slot9/Mcount_current_display_xor<0>11_INV_0
+INV 		slot9/Mcount_brightcount_xor<0>11_INV_0
+INV 		slot1/zspiclk/prescale_reset_mux00011_INV_0
+INV 		slot1/zspiclk/clk_i_not00011_INV_0
+INV 		slot1/zspi/ready_q_mux00001_INV_0
+INV 		slot0/zspiclk/prescale_reset_mux00011_INV_0
+INV 		slot0/zspiclk/clk_i_not00011_INV_0
+INV 		slot0/zspi/ready_q_mux00001_INV_0
+INV 		crc16_inst/ready_q_mux00001_INV_0
+INV 		slot9/segdata_6_not00001_INV_0
+INV 		slot9/segdata_5_not00001_INV_0
+INV 		slot9/segdata_4_not00001_INV_0
+INV 		slot9/segdata_3_not00001_INV_0
+INV 		slot9/segdata_2_not00001_INV_0
+INV 		slot9/segdata_1_not00001_INV_0
+INV 		slot9/segdata_0_not00001_INV_0
+INV 		slot9/dot1_INV_0
+INV 		rstgen/rx_inv1_INV_0
+INV 		timers_inst/timer0_inst/tmrr_dir_inv2_INV_0
+INV 		timers_inst/timer1_inst/tmrr_dir_inv2_INV_0
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ADC_SPI_CS                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| ADC_SPI_MISO                       | IBUF             | INPUT     | LVTTL                |       |          |      | IFF1         |          | 0 / 3    |
+| ADC_SPI_MOSI                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| ADC_SPI_SCLK                       | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| AUDIO                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| BLUE<0>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| BLUE<1>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| CLK                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| GREEN<0>                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| GREEN<1>                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| GREEN<2>                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| HSYNC                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| JOY_DOWN                           | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| JOY_LEFT                           | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| JOY_RIGHT                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| JOY_SELECT                         | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| JOY_UP                             | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| LED<0>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<1>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<2>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<3>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<4>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<5>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<6>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| LED<7>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| RED<0>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| RED<1>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| RED<2>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| RXD                                | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SPI_CS                             | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW |              |          | 0 / 0    |
+| SPI_MISO                           | IBUF             | INPUT     | LVCMOS33             |       |          |      | IFF1         |          | 0 / 3    |
+| SPI_MOSI                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF1         |          | 0 / 0    |
+| SPI_SCK                            | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST | OFF1         |          | 0 / 0    |
+| SWITCH<0>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<1>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<2>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<3>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<4>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<5>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<6>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| SWITCH<7>                          | IBUF             | INPUT     | LVTTL                |       |          |      |              |          | 0 / 0    |
+| Seg7_A                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_AN<0>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_AN<1>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_AN<2>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_AN<3>                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_B                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_C                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_D                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_DP                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_E                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_F                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| Seg7_G                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          | 0 / 0    |
+| TXD                                | IOB              | OUTPUT    | LVTTL                |       | 8        | FAST | OFF1         |          | 0 / 0    |
+| VSYNC                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW | OFF2         |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+DCM "clkgen_inst/DCM_inst":
+CLKDV_DIVIDE:2
+CLKOUT_PHASE_SHIFT:NONE
+DESKEW_ADJUST:7
+DFS_FREQUENCY_MODE:LOW
+DLL_FREQUENCY_MODE:LOW
+DUTY_CYCLE_CORRECTION:TRUE
+FACTORY_JF1:0XC0
+FACTORY_JF2:0X80
+CLKFX_DIVIDE = 1
+CLKFX_MULTIPLY = 3
+PHASE_SHIFT = 0
+X_CLKIN_PERIOD = 31.2500000000000000
+
+
+BUFGMUX "clkgen_inst/clkfx_inst":
+DISABLE_ATTR:LOW
+
+
+
+BUFGMUX "clkgen_inst/vgainst":
+DISABLE_ATTR:LOW
+
+
+
+RAMB16 "uart_inst/fifo_instance/Mram_memory":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:2048X9
+WRITEMODEA:READ_FIRST
+INIT_A = 000
+SRVAL_A = 000
+PORTB_ATTR:2048X9
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000
+SRVAL_B = 000
+
+
+RAMB16 "zpuino/memory/extra/Mram_RAM1":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:1024X18
+WRITEMODEA:WRITE_FIRST
+INIT_A = 00000
+SRVAL_A = 00000
+
+
+RAMB16 "zpuino/memory/extra/Mram_RAM2":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:1024X18
+WRITEMODEA:WRITE_FIRST
+INIT_A = 00000
+SRVAL_A = 00000
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM01":
+INIT_00 = 00000033001A006900000033000666350BF63138000235980000000800000008
+INIT_01 = 0000660500003605046B596100015AAF000006B60000004B0000000800000000
+INIT_02 = 016465A10000000800000008000B86E80002A598000004660000001100000005
+INIT_03 = 0000001F00000000000000220000000000000002000000CB0000000401521FA1
+INIT_04 = FBF4890B0BDD4B08F080083BFCD0880090880090812A19121C036F1000000006
+INIT_05 = DAF000FD82C107188F620DDAD6D28DD00334D241DD61F0044C311040481080D4
+INIT_06 = 8BF28C33B6370B50C008F1C30DD6F6241C22837AA3F0C0C3D4FBD2F80DDC0088
+INIT_07 = 37C094D9124030E5315022054021C4D1F2CA0DD9A1A42683F4F1A200000A4D3E
+INIT_08 = 14B5C4228D4366083338C322C1D4D40DDB4127701A414BD438C3520834615819
+INIT_09 = CD2C09C001C04DCE2A52F14FDDB1AD368E4C4031A2001171674813D8BC71CADB
+INIT_0a = 3380B7B0BFDD8CD4104506DE00C5DEC4DB55023FDA0DDE5FDDEA0B04D8E1DAF1
+INIT_0b = 8B87880F27F86E88B457A889FE020C3A0E614D1D20A10850C03B2DBCC00C0046
+INIT_0c = 6F244867D83046D88E803D855D00D4D0DD0CC1880AE150A28111700566392802
+INIT_0d = C4422625805805805804CAE2530E2E62250C6141F8212618A30800E203D74848
+INIT_0e = 7421FF304015E3E2044341239B36252262524C03174054689253E2E6A53C6903
+INIT_0f = 000000000F0F0000000C00000002F52E7C80E0FFF07D1E2C125F4C94C1840644
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM02":
+INIT_00 = 0000005700501100000000570000007000F08870000580000000000900000009
+INIT_01 = 0000007000005070000200050005002F00000A00000000020000000800000000
+INIT_02 = 0507000800000008000000080000009000052000000000000000005800000000
+INIT_03 = 0000005F00000000000000570000000000000005000000000000000005077F08
+INIT_04 = 309030808030B0F09B377330F029889599889599857070875F180F5111111119
+INIT_05 = 309888F088078253090783382025000A888027852F25F7870075878803570800
+INIT_06 = 08D580880587807807C095888330F57870753757F8F70907289005F0833087C0
+INIT_07 = 3188702887373725518851708818F825F7098008888050089CFB8779A88F82C2
+INIT_08 = 5F878785827371837537088808272883387851285875F8E57007758185785372
+INIT_09 = 0250CF88C80802E2180595F9338582F00800C8F5278A85551018730B80810938
+INIT_0a = 75C80508093088275D57872F7CF82F09AF001759288338E93380808820852295
+INIT_0b = 1737538FA7F70F30830750379B8D8B5AD5758272580888ED0D50190007707850
+INIT_0c = 73575375337357080208793753A8002833D0050085F571B73875077712177887
+INIT_0d = F85772100700700700700E2103721207757F5873E3787857E513882585357853
+INIT_0e = F053FF375789232575C757587F52107721078075725977830557212085387378
+INIT_0f = 000000000F0F0000000D0000082582832E7D90FFF0C0F25F95090035D7017081
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM11":
+INIT_00 = 000000760415AA1100000074004139314BF959F60006A2660000000B0000000B
+INIT_01 = 000419910000699101CB26430003F96A0000085F000000120000000B00000000
+INIT_02 = 01521F600000000B0000000B004B53B600060366000001920000003900000001
+INIT_03 = 00000435000000000000005500000000000000050000004B0000000501F94660
+INIT_04 = 1BBD5EB88B0DFB00DF22864B4C784C60584C605841325524120531300000004F
+INIT_05 = F0CCCC6D8DAC118080134E310F0AADDACBDD04D200146CCDDA81080DD31A10DD
+INIT_06 = 81C84997068CC4DB3108D6970881368428C473E84CFC221D30C0DCF08F324400
+INIT_07 = 8160DD48937553F72F60393911264CE31C3C0DDB12DD2F011F9C6689A8E40006
+INIT_08 = 7A148686DE21333C499385136DECA069984D235D41D4A1641668362484302430
+INIT_09 = CE2C0120AD4DD96FF11FD1ABE4D214118DD40416134AD877423131DF16C65C9D
+INIT_0a = F4003C7C0BDD4DED43000CAB404D5B4F12440D2D440D21BB0210C14D08D808DA
+INIT_0b = EFB28769F1F81068720D489821808E8B3DD1DEDE000CC8B040C7CCC131828032
+INIT_0c = 4B15C47AA26470D3808134B69BD48D52F20A080891D850E33923B354F3138088
+INIT_0d = C0583F0442442442442D86FF142FF038F569547266324C412634800638C14C05
+INIT_0e = 0D21112263265206350188477903C483F04C03152211B4CFE253FF037352D381
+INIT_0f = 000000000F0F0000000F000F8F4A798AA7999F0FF0AD6F8DE2CDD865E414108F
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM12":
+INIT_00 = 0000000200500087000000020008707800F000F0000028000000000000000000
+INIT_01 = 000080080000000805F080050005F00200000809000000570000000000000000
+INIT_02 = 05077F0700000000000000000000080000001800000005070000005000000008
+INIT_03 = 0000005000000000000000000000000000000000000000A00000000005F05007
+INIT_04 = 800082030083907729950AB008B0005570005570055700705710885111111103
+INIT_05 = F90C0CF30200770FC785CF85CFC203380000A023A88500D0003570800F527830
+INIT_06 = 75875732800009AF57982755CF8871075108A51700F075709A0930F7CF878887
+INIT_07 = 185C00D3055757F55F1A3232788700F58078833857005F75193850038397AA87
+INIT_08 = 885837302F51377A5513707372F0985F83725772752885217773758831377958
+INIT_09 = CF79885C82C0080FF5882880F8275F788008887085C828508787313F57087882
+INIT_0a = FA88B0B080A372F27888809888028819A5881252D5CF858088590802C820C822
+INIT_0b = FF887975F8F388C857E358838808020883272F2F7C90D8888809808757A70857
+INIT_0c = 59372A57FD575337888552A57F00F0D5F8889098382001F5C0552305F7835837
+INIT_0d = 070388F857857857857080FF857FF883857357072E570075727A378257F80038
+INIT_0e = 7057887503107780378703507378F8388F8075707757200E2107FF8825000837
+INIT_0f = 000000000F0F000000000000D200000000000F0FF0E30F0225F00897257858FF
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM21":
+INIT_00 = 000004E201612263000004E2001A96597B3B26FD000FB53D0000004B0000004B
+INIT_01 = 0001955900041559012B53D1000764F200004B120000003A0000004B00000000
+INIT_02 = 01F946990000004B0000004B009B03BC000F053C000003390000005200000049
+INIT_03 = 00000D1100000000000000040000000000000001000004FB0000000F47530199
+INIT_04 = 61BD60BE0B43B12802E200FDCCEC1C8D5C1C8D5C18A26F0CC7013300000000F4
+INIT_05 = 43408024AC0A8841F10404DEA1A80F21AFDDAD00A811F80DD031A10DD06224FD
+INIT_06 = D6130FF8FF687F1655000DA404892F482836E8FDD83201BD9B0032B404270013
+INIT_07 = 2D40DDE8E351582573656040913DD8B403530E2D7DDDCEAC1DFD6F0F19859A84
+INIT_08 = 1D4D84619BC718870C5939370AB5C094D0403830DA01D541377745133F427E32
+INIT_09 = FB80BD4014FDDB11D30301C04D0D3A38DDD0732104014231B07B21CD436674D0
+INIT_0a = F0C400E4C0F6D5BF230C05C50DD1A18C4C00804AE404D6C04D538DD9AD0CA800
+INIT_0b = 8FF9CF909C30988D72D52BEF6E8E808BAFECABAB40B402CB0B25B2C3563608C0
+INIT_0c = 8143F4089519237485F40440748AFD504CBCD08D49108263EE1884F183205083
+INIT_0d = 314581C05C05C05C051D41140581807C5BD55A434E3AD883220498231695D88E
+INIT_0e = 9DC15384F111080F13E43332D081C0081C0315248F708D86FF18180425F1DFD2
+INIT_0f = 000000000F0F0000000000028090000000000FF0F4431000F8BDDBF38668110D
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM22":
+INIT_00 = 00000027050377070000002700500000A08280FF000F208F0000000000000000
+INIT_01 = 0005000000008000057208070000079700000087000000500000000000000000
+INIT_02 = 05F05000000000000000000000A0170F000F108F000005700000000700000000
+INIT_03 = 0000007700000000000000180000000000000008000000900000000F00077800
+INIT_04 = F5030808E00808507125B790008858027858027853050F83001877111111113D
+INIT_05 = 0888888808903EC79578802F8888DF850F3380AA8371F88339F5278337085CF3
+INIT_06 = 27558FF0DF7719A50017C20880305F73187525F008878183908A87F880507857
+INIT_07 = 8288338E2107037553801818273008877785CF8202330F0080F25B7F58853837
+INIT_08 = 8272D5F8E808135280813231798788702F5C337C22C8277851795073FF571258
+INIT_09 = 980802885F9338872375C80802C28850233807587885D557270218F27371702C
+INIT_0a = F80C888C08F8288D55A0C785800B8580807C0C79888028080288C00882CC80C9
+INIT_0b = 7FF57F38508B007217FD302B7282888558F09898880888008019019F09507C07
+INIT_0c = 05759287328337853737872870F9F39800002800A377E723F25087F137575895
+INIT_0d = 57893707007007007053787370373708570E5277725208375712A37787350802
+INIT_0e = 03077735F788737F77257957093707937075707838078080FF83737775973FE5
+INIT_0f = 000000000F0F000000000000B000000000000FF0F0088777F00330F70513587F
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM31":
+INIT_00 = 00000132031AA01100000132003739223B3B5331004F3121000000FB000000EB
+INIT_01 = 0003A1220001A1220C7313210046193200005B92000000A20000003B00000000
+INIT_02 = 47530152000000FB0000007B00860CB100410121000007320000045200000021
+INIT_03 = 0000025100000000000004020000000000000041000001B10000000516465952
+INIT_04 = B0B21BBEFD44B820C408F1BD8088CC8A88CC8E883D0026246B596400000000B1
+INIT_05 = CB0B0B4C093067F28180DD00112034DE0F041DA21233100E3206124F31104042
+INIT_06 = ED680F880FC08C464408CA00DDDE6C63F850F7DDD680001FC8042600DD20801D
+INIT_07 = 3A079616FF121A3317514230A31DD12680D404D0040320048DD5CFAD2E08F195
+INIT_08 = DECA6418E16C612738C49081DC1650DD964A024A08ADE844338709373C535051
+INIT_09 = 2310AA0D2ABE48920424AD4DD9A018389E60081080DFE42383B0269E2133DD9A
+INIT_0a = B04040BF8D4C1A1CA7C40BD20DDCD3B203108C8C10DD4D8DD4CBFDDB19AF1CA2
+INIT_0b = C3760ED9BB7FE83A125000068D8E88DAA7B2C1C20C20BDA1080CB83A4A364058
+INIT_0c = 8421555DC05C14C054128055D8FD031DDA1C00CDE922E8A4635E235523C52C73
+INIT_0d = 5807923143143143144689264182715759D4A15810A1D0384512E8544D70D380
+INIT_0e = 1786655614895D4128863060DF22317D231524C051B74D41140322183759C462
+INIT_0f = 000000000F0F0000000000045010000000000FFF0F489228004F70285447126B
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/memory/ramrom/ram/Mram_RAM32":
+INIT_00 = 0000057705800377000005770050707780720887000F8877000000D0000000F0
+INIT_01 = 000508770005087700088707000080770000000700000007000000C000000000
+INIT_02 = 00077807000000D0000000F000801D0700081877000000770000000700000057
+INIT_03 = 0000000700000000000000100000000000000007000005080000000050700007
+INIT_04 = 0E0880029003035B088095038900008900008D005E11707002000011111111A8
+INIT_05 = 00808000998DE895350800A85757802FDF8853875958887F887085CF85878808
+INIT_06 = F270AF388F078085881B89D800D2501FF078F5733008C95F0BA0507800580850
+INIT_07 = 3985F850FF85895551078888031337500828802C8F88779C03280F02C2A0F585
+INIT_08 = 2F09217085708C7757081818A8585C0082187958C882F3735752823170058807
+INIT_09 = 75780982880F8305C57982C0088C8358EF888357082F85538329873F51372088
+INIT_0a = F8888A09C000B8580709882583382707857988B85800D2C00D0093385E895C87
+INIT_0b = 08258293575F285A8508A8823F3F37205787858580F802088890985989579870
+INIT_0c = 87387750E85D800385E5387508F8885000887A83FA55938707577307F5017D25
+INIT_0d = 0072C55785785785787830557895A57257352873782837835777295750D33788
+INIT_0e = 788005E581305958530577073FF5572D55707807A520737873795A538507F521
+INIT_0f = 000000000F0F00000000000A0000000000000FFF0303051377DF88537589580F
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:4096X4
+WRITEMODEA:WRITE_FIRST
+INIT_A = 0
+SRVAL_A = 0
+PORTB_ATTR:4096X4
+WRITEMODEB:WRITE_FIRST
+INIT_B = 0
+SRVAL_B = 0
+
+
+RAMB16 "zpuino/stack/stack":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:512X36
+WRITEMODEA:WRITE_FIRST
+INIT_A = 000000000
+SRVAL_A = 000000000
+PORTB_ATTR:512X36
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000000000
+SRVAL_B = 000000000
+
+
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                  | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name                                        |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| papilio_one_top/        |           | 0/2762        | 0/2326        | 0/3402        | 0/68          | 0/12      | 0/0       | 0/2   | 0/1   | papilio_one_top                                               |
+| +clkgen_inst            |           | 5/5           | 5/5           | 0/0           | 0/0           | 0/0       | 0/0       | 2/2   | 1/1   | papilio_one_top/clkgen_inst                                   |
+| +crc16_inst             |           | 80/80         | 76/76         | 85/85         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/crc16_inst                                    |
+| +gpio_inst              |           | 264/264       | 250/250       | 182/182       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/gpio_inst                                     |
+| +ibufrx                 |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/ibufrx                                        |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/ibufrx/sync                                   |
+| +obuftx                 |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/obuftx                                        |
+| +ospiclk                |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/ospiclk                                       |
+| +ospics                 |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/ospics                                        |
+| +ospimosi               |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/ospimosi                                      |
+| +pins.pin00             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin00                                    |
+| +pins.pin01             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin01                                    |
+| +pins.pin02             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin02                                    |
+| +pins.pin03             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin03                                    |
+| +pins.pin04             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin04                                    |
+| +pins.pin05             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin05                                    |
+| +pins.pin06             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin06                                    |
+| +pins.pin07             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin07                                    |
+| +pins.pin08             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin08                                    |
+| +pins.pin09             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin09                                    |
+| +pins.pin10             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin10                                    |
+| +pins.pin11             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin11                                    |
+| +pins.pin12             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin12                                    |
+| +pins.pin13             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin13                                    |
+| +pins.pin15             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin15                                    |
+| +pins.pin16             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin16                                    |
+| +pins.pin17             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin17                                    |
+| +pins.pin18             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin18                                    |
+| +pins.pin19             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin19                                    |
+| +pins.pin20             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin20                                    |
+| +pins.pin21             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin21                                    |
+| +pins.pin22             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin22                                    |
+| +pins.pin23             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin23                                    |
+| +pins.pin24             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin24                                    |
+| +pins.pin25             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin25                                    |
+| +pins.pin26             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin26                                    |
+| +pins.pin27             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin27                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin27/sync                               |
+| +pins.pin28             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin28                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin28/sync                               |
+| +pins.pin29             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin29                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin29/sync                               |
+| +pins.pin30             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin30                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin30/sync                               |
+| +pins.pin31             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin31                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin31/sync                               |
+| +pins.pin32             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin32                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin32/sync                               |
+| +pins.pin33             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin33                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin33/sync                               |
+| +pins.pin34             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin34                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin34/sync                               |
+| +pins.pin35             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin35                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin35/sync                               |
+| +pins.pin36             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin36                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin36/sync                               |
+| +pins.pin37             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin37                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin37/sync                               |
+| +pins.pin38             |           | 0/1           | 0/1           | 0/2           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin38                                    |
+| ++sync                  |           | 1/1           | 1/1           | 2/2           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin38/sync                               |
+| +pins.pin39             |           | 0/1           | 0/1           | 0/1           | 0/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin39                                    |
+| ++sync                  |           | 1/1           | 1/1           | 1/1           | 1/1           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin39/sync                               |
+| +pins.pin40             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin40                                    |
+| +pins.pin41             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin41                                    |
+| +pins.pin42             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin42                                    |
+| +pins.pin43             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin43                                    |
+| +pins.pin44             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin44                                    |
+| +pins.pin45             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin45                                    |
+| +pins.pin46             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin46                                    |
+| +pins.pin47             |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/pins.pin47                                    |
+| +rstgen                 |           | 25/25         | 34/34         | 43/43         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/rstgen                                        |
+| +sigmadelta_inst        |           | 51/51         | 69/69         | 37/37         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/sigmadelta_inst                               |
+| +slot0                  |           | 23/121        | 11/114        | 17/97         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot0                                         |
+| ++zspi                  |           | 69/69         | 71/71         | 56/56         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot0/zspi                                    |
+| ++zspiclk               |           | 12/29         | 8/32          | 7/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot0/zspiclk                                 |
+| +++pr                   |           | 17/17         | 24/24         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot0/zspiclk/pr                              |
+| +slot1                  |           | 28/117        | 11/114        | 20/100        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot1                                         |
+| ++zspi                  |           | 58/58         | 71/71         | 56/56         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot1/zspi                                    |
+| ++zspiclk               |           | 14/31         | 8/32          | 7/24          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot1/zspiclk                                 |
+| +++pr                   |           | 17/17         | 24/24         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot1/zspiclk/pr                              |
+| +slot12                 |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot12                                        |
+| +slot15                 |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot15                                        |
+| +slot9                  |           | 91/91         | 61/61         | 82/82         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/slot9                                         |
+| +timers_inst            |           | 49/232        | 0/193         | 77/317        | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/timers_inst                                   |
+| ++timer0_inst           |           | 106/120       | 111/135       | 124/141       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/timers_inst/timer0_inst                       |
+| +++pr.tmr0prescale_inst |           | 14/14         | 24/24         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/timers_inst/timer0_inst/pr.tmr0prescale_inst  |
+| ++timer1_inst           |           | 63/63         | 58/58         | 99/99         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/timers_inst/timer1_inst                       |
+| +uart_inst              |           | 17/173        | 18/165        | 6/214         | 0/0           | 0/1       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst                                     |
+| ++fifo_instance         |           | 35/35         | 45/45         | 48/48         | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/fifo_instance                       |
+| ++rx_inst               |           | 21/49         | 23/45         | 18/63         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/rx_inst                             |
+| +++baudgen              |           | 22/22         | 17/17         | 39/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/rx_inst/baudgen                     |
+| +++rxmvfilter           |           | 6/6           | 5/5           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/rx_inst/rxmvfilter                  |
+| ++rx_timer              |           | 23/23         | 17/17         | 38/38         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/rx_timer                            |
+| ++tx_core               |           | 26/26         | 23/23         | 20/20         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/tx_core                             |
+| ++tx_timer              |           | 23/23         | 17/17         | 39/39         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/uart_inst/tx_timer                            |
+| +vgat                   |           | 283/338       | 310/353       | 346/418       | 0/6           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat                                          |
+| ++myfifo                |           | 45/55         | 40/43         | 61/72         | 0/6           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat/myfifo                                   |
+| +++U1                   |           | 6/6           | 3/3           | 6/6           | 6/6           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat/myfifo/U1                                |
+| +++U2                   |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat/myfifo/U2                                |
+| +++U5                   |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat/myfifo/U5                                |
+| +++U6                   |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/vgat/myfifo/U6                                |
+| +zpuino                 |           | 8/1249        | 0/878         | 11/1810       | 0/32          | 0/11      | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino                                        |
+| ++core                  |           | 753/838       | 627/697       | 1264/1375     | 0/32          | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/core                                   |
+| +++shl                  |           | 85/85         | 70/70         | 111/111       | 32/32         | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/core/shl                               |
+| ++io                    |           | 234/317       | 109/177       | 230/316       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/io                                     |
+| +++intr_inst            |           | 83/83         | 68/68         | 86/86         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/io/intr_inst                           |
+| ++iomemmux              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/iomemmux                               |
+| ++memarb                |           | 43/43         | 1/1           | 62/62         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/memarb                                 |
+| ++memory                |           | 41/41         | 3/3           | 44/44         | 0/0           | 0/10      | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/memory                                 |
+| +++extra                |           | 0/0           | 0/0           | 0/0           | 0/0           | 2/2       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/memory/extra                           |
+| +++ramrom               |           | 0/0           | 0/0           | 0/0           | 0/0           | 0/8       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/memory/ramrom                          |
+| ++++ram                 |           | 0/0           | 0/0           | 0/0           | 0/0           | 8/8       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/memory/ramrom/ram                      |
+| ++stack                 |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | papilio_one_top/zpuino/stack                                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

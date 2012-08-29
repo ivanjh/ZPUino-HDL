@@ -38,7 +38,7 @@ NGDBUILD Design Results Summary:
 Total memory usage is 114236 kilobytes
 
 Writing NGD file "nexys2_zpuino.ngd" ...
-Total REAL time to NGDBUILD completion:  6 sec
-Total CPU time to NGDBUILD completion:   6 sec
+Total REAL time to NGDBUILD completion: 1 min  35 sec
+Total CPU time to NGDBUILD completion:  1 min  34 sec
 
 Writing NGDBUILD log file "nexys2_zpuino.bld"...

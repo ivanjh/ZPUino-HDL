@@ -32,10 +32,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 114812 kilobytes
+Total memory usage is 114808 kilobytes
 
 Writing NGD file "oho_godil.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  39 sec
-Total CPU time to NGDBUILD completion:  1 min  37 sec
+Total REAL time to NGDBUILD completion: 2 min  1 sec
+Total CPU time to NGDBUILD completion:  2 min  0 sec
 
 Writing NGDBUILD log file "oho_godil.bld"...

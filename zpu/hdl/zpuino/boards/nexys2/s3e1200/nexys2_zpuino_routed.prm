@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 promgen -w -spi -p bin -o nexys2_zpuino_routed.bin -s 1024 -u 0 nexys2_zpuino_routed.bit 
 
-PROM nexys2_zpuino_routed.prm map: Wed Aug 29 23:27:43 2012
+PROM nexys2_zpuino_routed.prm map: Fri Aug 31 02:37:58 2012
 
 Format        Bin
 Size          1024K
@@ -11,4 +11,4 @@ PROM start    00000000
 PROM end      000fffff
 
         Addr1        Addr2                     Date File(s)
-     00000000     00075393     Aug 29 23:24:06 2012 nexys2_zpuino_routed.bit
+     00000000     00075393     Aug 31 02:34:27 2012 nexys2_zpuino_routed.bit

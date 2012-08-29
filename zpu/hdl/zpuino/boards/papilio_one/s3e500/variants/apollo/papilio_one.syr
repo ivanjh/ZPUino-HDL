@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.18 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.50 secs
  
 --> 
 Reading design: papilio_one.prj
@@ -3419,13 +3419,13 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4628.00 secs
-Total CPU time to Xst completion: 4600.54 secs
+Total REAL time to Xst completion: 4885.00 secs
+Total CPU time to Xst completion: 4866.99 secs
  
 --> 
 
 
-Total memory usage is 322048 kilobytes
+Total memory usage is 322148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  968 (   0 filtered)

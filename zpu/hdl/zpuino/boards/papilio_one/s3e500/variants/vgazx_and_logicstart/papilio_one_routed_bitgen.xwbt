@@ -1,0 +1,7 @@
+INFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/vgazx_and_logicstart/papilio_one_routed.ncd
+OUTFILE=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/vgazx_and_logicstart/papilio_one_routed.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4vq100
+WORKINGDIR=/mnt/scratch/ZPUino-HDL/zpu/hdl/zpuino/boards/papilio_one/s3e500/variants/vgazx_and_logicstart
+LICENSE=WebPack
+USER_INFO=202284610_0_0_530

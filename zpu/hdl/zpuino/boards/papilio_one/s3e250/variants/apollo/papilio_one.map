@@ -10,7 +10,7 @@ Target Device  : xc3s250e
 Target Package : vq100
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 29 15:36:33 2012
+Mapped Date    : Thu Aug 30 18:43:44 2012
 
 Mapping design into LUTs...
 Running directed packing...
@@ -29,27 +29,27 @@ WARNING:Pack:501 - The I/O component SPI_CS has conflicting DRIVE property
 Running delay-based LUT packing...
 Updating timing models...
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 7 mins 20 secs 
-Total CPU  time at the beginning of Placer: 7 mins 20 secs 
+Total REAL time at the beginning of Placer: 6 mins 27 secs 
+Total CPU  time at the beginning of Placer: 6 mins 24 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4dd392c1) REAL time: 7 mins 22 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:4dd392c1) REAL time: 7 mins 55 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:4dd392c1) REAL time: 7 mins 22 secs 
+Phase 2.7  Design Feasibility Check (Checksum:4dd392c1) REAL time: 7 mins 57 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4dd392c1) REAL time: 7 mins 22 secs 
+Phase 3.31  Local Placement Optimization (Checksum:4dd392c1) REAL time: 7 mins 57 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:3e4cc659) REAL time: 7 mins 23 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:3e4cc659) REAL time: 8 mins 31 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:3e4cc659) REAL time: 7 mins 23 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:3e4cc659) REAL time: 8 mins 31 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:3e4cc659) REAL time: 7 mins 23 secs 
+Phase 6.36  Local Placement Optimization (Checksum:3e4cc659) REAL time: 8 mins 31 secs 
 
 Phase 7.8  Global Placement
 .........................
@@ -60,19 +60,19 @@ Phase 7.8  Global Placement
 ................
 ..............................
 ............................................
-Phase 7.8  Global Placement (Checksum:4afeb8a5) REAL time: 24 mins 15 secs 
+Phase 7.8  Global Placement (Checksum:4afeb8a5) REAL time: 22 mins 29 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:4afeb8a5) REAL time: 24 mins 20 secs 
+Phase 8.5  Local Placement Optimization (Checksum:4afeb8a5) REAL time: 22 mins 35 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:c8f681e3) REAL time: 34 mins 22 secs 
+Phase 9.18  Placement Optimization (Checksum:c8f681e3) REAL time: 35 mins 47 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:c8f681e3) REAL time: 34 mins 22 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c8f681e3) REAL time: 35 mins 48 secs 
 
-Total REAL time to Placer completion: 34 mins 22 secs 
-Total CPU  time to Placer completion: 34 mins 7 secs 
+Total REAL time to Placer completion: 35 mins 48 secs 
+Total CPU  time to Placer completion: 35 mins 19 secs 
 Running physical synthesis...
 
 Physical synthesis completed.
@@ -112,8 +112,8 @@ Logic Distribution:
 Average Fanout of Non-Clock Nets:                3.33
 
 Peak Memory Usage:  236 MB
-Total REAL time to MAP completion:  35 mins 20 secs 
-Total CPU time to MAP completion:   35 mins 4 secs 
+Total REAL time to MAP completion:  35 mins 54 secs 
+Total CPU time to MAP completion:   35 mins 27 secs 
 
 Mapping completed.
 See MAP report file "papilio_one.mrp" for details.
